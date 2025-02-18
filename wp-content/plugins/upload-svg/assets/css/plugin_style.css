@@ -1,0 +1,42 @@
+.settings_select_block {
+	margin:10px 0 10px 0;
+}
+
+.settings_select_block span {
+	display:inline-block;
+	width:150px;
+	font-weight:bold;
+	text-transform: capitalize;
+}
+
+.settings_limit_block {
+	margin:20px 0 10px 0;
+}
+
+.settings_limit_block span {
+	display:inline-block;
+}
+
+.settings_limit_block input {
+	width:120px;
+	margin-left:10px;
+}
+
+.settings_select_block_info {
+	margin: 0 0 20px 0;
+}
+
+/* correct thumb svg */
+.attachment-info .thumbnail img[src$=".svg"], #postimagediv .inside img[src$=".svg"] {
+	width:100%
+}
+
+/* Gutenberg fix */
+.components-responsive-wrapper__content[src*='.svg'] {
+	width:100%
+}
+
+/* Fix Media "Table-view" mode */
+.has-media-icon a .image-icon img[src$=".svg"] {
+	width:100%;
+}

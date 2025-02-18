@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="787" height="798.065" viewBox="0 0 787 798.065">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#2cffa5"/>
+      <stop offset="1" stop-color="#81f"/>
+    </linearGradient>
+    <filter id="about_us_-_img_-_bg" x="0" y="0" width="787" height="798.065" filterUnits="userSpaceOnUse">
+      <feOffset dy="10" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="12.5" result="blur"/>
+      <feFlood flood-color="#98f8cf" flood-opacity="0.2"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g transform="matrix(1, 0, 0, 1, 0, 0)" filter="url(#about_us_-_img_-_bg)">
+    <rect id="about_us_-_img_-_bg-2" data-name="about us - img - bg" width="578.039" height="593.687" rx="71" transform="matrix(0.97, -0.26, 0.26, 0.97, 37.5, 177.11)" opacity="0.8" fill="url(#linear-gradient)"/>
+  </g>
+</svg>

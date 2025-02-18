@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="68.32" height="68.32" viewBox="0 0 68.32 68.32">
+  <defs>
+    <linearGradient id="linear-gradient" x1="0.5" x2="0.5" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#ff1713"/>
+      <stop offset="1" stop-color="#f85d80"/>
+    </linearGradient>
+  </defs>
+  <path id="Polygon_hero_-_left" data-name="Polygon hero - left" d="M36.5,0a5,5,0,0,1,4.3,2.447L50.943,19.526a5,5,0,0,1,0,5.107L40.8,41.712a5,5,0,0,1-4.3,2.447H15.961a5,5,0,0,1-4.3-2.447L1.517,24.633a5,5,0,0,1,0-5.107L11.662,2.447A5,5,0,0,1,15.961,0Z" transform="translate(31.225) rotate(45)" fill="url(#linear-gradient)"/>
+</svg>
