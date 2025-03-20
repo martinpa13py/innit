@@ -171,7 +171,7 @@ function plugins_api( $action, $args = array() ) {
 			'user-agent' => 'WordPress/' . $wp_version . '; ' . home_url( '/' ),
 		);
 		$request   = wp_remote_get( $url, $http_args );
-
+		error_log('aqui2');
 		if ( $ssl && is_wp_error( $request ) ) {
 			if ( ! wp_is_json_request() ) {
 				wp_trigger_error(
@@ -187,7 +187,7 @@ function plugins_api( $action, $args = array() ) {
 
 			$request = wp_remote_get( $http_url, $http_args );
 		}
-
+		error_log('aqui3');
 		if ( is_wp_error( $request ) ) {
 			$res = new WP_Error(
 				'plugins_api_failed',

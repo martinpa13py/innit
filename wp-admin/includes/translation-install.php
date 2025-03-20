@@ -57,7 +57,7 @@ function translations_api( $type, $args = null ) {
 		}
 
 		$request = wp_remote_post( $url, $options );
-
+		error_log('aqui4');
 		if ( $ssl && is_wp_error( $request ) ) {
 			wp_trigger_error(
 				__FUNCTION__,
@@ -71,7 +71,7 @@ function translations_api( $type, $args = null ) {
 
 			$request = wp_remote_post( $http_url, $options );
 		}
-
+		error_log('aqui5');
 		if ( is_wp_error( $request ) ) {
 			$res = new WP_Error(
 				'translations_api_failed',
@@ -83,6 +83,7 @@ function translations_api( $type, $args = null ) {
 				$request->get_error_message()
 			);
 		} else {
+			error_log('aqui6');
 			$res = json_decode( wp_remote_retrieve_body( $request ), true );
 			if ( ! is_object( $res ) && ! is_array( $res ) ) {
 				$res = new WP_Error(
