@@ -172,6 +172,7 @@ function plugins_api( $action, $args = array() ) {
 		);
 		$request   = wp_remote_get( $url, $http_args );
 		error_log('aqui2');
+		error_log(print_r($request, true));
 		if ( $ssl && is_wp_error( $request ) ) {
 			if ( ! wp_is_json_request() ) {
 				wp_trigger_error(
