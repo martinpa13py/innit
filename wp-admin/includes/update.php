@@ -143,6 +143,7 @@ function get_core_checksums( $version, $locale ) {
 	);
 
 	$response = wp_remote_get( $url, $options );
+	error_log('aqui1');
 	error_log(print_r($response, true));
 	if ( $ssl && is_wp_error( $response ) ) {
 		wp_trigger_error(
