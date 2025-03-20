@@ -323,6 +323,38 @@ class Button extends Widget_Base {
             )
         );
 
+        $this->add_control(
+            'fading_hover',
+            array(
+                'label'        => __('Fade hover','auxin-elements' ),
+                'type'         => Controls_Manager::SWITCHER,
+                'label_on'     => __( 'Yes', 'auxin-elements' ),
+                'label_off'    => __( 'No', 'auxin-elements' ),
+                'return_value' => 'yes',
+                'default'      => 'no',
+                'selectors_dictionary' => [
+					'no'   => '',
+					'yes' => 'display: none;',
+                ],
+                'selectors' => [
+					'{{WRAPPER}} .aux-button .aux-overlay::after' => '{{value}}'
+				]
+            )
+        );
+
+        $this->add_group_control(
+            Group_Control_Background::get_type(),
+            array(
+                'name' => 'fading_hover_background',
+                'label' => __( 'Background', 'auxin-elements' ),
+                'types' => array( 'classic', 'gradient' ),
+                'selector' => '{{WRAPPER}} .aux-button:hover',
+                'condition' => [
+                    'fading_hover' => 'yes'
+                ]
+            )
+        );
+
         $this->add_group_control(
             Group_Control_Background::get_type(),
             array(
@@ -330,6 +362,9 @@ class Button extends Widget_Base {
                 'label' => __( 'Background', 'auxin-elements' ),
                 'types' => array( 'classic', 'gradient' ),
                 'selector' => '{{WRAPPER}} .aux-button .aux-overlay::after',
+                'condition' => [
+                    'fading_hover!' => 'yes'
+                ]
             )
         );
 

@@ -814,6 +814,15 @@ body.wp-admin #wpwrap #qm { margin-left: 160px !important; }
 .axi-switch > small { background: #fff; border-radius: 100%; box-shadow: 0 1px 3px rgba(0, 0, 0, 0.4); height: 28px; height: 14px; position: absolute; top: 0; width: 28px; top: 50%; transform: translateY(-50%); width: 14px; }
 .customize-control .axi-switch { position: absolute; right: 0; top: 2px; }
 
+input:checked+.axi-switch {
+  background-color: #2F5F91;
+  border-color: #2F5F91;
+}
+
+input:checked+.axi-switch>small {
+  right: 0;
+  left: auto;
+}
 /*!------------------------------------
   WP AttachmentMedia
 --------------------------------------*/
@@ -1439,6 +1448,15 @@ body.wp-admin #wpwrap #qm { margin-left: 160px !important; }
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper { width: 20%; display: flex; align-items: center; }
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper .axi-switch { margin: 0 8px; width: 33px; height: 18px; background-color: #0074a2 !important; border-color: #0074a2 !important; }
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper .axi-switch > small { width: 16px; height: 16px; }
+.auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper input:checked+.axi-switch {
+  background-color: #2F5F91;
+  border-color: #2F5F91;
+}
+
+.auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper input:checked+.axi-switch>small {
+  right: 0;
+  left: auto;
+}
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-group-wrapper span { font-size: 16px; }
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-filters-wrapper { width: 64%; }
 .auxin-wizard-panel .aux-welcome-page-templates .aux-isotope-filters .aux-isotope-search-wrapper { width: 16%; }

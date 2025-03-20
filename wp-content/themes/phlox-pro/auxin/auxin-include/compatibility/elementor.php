@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
 */
 
@@ -163,3 +163,39 @@ function auxin_add_container_size_notice( $element, $args) {
     );
 }
 add_action( 'elementor/element/container/section_layout_container/after_section_start', 'auxin_add_container_size_notice', 10, 2 );
+
+/**
+ * Add some svg tags to elementor allowed tags
+ *
+ * @param array $tags
+ * @return array
+ */
+function auxin_allow_elementor_svg_tags( $tags ) {
+
+    return array_merge( $tags, [
+        'feoffset', 
+        'fecomposite', 
+        'feflood'
+    ] );
+}
+add_filter( 'elementor/files/svg/allowed_elements', 'auxin_allow_elementor_svg_tags');
+
+/**
+ * Add some svg attributes to elementor allowed attributes
+ *
+ * @param array $attributes
+ * @return array
+ */
+function auxin_allow_elementor_svg_attributes( $attributes ) {
+    return array_merge( $attributes, [
+        'input',
+        'result',
+        'flood-color',
+        'flood-opacity',
+        'in',
+        'in2',
+        'operator',
+        'mode'
+    ]);
+}
+add_filter( 'elementor/files/svg/allowed_attributes', 'auxin_allow_elementor_svg_attributes');

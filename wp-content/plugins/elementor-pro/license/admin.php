@@ -9,6 +9,7 @@ use ElementorPro\Core\Connect\Apps\Activate;
 use ElementorPro\License\Notices\Trial_Expired_Notice;
 use ElementorPro\License\Notices\Trial_Period_Notice;
 use ElementorPro\Plugin;
+use ElementorPro\License\API as License_API;
 
 if ( ! defined( 'ABSPATH' ) ) {
 	exit; // Exit if accessed directly.
@@ -183,14 +184,6 @@ class Admin {
 				esc_html__( 'Unlock More Features', 'elementor-pro' ),
 				'manage_options',
 				'elementor_pro_upgrade_license_menu_link',
-				function () {
-					wp_redirect( current_user_can( 'manage_options' )
-						? 'https://go.elementor.com/go-pro-advanced-elementor-menu/'
-						: '/wp-admin'
-					);
-
-					die;
-				}
 			);
 		}
 	}
@@ -296,6 +289,14 @@ class Admin {
 					</p>
 				<?php endif; ?>
 			</form>
+			<?php if ( License_API::TIER_ESSENENTIAL === License_API::get_access_tier() ) : ?>
+				<p id="tier-upgrade-promotion" class="elementor-license-box e-row-stretch">
+					<span><?php echo esc_html__( 'Get more advanced features', 'elementor-pro' ); ?></span>
+					<a class="button elementor-upgrade-link" target="_blank" href="https://go.elementor.com/go-pro-advanced-license-screen/">
+						<?php echo esc_html__( 'Upgrade now', 'elementor-pro' ); ?>
+					</a>
+				</p>
+			<?php endif; ?>
 		</div>
 		<?php
 	}
@@ -754,6 +755,9 @@ class Admin {
 		add_filter( 'elementor/finder/categories', [ $this, 'add_finder_item' ] );
 		add_filter( 'plugin_action_links_' . ELEMENTOR_PRO_PLUGIN_BASE, [ $this, 'plugin_action_links' ], 50 );
 		add_filter( 'plugin_auto_update_setting_html', [ $this, 'plugin_auto_update_setting_html' ], 10, 2 );
+		add_filter( 'elementor/admin/homescreen_promotion_tier', function ( $tier ) {
+			return API::get_access_tier();
+		} );
 
 		$this->handle_dashboard_admin_widget();
 	}

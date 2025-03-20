@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
 */
 
 // no direct access allowed
@@ -83,6 +83,10 @@ class Auxels_Envato_Elements {
 
         if ( ! empty( get_option( 'phlox_envato_elements_token', '' ) ) ) {
             return array( 'status' => true, 'message' => __( 'Token is valid.', 'auxin-elements') );
+        }
+
+        if ( ! current_user_can('manage_options') ) {
+            return array( 'status' => false, 'message' => __( "Access Denied: You don't have the required permissions!", 'auxin-elements') );
         }
 
         $extension_id = md5( get_site_url() );

@@ -1,6 +1,6 @@
-/*! 2.3.7
+/*! 2.3.9
  *  All required plugins 
- *  http://averta.net/phlox/
+ *  https://phlox.pro
  */
 
 

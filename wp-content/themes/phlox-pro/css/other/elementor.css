@@ -7,8 +7,10 @@
 	width: auto;
 	max-width: 1900px
  }
- .aux-fhd .elementor-add-section,
- .aux-fhd .e-con > .e-con-inner{
+ .aux-fhd .e-con > .e-con-inner {
+	max-width: 1900px
+ }
+ .aux-fhd .elementor-add-section{
 	max-width: 1940px
  }
 
@@ -17,8 +19,10 @@
 	 width: auto;
 	 max-width: 1600px
  }
- .aux-s-fhd .elementor-add-section,
- .aux-s-fhd .e-con > .e-con-inner {
+ .aux-s-fhd .e-con > .e-con-inner  {
+	max-width: 1600px
+ }
+ .aux-s-fhd .elementor-add-section{
 	max-width: 1640px
 }
 
@@ -27,8 +31,10 @@
 	 width: auto;
 	 max-width: 1400px
  }
- .aux-xhd .elementor-add-section,
- .aux-xhd .e-con > .e-con-inner {
+ .aux-xhd .e-con > .e-con-inner  {
+	max-width: 1400px
+ }
+ .aux-xhd .elementor-add-section {
 	max-width: 1440px
 }
 
@@ -37,8 +43,10 @@
 	 width: auto;
 	 max-width: 1200px
  }
- .aux-hd .elementor-add-section,
- .aux-hd .e-con > .e-con-inner {
+ .aux-hd .e-con > .e-con-inner  {
+	max-width: 1200px
+ }
+ .aux-hd .elementor-add-section {
 	max-width: 1240px
 }
 
@@ -47,7 +55,9 @@
 	 width: auto;
 	 max-width: 1000px
  }
- .aux-nd .elementor-add-section,
  .aux-nd .e-con > .e-con-inner {
+	max-width: 1000px;
+ }
+ .aux-nd .elementor-add-section {
 	max-width: 1040px
 }

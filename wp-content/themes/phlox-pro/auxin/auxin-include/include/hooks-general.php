@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
 */
 
@@ -337,9 +337,7 @@ function auxin_set_content_width(){
         } elseif( 2 === $sidebar_num ){
             if ( auxin_primary_sidebar_has_content() && auxin_secondary_sidebar_has_content() ) {
                 $theme_width -= 560;
-            }
-
-            if ( auxin_primary_sidebar_has_content() || auxin_secondary_sidebar_has_content() ) {
+            } else if ( auxin_primary_sidebar_has_content() || auxin_secondary_sidebar_has_content() ) {
                 $theme_width -= 300;
             }
         }

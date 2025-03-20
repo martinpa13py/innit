@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 
 function  auxin_get_staff_master_array( $master_array )  {
@@ -657,7 +657,7 @@ function auxin_widget_staff_callback( $atts, $shortcode_content = null ){
             <?php } if( ! empty( $content ) ) { ?>
             <div class="entry-content">
                 <?php $encoding_flag =  defined('ENT_HTML401') ? ENT_HTML401 : ENT_QUOTES; ?>
-                <?php echo do_shortcode( html_entity_decode( $content, $encoding_flag, 'UTF-8') ); ?>
+                <?php echo do_shortcode( wp_kses_post( html_entity_decode( $content, $encoding_flag, 'UTF-8') ) ); ?>
             </div>
             <?php } if ( auxin_is_true( $socials ) ) { ?>
             <div class="aux-staff-footer <?php echo esc_attr( $footer_classes ) ;?>">

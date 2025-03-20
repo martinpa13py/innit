@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 
 function auxin_get_recent_posts_timeline_master_array( $master_array ) {
@@ -454,6 +454,7 @@ function auxin_widget_recent_posts_timeline_callback( $atts, $shortcode_content 
         'show_excerpt'                => true,
         'show_content'                => true,
         'excerpt_len'                 => 160,
+        'excerpt_length'              => '',
         'image_aspect_ratio'          => 0.75,
         'display_title'               => true,
         'show_info'                   => true,

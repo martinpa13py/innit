@@ -607,10 +607,23 @@ class RecentPostsGridCarousel extends Widget_Base {
         $this->add_control(
             'excerpt_len',
             array(
-                'label'       => __('Excerpt length','auxin-elements' ),
-                'description' => __('Specify summary content in character.','auxin-elements' ),
+                'label'       => __('Content length','auxin-elements' ),
+                'description' => __('Shorten the content by characters for the posts with no excerpt','auxin-elements' ),
                 'type'        => Controls_Manager::NUMBER,
                 'default'     => '160',
+                'condition'   => array(
+                    'show_excerpt' => 'yes',
+                )
+            )
+        );
+
+        $this->add_control(
+            'excerpt_length',
+            array(
+                'label'       => __('Excerpt length','auxin-elements' ),
+                'description' => __('Shorten the excerpt itself','auxin-elements' ),
+                'type'        => Controls_Manager::NUMBER,
+                'default'     => '',
                 'condition'   => array(
                     'show_excerpt' => 'yes',
                 )
@@ -2016,6 +2029,7 @@ class RecentPostsGridCarousel extends Widget_Base {
         'show_date'                   => $settings['show_date'],
         'show_excerpt'                => $settings['show_excerpt'],
         'excerpt_len'                 => $settings['excerpt_len'],
+        'excerpt_length'              => $settings['excerpt_length'],
         'author_or_readmore'          => $settings['author_or_readmore'],
         'display_author_header'       => $settings['display_author_header'],
         'display_author_footer'       => $settings['display_author_footer'],

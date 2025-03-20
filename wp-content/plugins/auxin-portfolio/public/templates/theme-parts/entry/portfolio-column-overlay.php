@@ -53,7 +53,7 @@
                                         <span class="entry-tax">
                                             <?php // the_category(' '); we can use this template tag, but customizable way is needed! ?>
                                             <?php $tax_name = 'portfolio-cat';
-                                                if( $cat_terms = wp_get_post_terms( $post->ID, $tax_name ) ){
+                                                if( $cat_terms = wp_get_post_terms( $post->ID, $tax_name ) && ! is_wp_error( $cat_terms ) ){
                                                     foreach( $cat_terms as $term ){
                                                         echo '<a href="'. get_term_link( $term->slug, $tax_name ) .'" title="'.__("View all posts in ", 'auxin-portfolio'). $term->name .'" rel="category" >'. $term->name .'</a>';
                                                     }

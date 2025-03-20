@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 
 function auxin_widget_products_grid_callback( $atts, $shortcode_content = null ){

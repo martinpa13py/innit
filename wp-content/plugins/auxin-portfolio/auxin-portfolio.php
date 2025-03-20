@@ -6,20 +6,21 @@
  * @package    Auxin
  * @license    LICENSE.txt
  * @author     averta
- * @link       http://averta.net/phlox/
- * @copyright  (c) 2010-2024 averta
+ * @link       https://phlox.pro
+ * @copyright  (c) 2010-2025 averta
  *
  * Plugin Name:       Phlox Portfolio
  * Plugin URI:        http://phlox.pro/
  * Description:       Showcase your projects beautifully in Phlox theme
- * Version:           2.3.7
+ * Version:           2.3.9
  * Author:            averta
  * Author URI:        http://averta.net
  * License:           GPL2
  * License URI:       https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain:       auxin-portfolio
  * Domain Path:       /languages
- * Tested up to: 	  6.7.1
+ * Tested up to: 	  6.7.2
+ * Requires Plugins:  auxin-elements
  */
 
 // If this file is called directly, abort.
@@ -49,16 +50,7 @@ if( is_admin() ||
     $plugin_requirements = new Auxin_Plugin_Requirements();
     $plugin_requirements->requirements = array(
 
-        'plugins' => array(
-            array(
-                'name'               => __('Phlox Core Elements', 'auxin-portfolio'), // The plugin name.
-                'basename'           => 'auxin-elements/auxin-elements.php', // The plugin basename (typically the folder name and main php file)
-                'required'           => true,    // If true, the user will be notified with a notice to install the plugin.
-                'version'            => '2.3.10', // E.g. 1.0.0. If set, the active plugin must be this version or higher.
-                'dependency'         => true,    // If true, and the plugin is activated, the plugin will be loaded before as a dependeny.
-                'is_callable'        => 'AUXELS' // If set, this callable will be be checked for availability to determine if a plugin is active.
-            )
-        ),
+        'plugins' => [],
 
         'themes' => array(
             array(

@@ -966,8 +966,7 @@ class CustomList extends Widget_Base {
                     )
                 ),
                 'selectors' => array(
-                    '{{WRAPPER}} .aux-icon-list-icon' => 'font-size: {{SIZE}}{{UNIT}};',
-					'{{WRAPPER}} .aux-icon-list-icon' => 'height: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .aux-icon-list-icon' => 'font-size: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
                 ),
                 'separator' => 'before'
             )

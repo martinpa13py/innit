@@ -1,4 +1,4 @@
-/*! elementor-pro - v3.27.0 - 03-02-2025 */
+/*! elementor-pro - v3.27.0 - 16-02-2025 */
 "use strict";
 (self["webpackChunkelementor_pro"] = self["webpackChunkelementor_pro"] || []).push([["archive-posts"],{
 

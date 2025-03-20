@@ -23,13 +23,13 @@
 define( 'DB_NAME', 'dev-innit' );
 
 /** Database username */
-define( 'DB_USER', 'root' );
+define( 'DB_USER', 'innit' );
 
 /** Database password */
-define( 'DB_PASSWORD', 'Innit@2024*' );
+define( 'DB_PASSWORD', 'Innit@2025!' );
 
 /** Database hostname */
-define( 'DB_HOST', 'localhost:3309' );
+define( 'DB_HOST', 'localhost:3306' );
 
 /** Database charset to use in creating database tables. */
 define( 'DB_CHARSET', 'utf8' );
@@ -79,13 +79,28 @@ $table_prefix = 'wp_';
  * Change this to true to enable the display of notices during development.
  * It is strongly recommended that plugin and theme developers use WP_DEBUG
  * in their development environments.
- *
+ A*
  * For information on other constants that can be used for debugging,
  * visit the documentation.
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
+
+define( 'WP_HTTP_CURL_SSL_VERIFY', false );
+
 define( 'WP_DEBUG', true );
+
+define('WP_DEBUG_LOG', true);
+
+define('FS_METHOD', 'direct');
+define( 'FORCE_SSL_ADMIN', true );
+
+define('WP_HTTP_BLOCK_EXTERNAL', false);
+define('WP_ACCESSIBLE_HOSTS', 'api.wordpress.org,downloads.wordpress.org,es-mx.wordpress.org');
+define('WP_HTTP_PROXY_HOST', ''); 
+define('WP_HTTP_PROXY_PORT', ''); 
+define('WP_PROXY_USERNAME', ''); 
+define('WP_PROXY_PASSWORD', '');
 
 /* Add any custom values between this line and the "stop editing" line. */
 
@@ -101,4 +116,4 @@ if ( ! defined( 'ABSPATH' ) ) {
 /** Sets up WordPress vars and included files. */
 require_once ABSPATH . 'wp-settings.php';
 
-define( 'WP_AUTO_UPDATE_CORE', false );
+//define( 'WP_AUTO_UPDATE_CORE', false );

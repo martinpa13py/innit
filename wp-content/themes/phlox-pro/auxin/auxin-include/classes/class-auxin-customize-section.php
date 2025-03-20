@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
  */
 class Auxin_Customize_Section extends WP_Customize_Section {
@@ -77,14 +77,10 @@ class Auxin_Customize_Section extends WP_Customize_Section {
     function render_template() {
         ?>
         <li id="accordion-section-{{ data.id }}" class="accordion-section control-section control-section-{{ data.type }}">
-            <h3 class="accordion-section-title" tabindex="0">
+            <h3 class="accordion-section-title">
                 <button type="button" class="accordion-trigger" aria-expanded="false" aria-controls="{{ data.id }}-content">
                     {{ data.title }}
                 </button>
-                <span class="screen-reader-text"><?php _e( 'Press return or enter to open this section', 'phlox-pro' ); ?></span>
-                <# if ( data.isDeprecated ) { #>
-                    <span class="aux-deprecated"><?php _e( 'Deprecated', 'phlox-pro' ); ?></span>
-                <# } #>
             </h3>
 
             <ul class="accordion-section-content" id="{{ data.id }}-content">

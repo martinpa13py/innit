@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
 */
 
@@ -54,7 +54,7 @@ function auxin_is_blog(){
     // whether the current page is a blog page template or not
     $is_blog_template    = ! empty( $page_template_slug ) && false !== strpos( $page_template_slug, 'blog-type' );
 
-    if( ( $is_blog_template || ( is_home() && !is_paged() ) || ( is_home() && !is_front_page() ) || ( !is_category() && !is_paged() && !is_tag() && !is_author() && is_archive() && !is_date() ) ) ) {
+    if( ( $is_blog_template || ( is_home() && !is_paged() ) || ( is_home() && !is_front_page() ) || ( !is_category() && !is_paged() && !is_tag() && !is_author() && is_archive() && !is_date() && !is_post_type_archive() ) ) ) {
         return true;
     }
     return false;

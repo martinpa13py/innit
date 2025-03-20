@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
  */
 class Auxin_Walker_Nav_Menu_Front extends Walker_Nav_Menu {

@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
 */
 
 // no direct access allowed
@@ -60,7 +60,7 @@ class Auxin_Demo_Importer {
     public function templates(){
 
         // Check security issues
-        if ( ! isset( $_POST['ID'] ) || ! isset( $_POST['verify'] ) || ! wp_verify_nonce( $_POST['verify'], 'aux-template-manager' ) ) {
+        if ( ! isset( $_POST['ID'] ) || ! isset( $_POST['verify'] ) || ! wp_verify_nonce( $_POST['verify'], 'aux-template-manager' ) || ! current_user_can('manage_options') ) {
             // This nonce is not valid.
             wp_send_json_error( $this->error_template() );
         }
@@ -206,6 +206,10 @@ class Auxin_Demo_Importer {
      */
     public function import() {
 
+        if ( ! current_user_can('manage_options') ) {
+            wp_send_json_error( array( 'message' => __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) ) );
+        }
+
         if ( ! isset( $_POST['ID'] ) || ! wp_verify_nonce( $_POST['verify'], 'aux-import-demo-' . $_POST['ID'] ) ) {
             // This nonce is not valid.
             wp_send_json_error( array( 'message' => __( 'Invalid Inputs.', 'auxin-elements' ) ) );
@@ -237,6 +241,10 @@ class Auxin_Demo_Importer {
     }
 
     public function import_step() {
+
+        if ( ! current_user_can('manage_options') ) {
+            wp_send_json_error( array( 'message' => __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) ) );
+        }
 
         if ( ! isset( $_POST['step'] ) ) {
             wp_send_json_error( array( 'message' => __( 'Step Failed!', 'auxin-elements' ) ) );
@@ -2067,6 +2075,7 @@ class Auxin_Demo_Importer {
         $svg_icon_patterns = [
             'icon',
             'selected_icon',
+            'selected_active_icon',
             'prev_icon',
             'next_icon',
             'aux_new_icon',
@@ -2218,9 +2227,9 @@ class Auxin_Demo_Importer {
             }
 
             $elementor_data = is_array( $elementor_data ) ? wp_json_encode( $elementor_data ) : $elementor_data;
-            preg_match_all( '/\{\"slider_id\":\"(\d+)\"/', $elementor_data, $shortcodes, PREG_SET_ORDER );
+            preg_match_all( '/\"slider_id\":\"(\d+)\"/', $elementor_data, $shortcodes, PREG_SET_ORDER );
             if ( empty( $shortcodes ) ) {
-                preg_match_all( '/\{\"slider_id\":\"#(\d+)\"/', $elementor_data, $shortcodes, PREG_SET_ORDER );
+                preg_match_all( '/\"slider_id\":\"#(\d+)\"/', $elementor_data, $shortcodes, PREG_SET_ORDER );
             }
 
             if ( !empty( $shortcodes ) ) {
@@ -2228,7 +2237,7 @@ class Auxin_Demo_Importer {
                     if ( !empty( $shortcode[1] ) ) {
                         $shortcode[1] = trim( $shortcode[1], '#' );
                         $imported_slider_id = get_transient( 'auxin_depicter_' . $shortcode[1] . '_to', $shortcode[1] );
-                        $elementor_data = str_replace( $shortcode[0], '{"slider_id":"#'.$imported_slider_id.'"', $elementor_data );
+                        $elementor_data = str_replace( $shortcode[0], '"slider_id":"#'.$imported_slider_id.'"', $elementor_data );
                     }
                 }
                 $elementor_data = wp_slash( $elementor_data );

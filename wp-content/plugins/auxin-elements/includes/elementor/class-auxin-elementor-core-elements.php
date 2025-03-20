@@ -12,7 +12,7 @@ namespace Auxin\Plugin\CoreElements\Elementor;
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 
 if ( ! defined( 'ABSPATH' ) ) {
@@ -491,6 +491,10 @@ final class Elements {
             array(
                 'file'  => $this->dir_path . '/modules/column.php',
                 'class' => 'Modules\Column'
+            ),
+            array(
+                'file'  => $this->dir_path . '/modules/container.php',
+                'class' => 'Modules\Container'
             ),
             array(
                 'file'  => $this->dir_path . '/modules/documents/header.php',

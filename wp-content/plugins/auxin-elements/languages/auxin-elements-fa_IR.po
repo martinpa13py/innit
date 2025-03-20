@@ -2,7 +2,7 @@ msgid ""
 msgstr ""
 "Project-Id-Version: Auxin Essential Elements\n"
 "Report-Msgid-Bugs-To: http://averta.net/phlox/wordpress-theme/\n"
-"POT-Creation-Date: 2024-12-28 11:07:11+00:00\n"
+"POT-Creation-Date: 2025-03-06 07:09:17+00:00\n"
 "PO-Revision-Date: 2016-11-09 12:50+0330\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -20,78 +20,87 @@ msgstr ""
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.js\n"
 
-#: admin/includes/admin-ajax.php:7 admin/includes/admin-ajax.php:73
-#: admin/includes/admin-ajax.php:97
+#: admin/includes/admin-ajax.php:7 admin/includes/admin-ajax.php:77
+#: admin/includes/admin-ajax.php:105
 msgid "Data cannot be delivered, please try again."
 msgstr "داده ها قابل تحویل نیستند، لطفا دوباره تلاش کنید."
 
-#: admin/includes/admin-ajax.php:18 admin/includes/admin-ajax.php:79
-#: admin/includes/admin-ajax.php:103
+#: admin/includes/admin-ajax.php:18 admin/includes/admin-ajax.php:83
+#: admin/includes/admin-ajax.php:111 admin/includes/admin-ajax.php:483
 msgid "Authorization failed!"
 msgstr "احراز هویت با خطا مواجه شد!"
 
-#: admin/includes/admin-ajax.php:57
+#: admin/includes/admin-ajax.php:22 admin/includes/admin-ajax.php:87
+#: admin/includes/admin-ajax.php:132 admin/includes/admin-ajax.php:411
+#: admin/includes/admin-ajax.php:489
+#: includes/classes/class-auxels-envato-elements.php:89
+#: includes/classes/class-auxin-demo-importer.php:210
+#: includes/classes/class-auxin-demo-importer.php:246
+msgid "Access Denied: You don't have the required permissions!"
+msgstr ""
+
+#: admin/includes/admin-ajax.php:61
 msgid "Sent Successfully. Thanks for your feedback!"
 msgstr "با موفقیت ارسال شد. از بازخورد شما ممنونیم."
 
-#: admin/includes/admin-ajax.php:60
+#: admin/includes/admin-ajax.php:64
 msgid "An error occurred. Feedback could not be delivered, please try again."
 msgstr "خطایی رخ داده است. بازخورد قابل تحویل نیست، لطفا دوباره تلاش کنید."
 
-#: admin/includes/admin-ajax.php:120 admin/includes/admin-ajax.php:242
-#: admin/includes/admin-ajax.php:301 admin/includes/admin-ajax.php:336
-#: admin/includes/admin-ajax.php:354 admin/includes/admin-ajax.php:395
+#: admin/includes/admin-ajax.php:128 admin/includes/admin-ajax.php:254
+#: admin/includes/admin-ajax.php:313 admin/includes/admin-ajax.php:348
+#: admin/includes/admin-ajax.php:366 admin/includes/admin-ajax.php:407
 msgid "Token Error."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:124
+#: admin/includes/admin-ajax.php:136
 msgid "It's Done."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:127
+#: admin/includes/admin-ajax.php:139
 msgid "An error occurred."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:245
+#: admin/includes/admin-ajax.php:257
 msgid "It's OK."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:258
+#: admin/includes/admin-ajax.php:270
 #: includes/classes/class-auxin-welcome.php:1207
 #: includes/classes/class-auxin-welcome.php:1212
 #: includes/classes/class-auxin-welcome.php:1375
 msgid "Security Token Error!"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:265
+#: admin/includes/admin-ajax.php:277
 msgid "License Activation"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:266
+#: admin/includes/admin-ajax.php:278
 msgid ""
 "Please activate your license to get automatic updates, premium support, and "
 "unlimited access to the template library and demo importer."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:269
+#: admin/includes/admin-ajax.php:281
 #, fuzzy
 msgid "E-mail address"
 msgstr "آدرس ایمیل جعبه تماس"
 
-#: admin/includes/admin-ajax.php:274
+#: admin/includes/admin-ajax.php:286
 msgid "Purchase code"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:282
+#: admin/includes/admin-ajax.php:294
 msgid "Activate"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:302 admin/includes/admin-ajax.php:317
+#: admin/includes/admin-ajax.php:314 admin/includes/admin-ajax.php:329
 #: includes/classes/class-auxin-demo-importer.php:191
 msgid "Retry"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:313
+#: admin/includes/admin-ajax.php:325
 #: includes/classes/class-auxin-demo-importer.php:115
 #: includes/classes/class-auxin-demo-importer.php:158
 #: includes/classes/class-auxin-demo-importer.php:193
@@ -101,26 +110,21 @@ msgstr ""
 msgid "Close"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:370
+#: admin/includes/admin-ajax.php:382
 msgid "No data found!"
 msgstr ""
 
-#: admin/includes/admin-ajax.php:400
+#: admin/includes/admin-ajax.php:416
 #, fuzzy
 msgid "Please upload a valid file."
 msgstr "لطفا فایل ویدیو را بارگذاری کنید."
 
-#: admin/includes/admin-ajax.php:415
+#: admin/includes/admin-ajax.php:431
 msgid "Invalid or Empty Data."
 msgstr ""
 
-#: admin/includes/admin-ajax.php:452
+#: admin/includes/admin-ajax.php:468
 msgid "Successfully Imported."
-msgstr ""
-
-#: admin/includes/admin-ajax.php:467 admin/includes/admin-the-functions.php:179
-#: admin/includes/admin-the-functions.php:357
-msgid "Sorry. You don't have sufficient permission to import a template!"
 msgstr ""
 
 #: admin/includes/admin-hooks.php:52
@@ -249,6 +253,11 @@ msgstr "دسته"
 
 #: admin/includes/admin-the-functions.php:133
 msgid "a long time"
+msgstr ""
+
+#: admin/includes/admin-the-functions.php:179
+#: admin/includes/admin-the-functions.php:357
+msgid "Sorry. You don't have sufficient permission to import a template!"
 msgstr ""
 
 #: admin/includes/admin-the-functions.php:191
@@ -620,6 +629,7 @@ msgstr "پیشفرض پوسته"
 #: admin/includes/metaboxes/metabox-fields-general-header.php:891
 #: admin/includes/metaboxes/metabox-fields-general-top-header.php:35
 #: admin/includes/metaboxes/metabox-fields-general-top-header.php:47
+#: includes/elementor/widgets/button.php:331
 #: includes/elementor/widgets/theme-elements/select.php:153
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:157
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:169
@@ -650,6 +660,7 @@ msgstr "بله"
 #: admin/includes/metaboxes/metabox-fields-general-header.php:892
 #: admin/includes/metaboxes/metabox-fields-general-top-header.php:36
 #: admin/includes/metaboxes/metabox-fields-general-top-header.php:48
+#: includes/elementor/widgets/button.php:332
 #: includes/elementor/widgets/theme-elements/select.php:154
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:158
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:170
@@ -1011,7 +1022,7 @@ msgstr ""
 
 #: admin/includes/metaboxes/metabox-fields-general-header.php:325
 #: includes/elementor/widgets/image.php:636
-#: includes/elementor/widgets/theme-elements/modern-search.php:683
+#: includes/elementor/widgets/theme-elements/modern-search.php:684
 #, fuzzy
 msgid "Border Color"
 msgstr "رنگ پس زمینه"
@@ -1159,9 +1170,9 @@ msgstr ""
 #: includes/elementor/widgets/modern-button.php:188
 #: includes/elementor/widgets/quote.php:169
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:257
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1688
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1801
-#: includes/elementor/widgets/recent-posts-masonry.php:1185
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1701
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1814
+#: includes/elementor/widgets/recent-posts-masonry.php:1198
 #: includes/elementor/widgets/recent-posts-timeline.php:134
 #: includes/elementor/widgets/responsive-table.php:141
 #: includes/elementor/widgets/responsive-table.php:210
@@ -1189,7 +1200,7 @@ msgstr "وسط"
 #: admin/includes/metaboxes/metabox-fields-general-header.php:603
 #: includes/elementor/modules/common.php:747
 #: includes/elementor/widgets/button.php:234
-#: includes/elementor/widgets/button.php:378
+#: includes/elementor/widgets/button.php:413
 #: includes/elementor/widgets/circle-chart.php:145
 #: includes/elementor/widgets/custom-list.php:477
 #: includes/elementor/widgets/custom-list.php:509
@@ -1201,9 +1212,9 @@ msgstr "وسط"
 #: includes/elementor/widgets/modern-button.php:184
 #: includes/elementor/widgets/modern-button.php:828
 #: includes/elementor/widgets/quote.php:165
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1684
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1797
-#: includes/elementor/widgets/recent-posts-masonry.php:1181
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1697
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1810
+#: includes/elementor/widgets/recent-posts-masonry.php:1194
 #: includes/elementor/widgets/recent-posts-timeline.php:138
 #: includes/elementor/widgets/responsive-table.php:137
 #: includes/elementor/widgets/responsive-table.php:206
@@ -1368,7 +1379,7 @@ msgstr ""
 #: includes/elementor/modules/dynamic-tags/post-date.php:49
 #: includes/elementor/modules/dynamic-tags/post-time.php:50
 #: includes/elementor/widgets/accordion.php:356
-#: includes/elementor/widgets/button.php:377
+#: includes/elementor/widgets/button.php:412
 #: includes/elementor/widgets/carousel-navigation.php:168
 #: includes/elementor/widgets/custom-list.php:389
 #: includes/elementor/widgets/gallery.php:129
@@ -1380,7 +1391,7 @@ msgstr ""
 #: includes/elementor/widgets/tabs.php:195
 #: includes/elementor/widgets/text.php:1155
 #: includes/elementor/widgets/theme-elements/menu.php:1009
-#: includes/elementor/widgets/theme-elements/modern-search.php:581
+#: includes/elementor/widgets/theme-elements/modern-search.php:582
 #: includes/elements/button.php:177 includes/elements/code.php:97
 #: includes/elements/gallery.php:118 includes/elements/quote.php:108
 #: includes/elements/recent-posts-tiles-carousel.php:296
@@ -1395,8 +1406,8 @@ msgstr "پیش فرض"
 #: includes/elementor/widgets/accordion.php:450
 #: includes/elementor/widgets/accordion.php:564
 #: includes/elementor/widgets/button.php:322
-#: includes/elementor/widgets/button.php:447
-#: includes/elementor/widgets/button.php:537
+#: includes/elementor/widgets/button.php:482
+#: includes/elementor/widgets/button.php:572
 #: includes/elementor/widgets/carousel-navigation.php:391
 #: includes/elementor/widgets/contact-form.php:350
 #: includes/elementor/widgets/contact-form.php:649
@@ -1405,7 +1416,7 @@ msgstr "پیش فرض"
 #: includes/elementor/widgets/contact-form.php:1357
 #: includes/elementor/widgets/contact-form.php:1717
 #: includes/elementor/widgets/custom-list.php:926
-#: includes/elementor/widgets/custom-list.php:1084
+#: includes/elementor/widgets/custom-list.php:1083
 #: includes/elementor/widgets/heading-modern.php:410
 #: includes/elementor/widgets/heading-modern.php:597
 #: includes/elementor/widgets/heading-modern.php:770
@@ -1428,30 +1439,30 @@ msgstr "پیش فرض"
 #: includes/elementor/widgets/products-grid.php:1053
 #: includes/elementor/widgets/recent-comments.php:201
 #: includes/elementor/widgets/recent-comments.php:286
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1015
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1085
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1191
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1386
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1493
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1621
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1752
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1906
-#: includes/elementor/widgets/recent-posts-land-style.php:643
-#: includes/elementor/widgets/recent-posts-land-style.php:749
-#: includes/elementor/widgets/recent-posts-land-style.php:930
-#: includes/elementor/widgets/recent-posts-masonry.php:688
-#: includes/elementor/widgets/recent-posts-masonry.php:758
-#: includes/elementor/widgets/recent-posts-masonry.php:864
-#: includes/elementor/widgets/recent-posts-masonry.php:1045
-#: includes/elementor/widgets/recent-posts-masonry.php:1136
-#: includes/elementor/widgets/recent-posts-masonry.php:1302
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1028
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1098
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1204
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1399
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1506
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1634
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1765
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1919
+#: includes/elementor/widgets/recent-posts-land-style.php:656
+#: includes/elementor/widgets/recent-posts-land-style.php:762
+#: includes/elementor/widgets/recent-posts-land-style.php:943
+#: includes/elementor/widgets/recent-posts-masonry.php:701
+#: includes/elementor/widgets/recent-posts-masonry.php:771
+#: includes/elementor/widgets/recent-posts-masonry.php:877
+#: includes/elementor/widgets/recent-posts-masonry.php:1058
+#: includes/elementor/widgets/recent-posts-masonry.php:1149
+#: includes/elementor/widgets/recent-posts-masonry.php:1315
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:519
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:625
 #: includes/elementor/widgets/recent-posts-tiles.php:460
 #: includes/elementor/widgets/recent-posts-tiles.php:566
-#: includes/elementor/widgets/recent-posts-timeline.php:641
-#: includes/elementor/widgets/recent-posts-timeline.php:747
-#: includes/elementor/widgets/recent-posts-timeline.php:928
+#: includes/elementor/widgets/recent-posts-timeline.php:654
+#: includes/elementor/widgets/recent-posts-timeline.php:760
+#: includes/elementor/widgets/recent-posts-timeline.php:941
 #: includes/elementor/widgets/recent-products.php:632
 #: includes/elementor/widgets/staff.php:491
 #: includes/elementor/widgets/staff.php:744
@@ -1478,9 +1489,9 @@ msgstr "پیش فرض"
 #: includes/elementor/widgets/theme-elements/menu.php:883
 #: includes/elementor/widgets/theme-elements/menu.php:1048
 #: includes/elementor/widgets/theme-elements/menu.php:1246
-#: includes/elementor/widgets/theme-elements/modern-search.php:293
-#: includes/elementor/widgets/theme-elements/modern-search.php:392
-#: includes/elementor/widgets/theme-elements/modern-search.php:513
+#: includes/elementor/widgets/theme-elements/modern-search.php:294
+#: includes/elementor/widgets/theme-elements/modern-search.php:393
+#: includes/elementor/widgets/theme-elements/modern-search.php:514
 #: includes/elementor/widgets/theme-elements/select.php:195
 #: includes/elementor/widgets/theme-elements/select.php:340
 #: includes/elementor/widgets/theme-elements/select.php:619
@@ -1649,7 +1660,7 @@ msgid ""
 msgstr ""
 
 #: admin/includes/metaboxes/metabox-fields-page-template.php:27
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:661
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:674
 #: includes/elements/recent-posts-grid-carousel.php:469
 #, fuzzy
 msgid "Before Content"
@@ -1666,7 +1677,7 @@ msgid "Above Content, Boxed Layout"
 msgstr "چیدمان محتوا"
 
 #: admin/includes/metaboxes/metabox-fields-page-template.php:30
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:660
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:673
 #: includes/elements/recent-posts-grid-carousel.php:468
 #, fuzzy
 msgid "After Content"
@@ -1857,15 +1868,15 @@ msgid "Add to Menu"
 msgstr "افزودن بخش"
 
 #: includes/classes/class-auxels-envato-elements.php:85
-#: includes/classes/class-auxels-envato-elements.php:106
+#: includes/classes/class-auxels-envato-elements.php:110
 msgid "Token is valid."
 msgstr ""
 
-#: includes/classes/class-auxels-envato-elements.php:108
+#: includes/classes/class-auxels-envato-elements.php:112
 msgid " Token is not valid."
 msgstr ""
 
-#: includes/classes/class-auxels-envato-elements.php:114
+#: includes/classes/class-auxels-envato-elements.php:118
 msgid "Something went wrong. Please try again later"
 msgstr ""
 
@@ -1955,63 +1966,63 @@ msgstr ""
 msgid "Process failed!."
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:211
+#: includes/classes/class-auxin-demo-importer.php:215
 msgid "Invalid Inputs."
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:242
+#: includes/classes/class-auxin-demo-importer.php:250
 msgid "Step Failed!"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:249
+#: includes/classes/class-auxin-demo-importer.php:257
 msgid "Error in getting data!"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:272
+#: includes/classes/class-auxin-demo-importer.php:280
 msgid "Downloading Medias"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:278
+#: includes/classes/class-auxin-demo-importer.php:286
 msgid "Importing Media"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:294
-#: includes/classes/class-auxin-demo-importer.php:1395
+#: includes/classes/class-auxin-demo-importer.php:302
+#: includes/classes/class-auxin-demo-importer.php:1403
 msgid "Importing Users"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:305
-#: includes/classes/class-auxin-demo-importer.php:317
+#: includes/classes/class-auxin-demo-importer.php:313
+#: includes/classes/class-auxin-demo-importer.php:325
 msgid "Importing Contents"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:329
+#: includes/classes/class-auxin-demo-importer.php:337
 #, fuzzy
 msgid "Importing Options"
 msgstr "تنظیمات طراحی"
 
-#: includes/classes/class-auxin-demo-importer.php:346
-#: includes/classes/class-auxin-demo-importer.php:579
+#: includes/classes/class-auxin-demo-importer.php:354
+#: includes/classes/class-auxin-demo-importer.php:587
 msgid "Importing Menus"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:352
+#: includes/classes/class-auxin-demo-importer.php:360
 msgid "Importing Widgets"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:437
+#: includes/classes/class-auxin-demo-importer.php:445
 msgid "Retrieve Body Fails"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:654
+#: includes/classes/class-auxin-demo-importer.php:662
 msgid "Importing Sliders"
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:1472
+#: includes/classes/class-auxin-demo-importer.php:1480
 msgid "Preparing Site ..."
 msgstr ""
 
-#: includes/classes/class-auxin-demo-importer.php:1516
+#: includes/classes/class-auxin-demo-importer.php:1524
 msgid "All steps are successful"
 msgstr ""
 
@@ -2826,7 +2837,7 @@ msgstr "تابع فراخوانی برای ابزارک وجود ندارد."
 #: includes/elementor/widgets/recent-posts-tiles.php:97
 #: includes/elementor/widgets/recent-posts-timeline.php:96
 #: includes/elementor/widgets/recent-products.php:101
-#: includes/elementor/widgets/theme-elements/modern-search.php:1077
+#: includes/elementor/widgets/theme-elements/modern-search.php:1078
 #: includes/elements/popular-posts-widget.php:20
 #: includes/elements/recent-posts-grid-carousel.php:20
 #: includes/elements/recent-posts-land-style.php:20
@@ -2882,47 +2893,47 @@ msgstr "انتخاب شکاف آکاردئون"
 msgid "Element class \"%s\" not found."
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:536
+#: includes/elementor/class-auxin-elementor-core-elements.php:540
 msgid "Module class \"%s\" not found."
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:614
+#: includes/elementor/class-auxin-elementor-core-elements.php:618
 msgid "%s - General"
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:622
+#: includes/elementor/class-auxin-elementor-core-elements.php:626
 msgid "%s - Featured"
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:630
+#: includes/elementor/class-auxin-elementor-core-elements.php:634
 #, fuzzy
 msgid "%s - Posts"
 msgstr "نوشته ها"
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:638
+#: includes/elementor/class-auxin-elementor-core-elements.php:642
 msgid "%s - Portfolio"
 msgstr ""
 
 #. translators: 1: Plugin name 2: PHP 3: Required PHP version
-#: includes/elementor/class-auxin-elementor-core-elements.php:725
-#: includes/elementor/class-auxin-elementor-core-elements.php:749
+#: includes/elementor/class-auxin-elementor-core-elements.php:729
+#: includes/elementor/class-auxin-elementor-core-elements.php:753
 msgid "\"%1$s\" requires \"%2$s\" version %3$s or greater."
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:727
+#: includes/elementor/class-auxin-elementor-core-elements.php:731
 msgid "Elementor"
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:751
+#: includes/elementor/class-auxin-elementor-core-elements.php:755
 #: includes/elements/code.php:80
 msgid "PHP"
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:808
+#: includes/elementor/class-auxin-elementor-core-elements.php:812
 msgid "Phlox Icons - Set 1"
 msgstr ""
 
-#: includes/elementor/class-auxin-elementor-core-elements.php:830
+#: includes/elementor/class-auxin-elementor-core-elements.php:834
 msgid "Phlox Icons - Set 2"
 msgstr ""
 
@@ -3089,7 +3100,7 @@ msgstr "بالا"
 
 #: includes/elementor/modules/common.php:682
 #: includes/elementor/widgets/button.php:242
-#: includes/elementor/widgets/button.php:379
+#: includes/elementor/widgets/button.php:414
 #: includes/elementor/widgets/circle-chart.php:153
 #: includes/elementor/widgets/custom-list.php:485
 #: includes/elementor/widgets/custom-list.php:517
@@ -3101,9 +3112,9 @@ msgstr "بالا"
 #: includes/elementor/widgets/modern-button.php:192
 #: includes/elementor/widgets/modern-button.php:829
 #: includes/elementor/widgets/quote.php:173
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1692
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1805
-#: includes/elementor/widgets/recent-posts-masonry.php:1189
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1705
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1818
+#: includes/elementor/widgets/recent-posts-masonry.php:1202
 #: includes/elementor/widgets/recent-posts-timeline.php:142
 #: includes/elementor/widgets/responsive-table.php:145
 #: includes/elementor/widgets/responsive-table.php:214
@@ -3312,10 +3323,10 @@ msgid "Author Meta"
 msgstr "نام نویسنده"
 
 #: includes/elementor/modules/dynamic-tags/author-name.php:18
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:630
-#: includes/elementor/widgets/recent-posts-land-style.php:326
-#: includes/elementor/widgets/recent-posts-masonry.php:404
-#: includes/elementor/widgets/recent-posts-timeline.php:319
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:643
+#: includes/elementor/widgets/recent-posts-land-style.php:339
+#: includes/elementor/widgets/recent-posts-masonry.php:417
+#: includes/elementor/widgets/recent-posts-timeline.php:332
 #: includes/elements/recent-posts-grid-carousel.php:450
 #: includes/elements/recent-posts-land-style.php:374
 #: includes/elements/recent-posts-masonry.php:350
@@ -3381,7 +3392,7 @@ msgstr "تعداد نوشته ها"
 #: includes/elementor/widgets/heading-modern.php:271
 #: includes/elementor/widgets/icon.php:153
 #: includes/elementor/widgets/modern-button.php:210
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:761
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:774
 #: includes/elementor/widgets/text.php:322
 #: includes/elementor/widgets/theme-elements/logo.php:182
 #: includes/elementor/widgets/theme-elements/logo.php:196
@@ -3399,16 +3410,16 @@ msgstr "پیوند"
 #: includes/elementor/widgets/gallery.php:303
 #: includes/elementor/widgets/image.php:302
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:240
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:631
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:897
-#: includes/elementor/widgets/recent-posts-land-style.php:327
-#: includes/elementor/widgets/recent-posts-land-style.php:513
-#: includes/elementor/widgets/recent-posts-masonry.php:405
-#: includes/elementor/widgets/recent-posts-masonry.php:608
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:644
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:910
+#: includes/elementor/widgets/recent-posts-land-style.php:340
+#: includes/elementor/widgets/recent-posts-land-style.php:526
+#: includes/elementor/widgets/recent-posts-masonry.php:418
+#: includes/elementor/widgets/recent-posts-masonry.php:621
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:210
 #: includes/elementor/widgets/recent-posts-tiles.php:392
-#: includes/elementor/widgets/recent-posts-timeline.php:320
-#: includes/elementor/widgets/recent-posts-timeline.php:523
+#: includes/elementor/widgets/recent-posts-timeline.php:333
+#: includes/elementor/widgets/recent-posts-timeline.php:536
 #: includes/elementor/widgets/testimonial.php:238
 #: includes/elementor/widgets/text.php:116
 #: includes/elementor/widgets/text.php:1603
@@ -3579,18 +3590,18 @@ msgstr "بخش"
 #: includes/elementor/widgets/products-grid.php:232
 #: includes/elementor/widgets/products-grid.php:383
 #: includes/elementor/widgets/recent-comments.php:171
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:799
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1046
-#: includes/elementor/widgets/recent-posts-land-style.php:433
-#: includes/elementor/widgets/recent-posts-land-style.php:604
-#: includes/elementor/widgets/recent-posts-masonry.php:528
-#: includes/elementor/widgets/recent-posts-masonry.php:719
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:812
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1059
+#: includes/elementor/widgets/recent-posts-land-style.php:446
+#: includes/elementor/widgets/recent-posts-land-style.php:617
+#: includes/elementor/widgets/recent-posts-masonry.php:541
+#: includes/elementor/widgets/recent-posts-masonry.php:732
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:410
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:480
 #: includes/elementor/widgets/recent-posts-tiles.php:312
 #: includes/elementor/widgets/recent-posts-tiles.php:421
-#: includes/elementor/widgets/recent-posts-timeline.php:443
-#: includes/elementor/widgets/recent-posts-timeline.php:602
+#: includes/elementor/widgets/recent-posts-timeline.php:456
+#: includes/elementor/widgets/recent-posts-timeline.php:615
 #: includes/elementor/widgets/recent-products.php:357
 #: includes/elementor/widgets/recent-products.php:529
 #: includes/elementor/widgets/staff.php:452
@@ -3666,7 +3677,7 @@ msgstr "نمایش فرمت نوشته؟"
 #: includes/elementor/widgets/carousel-navigation.php:105
 #: includes/elementor/widgets/divider.php:148
 #: includes/elementor/widgets/mailchimp.php:137
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:945
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:958
 #: includes/elementor/widgets/theme-elements/current-time.php:109
 #: includes/elementor/widgets/theme-elements/menu.php:1010
 #: includes/elements/image.php:96 includes/elements/staff.php:111
@@ -4063,12 +4074,12 @@ msgstr "شناسه کاربر"
 #: includes/elementor/modules/dynamic-tags/user-info.php:76
 #: includes/elementor/widgets/gallery.php:302
 #: includes/elementor/widgets/products-grid.php:233
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:800
-#: includes/elementor/widgets/recent-posts-land-style.php:434
-#: includes/elementor/widgets/recent-posts-masonry.php:529
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:813
+#: includes/elementor/widgets/recent-posts-land-style.php:447
+#: includes/elementor/widgets/recent-posts-masonry.php:542
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:411
 #: includes/elementor/widgets/recent-posts-tiles.php:313
-#: includes/elementor/widgets/recent-posts-timeline.php:444
+#: includes/elementor/widgets/recent-posts-timeline.php:457
 #: includes/elementor/widgets/recent-products.php:358
 #: includes/elements/gallery.php:194
 #: includes/elements/latest-posts-slider.php:137
@@ -4125,12 +4136,12 @@ msgstr ""
 #: includes/elementor/modules/query-control/controls/group-control-query.php:169
 #: includes/elementor/modules/query-control/controls/group-control-query.php:225
 #: includes/elementor/widgets/products-grid.php:237
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:804
-#: includes/elementor/widgets/recent-posts-land-style.php:438
-#: includes/elementor/widgets/recent-posts-masonry.php:533
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:817
+#: includes/elementor/widgets/recent-posts-land-style.php:451
+#: includes/elementor/widgets/recent-posts-masonry.php:546
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:415
 #: includes/elementor/widgets/recent-posts-tiles.php:317
-#: includes/elementor/widgets/recent-posts-timeline.php:448
+#: includes/elementor/widgets/recent-posts-timeline.php:461
 #: includes/elementor/widgets/recent-products.php:362
 #: includes/elements/latest-posts-slider.php:141
 #: includes/elements/popular-posts-widget.php:206
@@ -4219,12 +4230,12 @@ msgstr ""
 #: includes/elementor/modules/query-control/controls/group-control-query.php:276
 #: includes/elementor/modules/query-control/controls/group-control-query.php:345
 #: includes/elementor/widgets/products-grid.php:230
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:797
-#: includes/elementor/widgets/recent-posts-land-style.php:431
-#: includes/elementor/widgets/recent-posts-masonry.php:526
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:810
+#: includes/elementor/widgets/recent-posts-land-style.php:444
+#: includes/elementor/widgets/recent-posts-masonry.php:539
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:408
 #: includes/elementor/widgets/recent-posts-tiles.php:310
-#: includes/elementor/widgets/recent-posts-timeline.php:441
+#: includes/elementor/widgets/recent-posts-timeline.php:454
 #: includes/elementor/widgets/recent-products.php:355
 #: includes/elements/gallery.php:193
 #: includes/elements/latest-posts-slider.php:134
@@ -4296,12 +4307,12 @@ msgstr "مرتب سازی بر اساس"
 #: includes/elementor/modules/query-control/controls/group-control-query.php:347
 #: includes/elementor/widgets/gallery.php:300
 #: includes/elementor/widgets/products-grid.php:231
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:798
-#: includes/elementor/widgets/recent-posts-land-style.php:432
-#: includes/elementor/widgets/recent-posts-masonry.php:527
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:811
+#: includes/elementor/widgets/recent-posts-land-style.php:445
+#: includes/elementor/widgets/recent-posts-masonry.php:540
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:409
 #: includes/elementor/widgets/recent-posts-tiles.php:311
-#: includes/elementor/widgets/recent-posts-timeline.php:442
+#: includes/elementor/widgets/recent-posts-timeline.php:455
 #: includes/elementor/widgets/recent-products.php:356
 #: includes/elements/gallery.php:192
 #: includes/elements/latest-posts-slider.php:135
@@ -4321,12 +4332,12 @@ msgstr "ترتیب فهرست"
 
 #: includes/elementor/modules/query-control/controls/group-control-query.php:348
 #: includes/elementor/widgets/products-grid.php:234
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:801
-#: includes/elementor/widgets/recent-posts-land-style.php:435
-#: includes/elementor/widgets/recent-posts-masonry.php:530
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:814
+#: includes/elementor/widgets/recent-posts-land-style.php:448
+#: includes/elementor/widgets/recent-posts-masonry.php:543
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:412
 #: includes/elementor/widgets/recent-posts-tiles.php:314
-#: includes/elementor/widgets/recent-posts-timeline.php:445
+#: includes/elementor/widgets/recent-posts-timeline.php:458
 #: includes/elementor/widgets/recent-products.php:359
 #: includes/elements/latest-posts-slider.php:138
 #: includes/elements/popular-posts-widget.php:203
@@ -4346,12 +4357,12 @@ msgstr "تصادفی"
 #: includes/elementor/modules/query-control/controls/group-control-query.php:356
 #: includes/elementor/widgets/gallery.php:280
 #: includes/elementor/widgets/products-grid.php:246
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:816
-#: includes/elementor/widgets/recent-posts-land-style.php:447
-#: includes/elementor/widgets/recent-posts-masonry.php:542
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:829
+#: includes/elementor/widgets/recent-posts-land-style.php:460
+#: includes/elementor/widgets/recent-posts-masonry.php:555
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:424
 #: includes/elementor/widgets/recent-posts-tiles.php:326
-#: includes/elementor/widgets/recent-posts-timeline.php:457
+#: includes/elementor/widgets/recent-posts-timeline.php:470
 #: includes/elementor/widgets/recent-products.php:371
 #: includes/elements/gallery.php:165
 #: includes/elements/popular-posts-widget.php:215
@@ -4577,8 +4588,8 @@ msgstr ""
 #: includes/elementor/widgets/contact-form.php:1675
 #: includes/elementor/widgets/custom-list.php:204
 #: includes/elementor/widgets/custom-list.php:260
-#: includes/elementor/widgets/custom-list.php:979
-#: includes/elementor/widgets/custom-list.php:1031
+#: includes/elementor/widgets/custom-list.php:978
+#: includes/elementor/widgets/custom-list.php:1030
 #: includes/elementor/widgets/heading-modern.php:450
 #: includes/elementor/widgets/heading-modern.php:637
 #: includes/elementor/widgets/heading-modern.php:810
@@ -4598,7 +4609,7 @@ msgstr ""
 #: includes/elementor/widgets/theme-elements/menu.php:534
 #: includes/elementor/widgets/theme-elements/menu.php:979
 #: includes/elementor/widgets/theme-elements/menu.php:1342
-#: includes/elementor/widgets/theme-elements/modern-search.php:877
+#: includes/elementor/widgets/theme-elements/modern-search.php:878
 #: includes/elementor/widgets/theme-elements/search.php:322
 #: includes/elementor/widgets/theme-elements/search.php:432
 #: includes/elementor/widgets/theme-elements/select.php:516
@@ -4627,10 +4638,10 @@ msgstr ""
 #: includes/elementor/widgets/modern-button.php:454
 #: includes/elementor/widgets/modern-button.php:922
 #: includes/elementor/widgets/modern-button.php:1021
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:975
-#: includes/elementor/widgets/recent-posts-land-style.php:571
-#: includes/elementor/widgets/recent-posts-masonry.php:648
-#: includes/elementor/widgets/recent-posts-timeline.php:581
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:988
+#: includes/elementor/widgets/recent-posts-land-style.php:584
+#: includes/elementor/widgets/recent-posts-masonry.php:661
+#: includes/elementor/widgets/recent-posts-timeline.php:594
 #: includes/elementor/widgets/recent-products.php:508
 #: includes/elementor/widgets/tabs.php:235
 #: includes/elementor/widgets/tabs.php:497
@@ -4645,8 +4656,8 @@ msgstr ""
 #: includes/elementor/widgets/theme-elements/menu.php:939
 #: includes/elementor/widgets/theme-elements/menu.php:1222
 #: includes/elementor/widgets/theme-elements/menu.php:1302
-#: includes/elementor/widgets/theme-elements/modern-search.php:488
-#: includes/elementor/widgets/theme-elements/modern-search.php:552
+#: includes/elementor/widgets/theme-elements/modern-search.php:489
+#: includes/elementor/widgets/theme-elements/modern-search.php:553
 #: includes/elementor/widgets/theme-elements/search.php:367
 #, fuzzy
 msgid "Border Radius"
@@ -4657,8 +4668,8 @@ msgstr "کادربندی شده"
 #: includes/elementor/widgets/accordion.php:544
 #: includes/elementor/widgets/button.php:211
 #: includes/elementor/widgets/button.php:295
-#: includes/elementor/widgets/button.php:427
-#: includes/elementor/widgets/button.php:497
+#: includes/elementor/widgets/button.php:462
+#: includes/elementor/widgets/button.php:532
 #: includes/elementor/widgets/carousel-navigation.php:284
 #: includes/elementor/widgets/contact-form.php:316
 #: includes/elementor/widgets/contact-form.php:623
@@ -4667,7 +4678,7 @@ msgstr "کادربندی شده"
 #: includes/elementor/widgets/contact-form.php:1323
 #: includes/elementor/widgets/contact-form.php:1691
 #: includes/elementor/widgets/custom-list.php:897
-#: includes/elementor/widgets/custom-list.php:1047
+#: includes/elementor/widgets/custom-list.php:1046
 #: includes/elementor/widgets/heading-modern.php:372
 #: includes/elementor/widgets/heading-modern.php:559
 #: includes/elementor/widgets/heading-modern.php:732
@@ -4691,30 +4702,30 @@ msgstr "کادربندی شده"
 #: includes/elementor/widgets/products-grid.php:995
 #: includes/elementor/widgets/recent-comments.php:181
 #: includes/elementor/widgets/recent-comments.php:266
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:992
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1059
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1165
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1356
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1473
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1594
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1725
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1848
-#: includes/elementor/widgets/recent-posts-land-style.php:617
-#: includes/elementor/widgets/recent-posts-land-style.php:723
-#: includes/elementor/widgets/recent-posts-land-style.php:910
-#: includes/elementor/widgets/recent-posts-masonry.php:665
-#: includes/elementor/widgets/recent-posts-masonry.php:732
-#: includes/elementor/widgets/recent-posts-masonry.php:838
-#: includes/elementor/widgets/recent-posts-masonry.php:1025
-#: includes/elementor/widgets/recent-posts-masonry.php:1109
-#: includes/elementor/widgets/recent-posts-masonry.php:1244
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1005
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1072
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1178
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1369
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1486
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1607
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1738
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1861
+#: includes/elementor/widgets/recent-posts-land-style.php:630
+#: includes/elementor/widgets/recent-posts-land-style.php:736
+#: includes/elementor/widgets/recent-posts-land-style.php:923
+#: includes/elementor/widgets/recent-posts-masonry.php:678
+#: includes/elementor/widgets/recent-posts-masonry.php:745
+#: includes/elementor/widgets/recent-posts-masonry.php:851
+#: includes/elementor/widgets/recent-posts-masonry.php:1038
+#: includes/elementor/widgets/recent-posts-masonry.php:1122
+#: includes/elementor/widgets/recent-posts-masonry.php:1257
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:493
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:599
 #: includes/elementor/widgets/recent-posts-tiles.php:434
 #: includes/elementor/widgets/recent-posts-tiles.php:540
-#: includes/elementor/widgets/recent-posts-timeline.php:615
-#: includes/elementor/widgets/recent-posts-timeline.php:721
-#: includes/elementor/widgets/recent-posts-timeline.php:908
+#: includes/elementor/widgets/recent-posts-timeline.php:628
+#: includes/elementor/widgets/recent-posts-timeline.php:734
+#: includes/elementor/widgets/recent-posts-timeline.php:921
 #: includes/elementor/widgets/recent-products.php:606
 #: includes/elementor/widgets/staff.php:465
 #: includes/elementor/widgets/staff.php:718
@@ -4743,8 +4754,8 @@ msgstr "کادربندی شده"
 #: includes/elementor/widgets/theme-elements/menu.php:1027
 #: includes/elementor/widgets/theme-elements/menu.php:1166
 #: includes/elementor/widgets/theme-elements/modern-search.php:246
-#: includes/elementor/widgets/theme-elements/modern-search.php:353
-#: includes/elementor/widgets/theme-elements/modern-search.php:448
+#: includes/elementor/widgets/theme-elements/modern-search.php:354
+#: includes/elementor/widgets/theme-elements/modern-search.php:449
 #: includes/elementor/widgets/theme-elements/select.php:309
 #: includes/elementor/widgets/theme-elements/select.php:576
 #: includes/elements/button.php:116 includes/elements/text.php:735
@@ -4759,7 +4770,7 @@ msgstr "معمولی"
 #: includes/elementor/widgets/accordion.php:458
 #: includes/elementor/widgets/accordion.php:496
 #: includes/elementor/widgets/image.php:650
-#: includes/elementor/widgets/recent-posts-land-style.php:587
+#: includes/elementor/widgets/recent-posts-land-style.php:600
 #: includes/elementor/widgets/tabs.php:259
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:282
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:496
@@ -4785,7 +4796,7 @@ msgstr ""
 
 #: includes/elementor/widgets/accordion.php:357
 #: includes/elementor/widgets/tabs.php:196
-#: includes/elementor/widgets/theme-elements/modern-search.php:582
+#: includes/elementor/widgets/theme-elements/modern-search.php:583
 #, fuzzy
 msgid "Pointer"
 msgstr "وسط"
@@ -4794,21 +4805,21 @@ msgstr "وسط"
 #: includes/elementor/widgets/contact-box.php:322
 #: includes/elementor/widgets/gmap.php:203
 #: includes/elementor/widgets/tabs.php:197
-#: includes/elementor/widgets/theme-elements/modern-search.php:583
+#: includes/elementor/widgets/theme-elements/modern-search.php:584
 #: includes/elements/contact-box.php:276 includes/elements/gmap.php:169
 msgid "Zoom"
 msgstr "بزرگنمایی"
 
 #: includes/elementor/widgets/accordion.php:359
 #: includes/elementor/widgets/tabs.php:198
-#: includes/elementor/widgets/theme-elements/modern-search.php:584
+#: includes/elementor/widgets/theme-elements/modern-search.php:585
 msgid "Help"
 msgstr ""
 
 #: includes/elementor/widgets/accordion.php:371
 #: includes/elementor/widgets/accordion.php:650
 #: includes/elementor/widgets/button.php:257
-#: includes/elementor/widgets/button.php:469
+#: includes/elementor/widgets/button.php:504
 #: includes/elementor/widgets/carousel-navigation.php:375
 #: includes/elementor/widgets/carousel-navigation.php:481
 #: includes/elementor/widgets/contact-form.php:287
@@ -4817,8 +4828,8 @@ msgstr ""
 #: includes/elementor/widgets/contact-form.php:1058
 #: includes/elementor/widgets/contact-form.php:1294
 #: includes/elementor/widgets/contact-form.php:1662
-#: includes/elementor/widgets/custom-list.php:992
-#: includes/elementor/widgets/custom-list.php:1018
+#: includes/elementor/widgets/custom-list.php:991
+#: includes/elementor/widgets/custom-list.php:1017
 #: includes/elementor/widgets/heading-modern.php:463
 #: includes/elementor/widgets/heading-modern.php:650
 #: includes/elementor/widgets/heading-modern.php:823
@@ -4834,7 +4845,7 @@ msgstr ""
 #: includes/elementor/widgets/products-grid.php:863
 #: includes/elementor/widgets/products-grid.php:956
 #: includes/elementor/widgets/quote.php:337
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1429
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1442
 #: includes/elementor/widgets/staff.php:816
 #: includes/elementor/widgets/tabs.php:210
 #: includes/elementor/widgets/tabs.php:471
@@ -4849,9 +4860,9 @@ msgstr ""
 #: includes/elementor/widgets/theme-elements/menu.php:521
 #: includes/elementor/widgets/theme-elements/menu.php:966
 #: includes/elementor/widgets/theme-elements/menu.php:1329
-#: includes/elementor/widgets/theme-elements/modern-search.php:465
-#: includes/elementor/widgets/theme-elements/modern-search.php:530
-#: includes/elementor/widgets/theme-elements/modern-search.php:646
+#: includes/elementor/widgets/theme-elements/modern-search.php:466
+#: includes/elementor/widgets/theme-elements/modern-search.php:531
+#: includes/elementor/widgets/theme-elements/modern-search.php:647
 #: includes/elementor/widgets/theme-elements/search.php:334
 #: includes/elementor/widgets/theme-elements/search.php:420
 #: includes/elementor/widgets/theme-elements/select.php:504
@@ -4869,10 +4880,10 @@ msgstr "تیتر گذاری"
 #: includes/elementor/widgets/accordion.php:571
 #: includes/elementor/widgets/accordion.php:591
 #: includes/elementor/widgets/accordion.php:628
-#: includes/elementor/widgets/button.php:434
-#: includes/elementor/widgets/button.php:454
-#: includes/elementor/widgets/button.php:504
-#: includes/elementor/widgets/button.php:544
+#: includes/elementor/widgets/button.php:469
+#: includes/elementor/widgets/button.php:489
+#: includes/elementor/widgets/button.php:539
+#: includes/elementor/widgets/button.php:579
 #: includes/elementor/widgets/carousel-navigation.php:309
 #: includes/elementor/widgets/circle-chart.php:283
 #: includes/elementor/widgets/circle-chart.php:314
@@ -4936,31 +4947,31 @@ msgstr "تیتر گذاری"
 #: includes/elementor/widgets/recent-comments.php:208
 #: includes/elementor/widgets/recent-comments.php:273
 #: includes/elementor/widgets/recent-comments.php:293
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1069
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1095
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1175
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1201
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1289
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1480
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1500
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1873
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1931
-#: includes/elementor/widgets/recent-posts-land-style.php:627
-#: includes/elementor/widgets/recent-posts-land-style.php:653
-#: includes/elementor/widgets/recent-posts-land-style.php:733
-#: includes/elementor/widgets/recent-posts-land-style.php:759
-#: includes/elementor/widgets/recent-posts-land-style.php:847
-#: includes/elementor/widgets/recent-posts-land-style.php:917
-#: includes/elementor/widgets/recent-posts-land-style.php:937
-#: includes/elementor/widgets/recent-posts-masonry.php:742
-#: includes/elementor/widgets/recent-posts-masonry.php:768
-#: includes/elementor/widgets/recent-posts-masonry.php:848
-#: includes/elementor/widgets/recent-posts-masonry.php:874
-#: includes/elementor/widgets/recent-posts-masonry.php:962
-#: includes/elementor/widgets/recent-posts-masonry.php:1032
-#: includes/elementor/widgets/recent-posts-masonry.php:1052
-#: includes/elementor/widgets/recent-posts-masonry.php:1269
-#: includes/elementor/widgets/recent-posts-masonry.php:1327
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1082
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1108
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1188
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1214
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1302
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1493
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1513
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1886
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1944
+#: includes/elementor/widgets/recent-posts-land-style.php:640
+#: includes/elementor/widgets/recent-posts-land-style.php:666
+#: includes/elementor/widgets/recent-posts-land-style.php:746
+#: includes/elementor/widgets/recent-posts-land-style.php:772
+#: includes/elementor/widgets/recent-posts-land-style.php:860
+#: includes/elementor/widgets/recent-posts-land-style.php:930
+#: includes/elementor/widgets/recent-posts-land-style.php:950
+#: includes/elementor/widgets/recent-posts-masonry.php:755
+#: includes/elementor/widgets/recent-posts-masonry.php:781
+#: includes/elementor/widgets/recent-posts-masonry.php:861
+#: includes/elementor/widgets/recent-posts-masonry.php:887
+#: includes/elementor/widgets/recent-posts-masonry.php:975
+#: includes/elementor/widgets/recent-posts-masonry.php:1045
+#: includes/elementor/widgets/recent-posts-masonry.php:1065
+#: includes/elementor/widgets/recent-posts-masonry.php:1282
+#: includes/elementor/widgets/recent-posts-masonry.php:1340
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:503
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:529
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:609
@@ -4969,13 +4980,13 @@ msgstr "تیتر گذاری"
 #: includes/elementor/widgets/recent-posts-tiles.php:470
 #: includes/elementor/widgets/recent-posts-tiles.php:550
 #: includes/elementor/widgets/recent-posts-tiles.php:576
-#: includes/elementor/widgets/recent-posts-timeline.php:625
-#: includes/elementor/widgets/recent-posts-timeline.php:651
-#: includes/elementor/widgets/recent-posts-timeline.php:731
-#: includes/elementor/widgets/recent-posts-timeline.php:757
-#: includes/elementor/widgets/recent-posts-timeline.php:845
-#: includes/elementor/widgets/recent-posts-timeline.php:915
-#: includes/elementor/widgets/recent-posts-timeline.php:935
+#: includes/elementor/widgets/recent-posts-timeline.php:638
+#: includes/elementor/widgets/recent-posts-timeline.php:664
+#: includes/elementor/widgets/recent-posts-timeline.php:744
+#: includes/elementor/widgets/recent-posts-timeline.php:770
+#: includes/elementor/widgets/recent-posts-timeline.php:858
+#: includes/elementor/widgets/recent-posts-timeline.php:928
+#: includes/elementor/widgets/recent-posts-timeline.php:948
 #: includes/elementor/widgets/recent-products.php:540
 #: includes/elementor/widgets/recent-products.php:616
 #: includes/elementor/widgets/recent-products.php:642
@@ -5023,9 +5034,9 @@ msgstr "تیتر گذاری"
 #: includes/elementor/widgets/theme-elements/menu.php:1173
 #: includes/elementor/widgets/theme-elements/menu.php:1253
 #: includes/elementor/widgets/theme-elements/modern-search.php:253
-#: includes/elementor/widgets/theme-elements/modern-search.php:300
-#: includes/elementor/widgets/theme-elements/modern-search.php:360
-#: includes/elementor/widgets/theme-elements/modern-search.php:399
+#: includes/elementor/widgets/theme-elements/modern-search.php:301
+#: includes/elementor/widgets/theme-elements/modern-search.php:361
+#: includes/elementor/widgets/theme-elements/modern-search.php:400
 #: includes/elementor/widgets/theme-elements/site-title.php:303
 #: includes/elementor/widgets/theme-elements/site-title.php:371
 #: includes/elementor/widgets/theme-elements/site-title.php:439
@@ -5041,7 +5052,7 @@ msgid "Audio Player"
 msgstr "پخش کننده صدا"
 
 #: includes/elementor/widgets/audio.php:95
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:764
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:777
 #: includes/elements/audio.php:15
 msgid "Audio"
 msgstr ""
@@ -5103,11 +5114,11 @@ msgstr "فایل صوتی را به صورت خودکار پخش کن."
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:575
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:587
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:600
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:643
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:687
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:726
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:741
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:778
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:656
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:700
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:739
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:754
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:791
 #: includes/elementor/widgets/recent-posts-land-style.php:133
 #: includes/elementor/widgets/recent-posts-land-style.php:145
 #: includes/elementor/widgets/recent-posts-land-style.php:187
@@ -5118,10 +5129,10 @@ msgstr "فایل صوتی را به صورت خودکار پخش کن."
 #: includes/elementor/widgets/recent-posts-land-style.php:271
 #: includes/elementor/widgets/recent-posts-land-style.php:283
 #: includes/elementor/widgets/recent-posts-land-style.php:296
-#: includes/elementor/widgets/recent-posts-land-style.php:338
-#: includes/elementor/widgets/recent-posts-land-style.php:390
-#: includes/elementor/widgets/recent-posts-land-style.php:402
-#: includes/elementor/widgets/recent-posts-land-style.php:414
+#: includes/elementor/widgets/recent-posts-land-style.php:351
+#: includes/elementor/widgets/recent-posts-land-style.php:403
+#: includes/elementor/widgets/recent-posts-land-style.php:415
+#: includes/elementor/widgets/recent-posts-land-style.php:427
 #: includes/elementor/widgets/recent-posts-masonry.php:184
 #: includes/elementor/widgets/recent-posts-masonry.php:197
 #: includes/elementor/widgets/recent-posts-masonry.php:212
@@ -5133,11 +5144,11 @@ msgstr "فایل صوتی را به صورت خودکار پخش کن."
 #: includes/elementor/widgets/recent-posts-masonry.php:349
 #: includes/elementor/widgets/recent-posts-masonry.php:361
 #: includes/elementor/widgets/recent-posts-masonry.php:374
-#: includes/elementor/widgets/recent-posts-masonry.php:417
-#: includes/elementor/widgets/recent-posts-masonry.php:433
-#: includes/elementor/widgets/recent-posts-masonry.php:485
-#: includes/elementor/widgets/recent-posts-masonry.php:497
-#: includes/elementor/widgets/recent-posts-masonry.php:509
+#: includes/elementor/widgets/recent-posts-masonry.php:430
+#: includes/elementor/widgets/recent-posts-masonry.php:446
+#: includes/elementor/widgets/recent-posts-masonry.php:498
+#: includes/elementor/widgets/recent-posts-masonry.php:510
+#: includes/elementor/widgets/recent-posts-masonry.php:522
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:258
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:270
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:306
@@ -5158,11 +5169,11 @@ msgstr "فایل صوتی را به صورت خودکار پخش کن."
 #: includes/elementor/widgets/recent-posts-timeline.php:264
 #: includes/elementor/widgets/recent-posts-timeline.php:276
 #: includes/elementor/widgets/recent-posts-timeline.php:289
-#: includes/elementor/widgets/recent-posts-timeline.php:332
-#: includes/elementor/widgets/recent-posts-timeline.php:348
-#: includes/elementor/widgets/recent-posts-timeline.php:400
-#: includes/elementor/widgets/recent-posts-timeline.php:412
-#: includes/elementor/widgets/recent-posts-timeline.php:424
+#: includes/elementor/widgets/recent-posts-timeline.php:345
+#: includes/elementor/widgets/recent-posts-timeline.php:361
+#: includes/elementor/widgets/recent-posts-timeline.php:413
+#: includes/elementor/widgets/recent-posts-timeline.php:425
+#: includes/elementor/widgets/recent-posts-timeline.php:437
 #: includes/elementor/widgets/recent-products.php:187
 #: includes/elementor/widgets/recent-products.php:199
 #: includes/elementor/widgets/recent-products.php:212
@@ -5249,11 +5260,11 @@ msgstr ""
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:576
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:588
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:601
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:644
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:688
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:727
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:742
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:779
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:657
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:701
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:740
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:755
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:792
 #: includes/elementor/widgets/recent-posts-land-style.php:134
 #: includes/elementor/widgets/recent-posts-land-style.php:146
 #: includes/elementor/widgets/recent-posts-land-style.php:188
@@ -5264,10 +5275,10 @@ msgstr ""
 #: includes/elementor/widgets/recent-posts-land-style.php:272
 #: includes/elementor/widgets/recent-posts-land-style.php:284
 #: includes/elementor/widgets/recent-posts-land-style.php:297
-#: includes/elementor/widgets/recent-posts-land-style.php:339
-#: includes/elementor/widgets/recent-posts-land-style.php:391
-#: includes/elementor/widgets/recent-posts-land-style.php:403
-#: includes/elementor/widgets/recent-posts-land-style.php:415
+#: includes/elementor/widgets/recent-posts-land-style.php:352
+#: includes/elementor/widgets/recent-posts-land-style.php:404
+#: includes/elementor/widgets/recent-posts-land-style.php:416
+#: includes/elementor/widgets/recent-posts-land-style.php:428
 #: includes/elementor/widgets/recent-posts-masonry.php:185
 #: includes/elementor/widgets/recent-posts-masonry.php:198
 #: includes/elementor/widgets/recent-posts-masonry.php:213
@@ -5279,11 +5290,11 @@ msgstr ""
 #: includes/elementor/widgets/recent-posts-masonry.php:350
 #: includes/elementor/widgets/recent-posts-masonry.php:362
 #: includes/elementor/widgets/recent-posts-masonry.php:375
-#: includes/elementor/widgets/recent-posts-masonry.php:418
-#: includes/elementor/widgets/recent-posts-masonry.php:434
-#: includes/elementor/widgets/recent-posts-masonry.php:486
-#: includes/elementor/widgets/recent-posts-masonry.php:498
-#: includes/elementor/widgets/recent-posts-masonry.php:510
+#: includes/elementor/widgets/recent-posts-masonry.php:431
+#: includes/elementor/widgets/recent-posts-masonry.php:447
+#: includes/elementor/widgets/recent-posts-masonry.php:499
+#: includes/elementor/widgets/recent-posts-masonry.php:511
+#: includes/elementor/widgets/recent-posts-masonry.php:523
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:259
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:271
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:307
@@ -5304,11 +5315,11 @@ msgstr ""
 #: includes/elementor/widgets/recent-posts-timeline.php:265
 #: includes/elementor/widgets/recent-posts-timeline.php:277
 #: includes/elementor/widgets/recent-posts-timeline.php:290
-#: includes/elementor/widgets/recent-posts-timeline.php:333
-#: includes/elementor/widgets/recent-posts-timeline.php:349
-#: includes/elementor/widgets/recent-posts-timeline.php:401
-#: includes/elementor/widgets/recent-posts-timeline.php:413
-#: includes/elementor/widgets/recent-posts-timeline.php:425
+#: includes/elementor/widgets/recent-posts-timeline.php:346
+#: includes/elementor/widgets/recent-posts-timeline.php:362
+#: includes/elementor/widgets/recent-posts-timeline.php:414
+#: includes/elementor/widgets/recent-posts-timeline.php:426
+#: includes/elementor/widgets/recent-posts-timeline.php:438
 #: includes/elementor/widgets/recent-products.php:188
 #: includes/elementor/widgets/recent-products.php:200
 #: includes/elementor/widgets/recent-products.php:213
@@ -5420,12 +5431,12 @@ msgstr "ظاهر"
 
 #: includes/elementor/widgets/before-after.php:155
 #: includes/elementor/widgets/products-grid.php:286
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:868
-#: includes/elementor/widgets/recent-posts-land-style.php:487
-#: includes/elementor/widgets/recent-posts-masonry.php:582
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:881
+#: includes/elementor/widgets/recent-posts-land-style.php:500
+#: includes/elementor/widgets/recent-posts-masonry.php:595
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:464
 #: includes/elementor/widgets/recent-posts-tiles.php:366
-#: includes/elementor/widgets/recent-posts-timeline.php:497
+#: includes/elementor/widgets/recent-posts-timeline.php:510
 #: includes/elementor/widgets/recent-products.php:411
 #: includes/elements/before-after.php:81
 #: includes/elements/latest-posts-slider.php:114
@@ -5478,7 +5489,7 @@ msgstr "عرض"
 #: includes/elementor/widgets/text.php:279
 #: includes/elementor/widgets/text.php:1034
 #: includes/elementor/widgets/theme-elements/modern-search.php:99
-#: includes/elementor/widgets/theme-elements/modern-search.php:438
+#: includes/elementor/widgets/theme-elements/modern-search.php:439
 #: includes/elementor/widgets/theme-elements/search.php:120
 #: includes/elementor/widgets/theme-elements/search.php:385
 #: includes/elements/button.php:16 includes/elements/button.php:45
@@ -5513,8 +5524,8 @@ msgstr "بازشدن لایت باکس"
 
 #: includes/elementor/widgets/button.php:148
 #: includes/elementor/widgets/heading-modern.php:1057
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1560
-#: includes/elementor/widgets/recent-posts-masonry.php:1099
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1573
+#: includes/elementor/widgets/recent-posts-masonry.php:1112
 #: includes/elementor/widgets/text.php:1439
 #, fuzzy
 msgid "Wrapper"
@@ -5596,16 +5607,17 @@ msgstr "خط بیرونی"
 
 #: includes/elementor/widgets/button.php:230
 #: includes/elementor/widgets/carousel-navigation.php:164
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1679
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1792
-#: includes/elementor/widgets/recent-posts-masonry.php:1176
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1692
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1805
+#: includes/elementor/widgets/recent-posts-masonry.php:1189
 #: includes/elementor/widgets/theme-elements/current-time.php:131
 #, fuzzy
 msgid "Align"
 msgstr "تراز"
 
 #: includes/elementor/widgets/button.php:303
-#: includes/elementor/widgets/button.php:330
+#: includes/elementor/widgets/button.php:349
+#: includes/elementor/widgets/button.php:362
 #: includes/elementor/widgets/carousel-navigation.php:292
 #: includes/elementor/widgets/carousel-navigation.php:399
 #: includes/elementor/widgets/heading-modern.php:966
@@ -5617,18 +5629,18 @@ msgstr "تراز"
 #: includes/elementor/widgets/products-grid.php:969
 #: includes/elementor/widgets/products-grid.php:1003
 #: includes/elementor/widgets/products-grid.php:1061
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1364
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1394
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1602
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1640
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1733
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1771
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1856
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1914
-#: includes/elementor/widgets/recent-posts-masonry.php:1117
-#: includes/elementor/widgets/recent-posts-masonry.php:1155
-#: includes/elementor/widgets/recent-posts-masonry.php:1252
-#: includes/elementor/widgets/recent-posts-masonry.php:1310
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1377
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1407
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1615
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1653
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1746
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1784
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1869
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1927
+#: includes/elementor/widgets/recent-posts-masonry.php:1130
+#: includes/elementor/widgets/recent-posts-masonry.php:1168
+#: includes/elementor/widgets/recent-posts-masonry.php:1265
+#: includes/elementor/widgets/recent-posts-masonry.php:1323
 #: includes/elementor/widgets/testimonial.php:907
 #: includes/elementor/widgets/testimonial.php:943
 #: includes/elementor/widgets/text.php:384
@@ -5652,7 +5664,12 @@ msgstr "تراز"
 msgid "Background"
 msgstr "اندازه پس زمینه"
 
-#: includes/elementor/widgets/button.php:357
+#: includes/elementor/widgets/button.php:329
+#, fuzzy
+msgid "Fade hover"
+msgstr "تصویر شناور"
+
+#: includes/elementor/widgets/button.php:392
 #: includes/elementor/widgets/carousel-navigation.php:216
 #: includes/elementor/widgets/custom-list.php:120
 #: includes/elementor/widgets/custom-list.php:887
@@ -5675,19 +5692,19 @@ msgstr "اندازه پس زمینه"
 msgid "Icon"
 msgstr "شکلک"
 
-#: includes/elementor/widgets/button.php:365
+#: includes/elementor/widgets/button.php:400
 #: includes/elementor/widgets/text.php:311 includes/elements/button.php:156
 #: includes/elements/text.php:781
 msgid "Icon for button"
 msgstr "شکلک برای دکمه"
 
-#: includes/elementor/widgets/button.php:373
+#: includes/elementor/widgets/button.php:408
 #: includes/elementor/widgets/text.php:1151 includes/elements/button.php:169
 #: includes/elements/text.php:797
 msgid "Icon alignment"
 msgstr "تراز شکلک"
 
-#: includes/elementor/widgets/button.php:380
+#: includes/elementor/widgets/button.php:415
 #: includes/elementor/widgets/modern-button.php:826
 #: includes/elementor/widgets/text.php:1158 includes/elements/button.php:189
 #: includes/elements/text.php:806 includes/general-hooks.php:454
@@ -5695,33 +5712,33 @@ msgstr "تراز شکلک"
 msgid "Over"
 msgstr "رو"
 
-#: includes/elementor/widgets/button.php:381
+#: includes/elementor/widgets/button.php:416
 #: includes/elementor/widgets/text.php:1159 includes/elements/button.php:193
 #: includes/elements/text.php:807 includes/general-hooks.php:458
 #: includes/general-hooks.php:870
 msgid "Animate from Left"
 msgstr "متحرک سازی از چپ"
 
-#: includes/elementor/widgets/button.php:382
+#: includes/elementor/widgets/button.php:417
 #: includes/elementor/widgets/text.php:1160 includes/elements/text.php:808
 msgid "Animate from Right"
 msgstr "متحرک سازی از راست"
 
-#: includes/elementor/widgets/button.php:390
+#: includes/elementor/widgets/button.php:425
 #: includes/elementor/widgets/text.php:430
 #: includes/elementor/widgets/text.php:1172
 #, fuzzy
 msgid "Icon Size"
 msgstr "اندازه شکلک"
 
-#: includes/elementor/widgets/button.php:413
+#: includes/elementor/widgets/button.php:448
 #: includes/elementor/widgets/text.php:1361
 #: includes/elementor/widgets/theme-elements/search.php:247
 #, fuzzy
 msgid "Icon Margin"
 msgstr "تراز شکلک"
 
-#: includes/elementor/widgets/button.php:487
+#: includes/elementor/widgets/button.php:522
 #: includes/elementor/widgets/custom-list.php:110
 #: includes/elementor/widgets/custom-list.php:761
 #: includes/elementor/widgets/custom-list.php:769
@@ -5730,18 +5747,18 @@ msgstr "تراز شکلک"
 #: includes/elementor/widgets/modern-button.php:478
 #: includes/elementor/widgets/quote.php:98
 #: includes/elementor/widgets/quote.php:148
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1373
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1403
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1386
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1416
 #: includes/elementor/widgets/theme-elements/breadcrumbs.php:260
 #: includes/elementor/widgets/theme-elements/current-time.php:163
 #: includes/elementor/widgets/theme-elements/modern-search.php:118
-#: includes/elementor/widgets/theme-elements/modern-search.php:342
+#: includes/elementor/widgets/theme-elements/modern-search.php:343
 #: includes/elements/custom-list.php:55 includes/elements/image.php:300
 msgid "Text"
 msgstr ""
 
-#: includes/elementor/widgets/button.php:516
-#: includes/elementor/widgets/button.php:556
+#: includes/elementor/widgets/button.php:551
+#: includes/elementor/widgets/button.php:591
 #: includes/elementor/widgets/heading-modern.php:391
 #: includes/elementor/widgets/heading-modern.php:429
 #: includes/elementor/widgets/heading-modern.php:578
@@ -5757,10 +5774,10 @@ msgstr ""
 #: includes/elementor/widgets/modern-button.php:780
 #: includes/elementor/widgets/products-grid.php:1032
 #: includes/elementor/widgets/products-grid.php:1090
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1885
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1943
-#: includes/elementor/widgets/recent-posts-masonry.php:1281
-#: includes/elementor/widgets/recent-posts-masonry.php:1339
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1898
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1956
+#: includes/elementor/widgets/recent-posts-masonry.php:1294
+#: includes/elementor/widgets/recent-posts-masonry.php:1352
 #: includes/elementor/widgets/text.php:764
 #: includes/elementor/widgets/text.php:862
 #: includes/elementor/widgets/text.php:975
@@ -5809,11 +5826,11 @@ msgid "Previous Button"
 msgstr "قبلی و بعدی"
 
 #: includes/elementor/widgets/carousel-navigation.php:128
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:905
-#: includes/elementor/widgets/recent-posts-land-style.php:521
-#: includes/elementor/widgets/recent-posts-masonry.php:616
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:918
+#: includes/elementor/widgets/recent-posts-land-style.php:534
+#: includes/elementor/widgets/recent-posts-masonry.php:629
 #: includes/elementor/widgets/recent-posts-tiles.php:400
-#: includes/elementor/widgets/recent-posts-timeline.php:531
+#: includes/elementor/widgets/recent-posts-timeline.php:544
 #: includes/elements/recent-posts-grid-carousel.php:417
 #: includes/elements/recent-posts-land-style.php:337
 #: includes/elements/recent-posts-masonry.php:317
@@ -5863,7 +5880,7 @@ msgstr "فاصله بین اسلایدها"
 #: includes/elementor/widgets/theme-elements/breadcrumbs.php:241
 #: includes/elementor/widgets/theme-elements/breadcrumbs.php:371
 #: includes/elementor/widgets/theme-elements/modern-search.php:264
-#: includes/elementor/widgets/theme-elements/modern-search.php:311
+#: includes/elementor/widgets/theme-elements/modern-search.php:312
 #: includes/elementor/widgets/theme-elements/search.php:213
 #: includes/elementor/widgets/theme-elements/select.php:550
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:364
@@ -6438,7 +6455,7 @@ msgstr "نمایش تصویر"
 msgid "Text Margin"
 msgstr "تراز متن"
 
-#: includes/elementor/widgets/custom-list.php:1010
+#: includes/elementor/widgets/custom-list.php:1009
 #: includes/elements/custom-list.php:58 includes/elements/custom-list.php:61
 #: includes/elements/custom-list.php:74 includes/elements/custom-list.php:90
 #: includes/elements/custom-list.php:93 includes/elements/custom-list.php:106
@@ -6446,13 +6463,13 @@ msgstr "تراز متن"
 msgid "List Item"
 msgstr ""
 
-#: includes/elementor/widgets/custom-list.php:1055
+#: includes/elementor/widgets/custom-list.php:1054
 #: includes/elementor/widgets/tabs.php:297
 #: includes/elementor/widgets/tabs.php:335
 msgid "Box Shadow Normal"
 msgstr ""
 
-#: includes/elementor/widgets/custom-list.php:1092
+#: includes/elementor/widgets/custom-list.php:1091
 msgid "Box Shadow Hover"
 msgstr ""
 
@@ -6655,9 +6672,9 @@ msgid "Image spacing"
 msgstr "اندازه تصویر"
 
 #: includes/elementor/widgets/gallery.php:186
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:937
-#: includes/elementor/widgets/recent-posts-land-style.php:553
-#: includes/elementor/widgets/recent-posts-timeline.php:563
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:950
+#: includes/elementor/widgets/recent-posts-land-style.php:566
+#: includes/elementor/widgets/recent-posts-timeline.php:576
 #: includes/elementor/widgets/recent-products.php:490
 #: includes/elements/gallery.php:290
 #: includes/elements/recent-posts-grid-carousel.php:115
@@ -6932,11 +6949,11 @@ msgstr "تصویر پس زمینه"
 #: includes/elementor/widgets/image.php:110
 #: includes/elementor/widgets/image.php:165
 #: includes/elementor/widgets/image.php:418
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:760
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:926
-#: includes/elementor/widgets/recent-posts-land-style.php:542
-#: includes/elementor/widgets/recent-posts-masonry.php:637
-#: includes/elementor/widgets/recent-posts-timeline.php:552
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:773
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:939
+#: includes/elementor/widgets/recent-posts-land-style.php:555
+#: includes/elementor/widgets/recent-posts-masonry.php:650
+#: includes/elementor/widgets/recent-posts-timeline.php:565
 #: includes/elementor/widgets/recent-products.php:479
 #: includes/elementor/widgets/staff.php:169
 #: includes/elementor/widgets/staff.php:176
@@ -7105,11 +7122,11 @@ msgstr "عمودی"
 
 #: includes/elementor/widgets/image.php:659
 #: includes/elementor/widgets/quote.php:186
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1628
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1759
-#: includes/elementor/widgets/recent-posts-masonry.php:1143
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1641
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1772
+#: includes/elementor/widgets/recent-posts-masonry.php:1156
 #: includes/elementor/widgets/theme-elements/breadcrumbs.php:296
-#: includes/elementor/widgets/theme-elements/modern-search.php:611
+#: includes/elementor/widgets/theme-elements/modern-search.php:612
 #: includes/elementor/widgets/theme-elements/shopping-cart.php:271
 #, fuzzy
 msgid "Text Color"
@@ -7233,12 +7250,12 @@ msgid "Products Grid"
 msgstr ""
 
 #: includes/elementor/widgets/products-grid.php:157
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:712
-#: includes/elementor/widgets/recent-posts-land-style.php:376
-#: includes/elementor/widgets/recent-posts-masonry.php:471
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:725
+#: includes/elementor/widgets/recent-posts-land-style.php:389
+#: includes/elementor/widgets/recent-posts-masonry.php:484
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:353
 #: includes/elementor/widgets/recent-posts-tiles.php:255
-#: includes/elementor/widgets/recent-posts-timeline.php:386
+#: includes/elementor/widgets/recent-posts-timeline.php:399
 #: includes/elementor/widgets/recent-products.php:327
 #: includes/elements/popular-posts-widget.php:67
 #: includes/elements/recent-posts-grid-carousel.php:101
@@ -7251,12 +7268,12 @@ msgid "Number of posts to show"
 msgstr "تعداد نوشته ها برای نمایش"
 
 #: includes/elementor/widgets/products-grid.php:177
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:678
-#: includes/elementor/widgets/recent-posts-land-style.php:357
-#: includes/elementor/widgets/recent-posts-masonry.php:452
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:691
+#: includes/elementor/widgets/recent-posts-land-style.php:370
+#: includes/elementor/widgets/recent-posts-masonry.php:465
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:334
 #: includes/elementor/widgets/recent-posts-tiles.php:236
-#: includes/elementor/widgets/recent-posts-timeline.php:367
+#: includes/elementor/widgets/recent-posts-timeline.php:380
 #: includes/elementor/widgets/recent-products.php:308
 #: includes/elements/latest-posts-slider.php:68
 #: includes/elements/latest-posts-slider.php:82
@@ -7370,12 +7387,12 @@ msgid "Deal Products"
 msgstr ""
 
 #: includes/elementor/widgets/products-grid.php:202
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:697
-#: includes/elementor/widgets/recent-posts-land-style.php:364
-#: includes/elementor/widgets/recent-posts-masonry.php:459
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:710
+#: includes/elementor/widgets/recent-posts-land-style.php:377
+#: includes/elementor/widgets/recent-posts-masonry.php:472
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:341
 #: includes/elementor/widgets/recent-posts-tiles.php:243
-#: includes/elementor/widgets/recent-posts-timeline.php:374
+#: includes/elementor/widgets/recent-posts-timeline.php:387
 #: includes/elementor/widgets/recent-products.php:315
 #: includes/elements/popular-posts-widget.php:238
 #: includes/elements/recent-posts-grid-carousel.php:86
@@ -7402,12 +7419,12 @@ msgid "Exclude products without media"
 msgstr "نادیده گرفتن نوشته های بدون رسانه"
 
 #: includes/elementor/widgets/products-grid.php:226
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:793
-#: includes/elementor/widgets/recent-posts-land-style.php:427
-#: includes/elementor/widgets/recent-posts-masonry.php:522
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:806
+#: includes/elementor/widgets/recent-posts-land-style.php:440
+#: includes/elementor/widgets/recent-posts-masonry.php:535
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:404
 #: includes/elementor/widgets/recent-posts-tiles.php:306
-#: includes/elementor/widgets/recent-posts-timeline.php:437
+#: includes/elementor/widgets/recent-posts-timeline.php:450
 #: includes/elementor/widgets/recent-products.php:351
 #: includes/elements/latest-posts-slider.php:128
 #: includes/elements/popular-posts-widget.php:191
@@ -7425,12 +7442,12 @@ msgid "Order by"
 msgstr "مرتب سازی بر اساس"
 
 #: includes/elementor/widgets/products-grid.php:235
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:802
-#: includes/elementor/widgets/recent-posts-land-style.php:436
-#: includes/elementor/widgets/recent-posts-masonry.php:531
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:815
+#: includes/elementor/widgets/recent-posts-land-style.php:449
+#: includes/elementor/widgets/recent-posts-masonry.php:544
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:413
 #: includes/elementor/widgets/recent-posts-tiles.php:315
-#: includes/elementor/widgets/recent-posts-timeline.php:446
+#: includes/elementor/widgets/recent-posts-timeline.php:459
 #: includes/elementor/widgets/recent-products.php:360
 #: includes/elements/latest-posts-slider.php:139
 #: includes/elements/popular-posts-widget.php:204
@@ -7448,12 +7465,12 @@ msgid "Comments"
 msgstr "دیدگاه ها"
 
 #: includes/elementor/widgets/products-grid.php:236
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:803
-#: includes/elementor/widgets/recent-posts-land-style.php:437
-#: includes/elementor/widgets/recent-posts-masonry.php:532
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:816
+#: includes/elementor/widgets/recent-posts-land-style.php:450
+#: includes/elementor/widgets/recent-posts-masonry.php:545
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:414
 #: includes/elementor/widgets/recent-posts-tiles.php:316
-#: includes/elementor/widgets/recent-posts-timeline.php:447
+#: includes/elementor/widgets/recent-posts-timeline.php:460
 #: includes/elementor/widgets/recent-products.php:361
 #: includes/elements/latest-posts-slider.php:140
 #: includes/elements/popular-posts-widget.php:205
@@ -7471,12 +7488,12 @@ msgid "Date Modified"
 msgstr "تاریخ ویرایش"
 
 #: includes/elementor/widgets/products-grid.php:238
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:805
-#: includes/elementor/widgets/recent-posts-land-style.php:439
-#: includes/elementor/widgets/recent-posts-masonry.php:534
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:818
+#: includes/elementor/widgets/recent-posts-land-style.php:452
+#: includes/elementor/widgets/recent-posts-masonry.php:547
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:416
 #: includes/elementor/widgets/recent-posts-tiles.php:318
-#: includes/elementor/widgets/recent-posts-timeline.php:449
+#: includes/elementor/widgets/recent-posts-timeline.php:462
 #: includes/elementor/widgets/recent-products.php:363
 #: includes/elements/recent-posts-grid-carousel.php:193
 #: includes/elements/recent-posts-land-style.php:180
@@ -7492,12 +7509,12 @@ msgid "Inserted Post IDs"
 msgstr "افزودن متای نوشته"
 
 #: includes/elementor/widgets/products-grid.php:250
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:820
-#: includes/elementor/widgets/recent-posts-land-style.php:451
-#: includes/elementor/widgets/recent-posts-masonry.php:546
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:833
+#: includes/elementor/widgets/recent-posts-land-style.php:464
+#: includes/elementor/widgets/recent-posts-masonry.php:559
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:428
 #: includes/elementor/widgets/recent-posts-tiles.php:330
-#: includes/elementor/widgets/recent-posts-timeline.php:461
+#: includes/elementor/widgets/recent-posts-timeline.php:474
 #: includes/elementor/widgets/recent-products.php:375
 #: includes/elements/latest-posts-slider.php:158
 #: includes/elements/popular-posts-widget.php:223
@@ -7515,12 +7532,12 @@ msgid "Descending"
 msgstr "نزولی"
 
 #: includes/elementor/widgets/products-grid.php:251
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:821
-#: includes/elementor/widgets/recent-posts-land-style.php:452
-#: includes/elementor/widgets/recent-posts-masonry.php:547
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:834
+#: includes/elementor/widgets/recent-posts-land-style.php:465
+#: includes/elementor/widgets/recent-posts-masonry.php:560
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:429
 #: includes/elementor/widgets/recent-posts-tiles.php:331
-#: includes/elementor/widgets/recent-posts-timeline.php:462
+#: includes/elementor/widgets/recent-posts-timeline.php:475
 #: includes/elementor/widgets/recent-products.php:376
 #: includes/elements/latest-posts-slider.php:159
 #: includes/elements/popular-posts-widget.php:224
@@ -7654,8 +7671,8 @@ msgid "Featured Badge"
 msgstr "تصویر شاخص"
 
 #: includes/elementor/widgets/products-grid.php:1113
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1966
-#: includes/elementor/widgets/recent-posts-masonry.php:1362
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1979
+#: includes/elementor/widgets/recent-posts-masonry.php:1375
 #, fuzzy
 msgid "Button Padding"
 msgstr "اندازه دکمه"
@@ -7741,27 +7758,27 @@ msgstr "نمایش تصویر"
 
 #: includes/elementor/widgets/recent-comments.php:234
 #: includes/elementor/widgets/recent-comments.php:319
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1127
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1233
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1317
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1441
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1538
-#: includes/elementor/widgets/recent-posts-land-style.php:685
-#: includes/elementor/widgets/recent-posts-land-style.php:791
-#: includes/elementor/widgets/recent-posts-land-style.php:875
-#: includes/elementor/widgets/recent-posts-land-style.php:963
-#: includes/elementor/widgets/recent-posts-masonry.php:800
-#: includes/elementor/widgets/recent-posts-masonry.php:906
-#: includes/elementor/widgets/recent-posts-masonry.php:990
-#: includes/elementor/widgets/recent-posts-masonry.php:1078
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1140
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1246
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1330
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1454
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1551
+#: includes/elementor/widgets/recent-posts-land-style.php:698
+#: includes/elementor/widgets/recent-posts-land-style.php:804
+#: includes/elementor/widgets/recent-posts-land-style.php:888
+#: includes/elementor/widgets/recent-posts-land-style.php:976
+#: includes/elementor/widgets/recent-posts-masonry.php:813
+#: includes/elementor/widgets/recent-posts-masonry.php:919
+#: includes/elementor/widgets/recent-posts-masonry.php:1003
+#: includes/elementor/widgets/recent-posts-masonry.php:1091
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:561
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:667
 #: includes/elementor/widgets/recent-posts-tiles.php:502
 #: includes/elementor/widgets/recent-posts-tiles.php:608
-#: includes/elementor/widgets/recent-posts-timeline.php:683
-#: includes/elementor/widgets/recent-posts-timeline.php:789
-#: includes/elementor/widgets/recent-posts-timeline.php:873
-#: includes/elementor/widgets/recent-posts-timeline.php:961
+#: includes/elementor/widgets/recent-posts-timeline.php:696
+#: includes/elementor/widgets/recent-posts-timeline.php:802
+#: includes/elementor/widgets/recent-posts-timeline.php:886
+#: includes/elementor/widgets/recent-posts-timeline.php:974
 #: includes/elementor/widgets/recent-products.php:674
 #: includes/elementor/widgets/staff.php:552
 #: includes/elementor/widgets/staff.php:616
@@ -7781,12 +7798,12 @@ msgid "Meta Info"
 msgstr "اطلاعات"
 
 #: includes/elementor/widgets/recent-comments.php:335
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1252
-#: includes/elementor/widgets/recent-posts-land-style.php:810
-#: includes/elementor/widgets/recent-posts-masonry.php:925
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1265
+#: includes/elementor/widgets/recent-posts-land-style.php:823
+#: includes/elementor/widgets/recent-posts-masonry.php:938
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:686
 #: includes/elementor/widgets/recent-posts-tiles.php:627
-#: includes/elementor/widgets/recent-posts-timeline.php:808
+#: includes/elementor/widgets/recent-posts-timeline.php:821
 #, fuzzy
 msgid "Space between metas"
 msgstr "فاصله بین اسلایدها"
@@ -8113,16 +8130,16 @@ msgstr "نمایش تصویر"
 
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:548
 #: includes/elementor/widgets/recent-posts-land-style.php:209
-#: includes/elementor/widgets/recent-posts-masonry.php:414
-#: includes/elementor/widgets/recent-posts-timeline.php:329
+#: includes/elementor/widgets/recent-posts-masonry.php:427
+#: includes/elementor/widgets/recent-posts-timeline.php:342
 #, fuzzy
 msgid "Display Author in Header"
 msgstr "نمایش نویسنده یا ادامه نوشته"
 
 #: includes/elementor/widgets/recent-posts-grid-carousel.php:549
 #: includes/elementor/widgets/recent-posts-land-style.php:210
-#: includes/elementor/widgets/recent-posts-masonry.php:415
-#: includes/elementor/widgets/recent-posts-timeline.php:330
+#: includes/elementor/widgets/recent-posts-masonry.php:428
+#: includes/elementor/widgets/recent-posts-timeline.php:343
 #, fuzzy
 msgid "Enable it to display author name in header"
 msgstr "برای نمایش پس زمینه دلخواه در صفحه ورود این گزینه را فعال کنید."
@@ -8174,6 +8191,21 @@ msgstr "برای نمایش خلاصه نوشته به جای محتوای کا�
 #: includes/elementor/widgets/recent-posts-land-style.php:306
 #: includes/elementor/widgets/recent-posts-masonry.php:384
 #: includes/elementor/widgets/recent-posts-timeline.php:299
+#, fuzzy
+msgid "Content length"
+msgstr "طول متن نوشته"
+
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:611
+#: includes/elementor/widgets/recent-posts-land-style.php:307
+#: includes/elementor/widgets/recent-posts-masonry.php:385
+#: includes/elementor/widgets/recent-posts-timeline.php:300
+msgid "Shorten the content by characters for the posts with no excerpt"
+msgstr ""
+
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:623
+#: includes/elementor/widgets/recent-posts-land-style.php:319
+#: includes/elementor/widgets/recent-posts-masonry.php:397
+#: includes/elementor/widgets/recent-posts-timeline.php:312
 #: includes/elements/popular-posts-widget.php:177
 #: includes/elements/recent-posts-grid-carousel.php:427
 #: includes/elements/recent-posts-land-style.php:347
@@ -8183,21 +8215,17 @@ msgstr "برای نمایش خلاصه نوشته به جای محتوای کا�
 msgid "Excerpt length"
 msgstr "طول خلاصه"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:611
-#: includes/elementor/widgets/recent-posts-land-style.php:307
-#: includes/elementor/widgets/recent-posts-masonry.php:385
-#: includes/elementor/widgets/recent-posts-timeline.php:300
-#: includes/elements/recent-posts-grid-carousel.php:428
-#: includes/elements/recent-posts-land-style.php:348
-#: includes/elements/recent-posts-masonry.php:328
-#: includes/elements/recent-posts-timeline.php:370
-msgid "Specify summary content in character."
-msgstr "خلاصه نوشته را برحسب کاراکتر مشخص می کند."
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:624
+#: includes/elementor/widgets/recent-posts-land-style.php:320
+#: includes/elementor/widgets/recent-posts-masonry.php:398
+#: includes/elementor/widgets/recent-posts-timeline.php:313
+msgid "Shorten the excerpt itself"
+msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:623
-#: includes/elementor/widgets/recent-posts-land-style.php:319
-#: includes/elementor/widgets/recent-posts-masonry.php:397
-#: includes/elementor/widgets/recent-posts-timeline.php:312
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:636
+#: includes/elementor/widgets/recent-posts-land-style.php:332
+#: includes/elementor/widgets/recent-posts-masonry.php:410
+#: includes/elementor/widgets/recent-posts-timeline.php:325
 #: includes/elements/recent-posts-grid-carousel.php:441
 #: includes/elements/recent-posts-land-style.php:365
 #: includes/elements/recent-posts-masonry.php:341
@@ -8205,10 +8233,10 @@ msgstr "خلاصه نوشته را برحسب کاراکتر مشخص می کن�
 msgid "Display author or read more"
 msgstr "نمایش نویسنده یا ادامه نوشته"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:625
-#: includes/elementor/widgets/recent-posts-land-style.php:321
-#: includes/elementor/widgets/recent-posts-masonry.php:399
-#: includes/elementor/widgets/recent-posts-timeline.php:314
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:638
+#: includes/elementor/widgets/recent-posts-land-style.php:334
+#: includes/elementor/widgets/recent-posts-masonry.php:412
+#: includes/elementor/widgets/recent-posts-timeline.php:327
 #: includes/elements/recent-posts-grid-carousel.php:442
 #: includes/elements/recent-posts-land-style.php:366
 #: includes/elements/recent-posts-masonry.php:342
@@ -8216,12 +8244,12 @@ msgstr "نمایش نویسنده یا ادامه نوشته"
 msgid "Specifies whether to show author or read more on each post."
 msgstr "مشخص می کند نویسنده یا بیشتر بخوانید در هر نوشته نشان داده شود یا خیر."
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:629
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1838
-#: includes/elementor/widgets/recent-posts-land-style.php:325
-#: includes/elementor/widgets/recent-posts-masonry.php:403
-#: includes/elementor/widgets/recent-posts-masonry.php:1234
-#: includes/elementor/widgets/recent-posts-timeline.php:318
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:642
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1851
+#: includes/elementor/widgets/recent-posts-land-style.php:338
+#: includes/elementor/widgets/recent-posts-masonry.php:416
+#: includes/elementor/widgets/recent-posts-masonry.php:1247
+#: includes/elementor/widgets/recent-posts-timeline.php:331
 #: includes/elementor/widgets/text.php:301
 #: includes/elements/recent-posts-grid-carousel.php:449
 #: includes/elements/recent-posts-land-style.php:373
@@ -8230,37 +8258,37 @@ msgstr "مشخص می کند نویسنده یا بیشتر بخوانید در 
 msgid "Read More"
 msgstr "بیشتر بخوانید"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:640
-#: includes/elementor/widgets/recent-posts-land-style.php:335
-#: includes/elementor/widgets/recent-posts-masonry.php:430
-#: includes/elementor/widgets/recent-posts-timeline.php:345
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:653
+#: includes/elementor/widgets/recent-posts-land-style.php:348
+#: includes/elementor/widgets/recent-posts-masonry.php:443
+#: includes/elementor/widgets/recent-posts-timeline.php:358
 #, fuzzy
 msgid "Display Author in Footer"
 msgstr "نمایش نویسنده یا ادامه نوشته"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:641
-#: includes/elementor/widgets/recent-posts-land-style.php:336
-#: includes/elementor/widgets/recent-posts-masonry.php:431
-#: includes/elementor/widgets/recent-posts-timeline.php:346
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:654
+#: includes/elementor/widgets/recent-posts-land-style.php:349
+#: includes/elementor/widgets/recent-posts-masonry.php:444
+#: includes/elementor/widgets/recent-posts-timeline.php:359
 #, fuzzy
 msgid "Enable it to display author name in footer"
 msgstr "برای نمایش مطالب اخیر این گزینه را فعال کنید."
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:656
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:669
 #, fuzzy
 msgid "Meta info position"
 msgstr "موقعیت تصویر یا شکلک"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:685
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:698
 msgid "Use wp query"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:698
-#: includes/elementor/widgets/recent-posts-land-style.php:365
-#: includes/elementor/widgets/recent-posts-masonry.php:460
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:711
+#: includes/elementor/widgets/recent-posts-land-style.php:378
+#: includes/elementor/widgets/recent-posts-masonry.php:473
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:342
 #: includes/elementor/widgets/recent-posts-tiles.php:244
-#: includes/elementor/widgets/recent-posts-timeline.php:375
+#: includes/elementor/widgets/recent-posts-timeline.php:388
 #: includes/elementor/widgets/recent-products.php:316
 #: includes/elements/recent-posts-grid-carousel.php:87
 #: includes/elements/recent-posts-land-style.php:74
@@ -8273,12 +8301,12 @@ msgstr ""
 msgid "Specifies a category that you want to show posts from it."
 msgstr "دسته ای که می خواهید نوشته ها از آن نشان داده شوند را مشخص کنید."
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:724
-#: includes/elementor/widgets/recent-posts-land-style.php:388
-#: includes/elementor/widgets/recent-posts-masonry.php:483
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:737
+#: includes/elementor/widgets/recent-posts-land-style.php:401
+#: includes/elementor/widgets/recent-posts-masonry.php:496
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:365
 #: includes/elementor/widgets/recent-posts-tiles.php:267
-#: includes/elementor/widgets/recent-posts-timeline.php:398
+#: includes/elementor/widgets/recent-posts-timeline.php:411
 #: includes/elementor/widgets/recent-products.php:339
 #: includes/elements/recent-posts-grid-carousel.php:135
 #: includes/elements/recent-posts-land-style.php:122
@@ -8290,45 +8318,45 @@ msgstr "دسته ای که می خواهید نوشته ها از آن نشان 
 msgid "Exclude posts without media"
 msgstr "نادیده گرفتن نوشته های بدون رسانه"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:739
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:752
 #: includes/elements/recent-posts-timeline.php:109
 #, fuzzy
 msgid "Exclude all custom post formats"
 msgstr "نادیده گرفتن فرمت های سفارشی نوشته"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:754
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:767
 #, fuzzy
 msgid "Include custom post formats"
 msgstr "نادیده گرفتن فرمت های سفارشی نوشته"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:758
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:771
 msgid "Aside"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:759
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:772
 #: includes/elements/gallery.php:15
 #, fuzzy
 msgid "Gallery"
 msgstr "شناسه گالری"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:762
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:775
 #: includes/elements/quote.php:15
 #, fuzzy
 msgid "Quote"
 msgstr "متن نقل قول"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:763
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:776
 #: includes/elementor/widgets/video.php:94 includes/elements/video.php:15
 #, fuzzy
 msgid "Video"
 msgstr "فایل ویدیو"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:776
-#: includes/elementor/widgets/recent-posts-land-style.php:412
-#: includes/elementor/widgets/recent-posts-masonry.php:507
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:789
+#: includes/elementor/widgets/recent-posts-land-style.php:425
+#: includes/elementor/widgets/recent-posts-masonry.php:520
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:389
 #: includes/elementor/widgets/recent-posts-tiles.php:291
-#: includes/elementor/widgets/recent-posts-timeline.php:422
+#: includes/elementor/widgets/recent-posts-timeline.php:435
 #: includes/elements/recent-posts-grid-carousel.php:161
 #: includes/elements/recent-posts-land-style.php:148
 #: includes/elements/recent-posts-masonry.php:128
@@ -8339,12 +8367,12 @@ msgstr "فایل ویدیو"
 msgid "Exclude quote and link post formats"
 msgstr "نادیده گرفتن نوشته های سبک نقل قول و لینک"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:832
-#: includes/elementor/widgets/recent-posts-land-style.php:460
-#: includes/elementor/widgets/recent-posts-masonry.php:555
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:845
+#: includes/elementor/widgets/recent-posts-land-style.php:473
+#: includes/elementor/widgets/recent-posts-masonry.php:568
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:437
 #: includes/elementor/widgets/recent-posts-tiles.php:339
-#: includes/elementor/widgets/recent-posts-timeline.php:470
+#: includes/elementor/widgets/recent-posts-timeline.php:483
 #: includes/elements/recent-posts-grid-carousel.php:220
 #: includes/elements/recent-posts-land-style.php:207
 #: includes/elements/recent-posts-masonry.php:187
@@ -8355,12 +8383,12 @@ msgstr "نادیده گرفتن نوشته های سبک نقل قول و لین
 msgid "Only posts"
 msgstr "شامل شدن این نوشته ها"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:833
-#: includes/elementor/widgets/recent-posts-land-style.php:461
-#: includes/elementor/widgets/recent-posts-masonry.php:556
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:846
+#: includes/elementor/widgets/recent-posts-land-style.php:474
+#: includes/elementor/widgets/recent-posts-masonry.php:569
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:438
 #: includes/elementor/widgets/recent-posts-tiles.php:340
-#: includes/elementor/widgets/recent-posts-timeline.php:471
+#: includes/elementor/widgets/recent-posts-timeline.php:484
 #: includes/elements/recent-posts-grid-carousel.php:221
 #: includes/elements/recent-posts-land-style.php:208
 #: includes/elements/recent-posts-masonry.php:188
@@ -8373,12 +8401,12 @@ msgid ""
 "53,34,87,25)."
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:844
-#: includes/elementor/widgets/recent-posts-land-style.php:469
-#: includes/elementor/widgets/recent-posts-masonry.php:564
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:857
+#: includes/elementor/widgets/recent-posts-land-style.php:482
+#: includes/elementor/widgets/recent-posts-masonry.php:577
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:446
 #: includes/elementor/widgets/recent-posts-tiles.php:348
-#: includes/elementor/widgets/recent-posts-timeline.php:479
+#: includes/elementor/widgets/recent-posts-timeline.php:492
 #: includes/elements/latest-posts-slider.php:100
 #: includes/elements/recent-posts-grid-carousel.php:234
 #: includes/elements/recent-posts-land-style.php:221
@@ -8390,12 +8418,12 @@ msgstr ""
 msgid "Include posts"
 msgstr "شامل شدن این نوشته ها"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:845
-#: includes/elementor/widgets/recent-posts-land-style.php:470
-#: includes/elementor/widgets/recent-posts-masonry.php:565
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:858
+#: includes/elementor/widgets/recent-posts-land-style.php:483
+#: includes/elementor/widgets/recent-posts-masonry.php:578
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:447
 #: includes/elementor/widgets/recent-posts-tiles.php:349
-#: includes/elementor/widgets/recent-posts-timeline.php:480
+#: includes/elementor/widgets/recent-posts-timeline.php:493
 #: includes/elements/recent-posts-grid-carousel.php:235
 #: includes/elements/recent-posts-land-style.php:222
 #: includes/elements/recent-posts-masonry.php:202
@@ -8408,12 +8436,12 @@ msgid ""
 "53,34,87,25)"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:856
-#: includes/elementor/widgets/recent-posts-land-style.php:478
-#: includes/elementor/widgets/recent-posts-masonry.php:573
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:869
+#: includes/elementor/widgets/recent-posts-land-style.php:491
+#: includes/elementor/widgets/recent-posts-masonry.php:586
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:455
 #: includes/elementor/widgets/recent-posts-tiles.php:357
-#: includes/elementor/widgets/recent-posts-timeline.php:488
+#: includes/elementor/widgets/recent-posts-timeline.php:501
 #: includes/elements/latest-posts-slider.php:86
 #: includes/elements/recent-posts-grid-carousel.php:248
 #: includes/elements/recent-posts-land-style.php:235
@@ -8424,12 +8452,12 @@ msgstr ""
 msgid "Exclude posts"
 msgstr "نادیده گرفتن این نوشته ها"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:857
-#: includes/elementor/widgets/recent-posts-land-style.php:479
-#: includes/elementor/widgets/recent-posts-masonry.php:574
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:870
+#: includes/elementor/widgets/recent-posts-land-style.php:492
+#: includes/elementor/widgets/recent-posts-masonry.php:587
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:456
 #: includes/elementor/widgets/recent-posts-tiles.php:358
-#: includes/elementor/widgets/recent-posts-timeline.php:489
+#: includes/elementor/widgets/recent-posts-timeline.php:502
 #: includes/elements/recent-posts-grid-carousel.php:249
 #: includes/elements/recent-posts-land-style.php:236
 #: includes/elements/recent-posts-masonry.php:216
@@ -8442,12 +8470,12 @@ msgid ""
 "53,34,87,25)"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:869
-#: includes/elementor/widgets/recent-posts-land-style.php:488
-#: includes/elementor/widgets/recent-posts-masonry.php:583
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:882
+#: includes/elementor/widgets/recent-posts-land-style.php:501
+#: includes/elementor/widgets/recent-posts-masonry.php:596
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:465
 #: includes/elementor/widgets/recent-posts-tiles.php:367
-#: includes/elementor/widgets/recent-posts-timeline.php:498
+#: includes/elementor/widgets/recent-posts-timeline.php:511
 #: includes/elementor/widgets/recent-products.php:412
 #: includes/elements/latest-posts-slider.php:115
 #: includes/elements/recent-posts-grid-carousel.php:263
@@ -8459,20 +8487,20 @@ msgstr ""
 msgid "Number of post to displace or pass over."
 msgstr "تعداد نوشته هایی که باید از آن ها عبور کرد یا آن ها را نادیده گرفت."
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:886
-#: includes/elementor/widgets/recent-posts-land-style.php:502
-#: includes/elementor/widgets/recent-posts-masonry.php:597
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:899
+#: includes/elementor/widgets/recent-posts-land-style.php:515
+#: includes/elementor/widgets/recent-posts-masonry.php:610
 #: includes/elementor/widgets/recent-posts-tiles.php:381
-#: includes/elementor/widgets/recent-posts-timeline.php:512
+#: includes/elementor/widgets/recent-posts-timeline.php:525
 #, fuzzy
 msgid "Paginate"
 msgstr "صفحه بندی"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:893
-#: includes/elementor/widgets/recent-posts-land-style.php:509
-#: includes/elementor/widgets/recent-posts-masonry.php:604
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:906
+#: includes/elementor/widgets/recent-posts-land-style.php:522
+#: includes/elementor/widgets/recent-posts-masonry.php:617
 #: includes/elementor/widgets/recent-posts-tiles.php:388
-#: includes/elementor/widgets/recent-posts-timeline.php:519
+#: includes/elementor/widgets/recent-posts-timeline.php:532
 #: includes/elements/recent-posts-grid-carousel.php:396
 #: includes/elements/recent-posts-land-style.php:316
 #: includes/elements/recent-posts-masonry.php:296
@@ -8482,11 +8510,11 @@ msgstr "صفحه بندی"
 msgid "Load More Type"
 msgstr "بیشتر بخوانید"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:901
-#: includes/elementor/widgets/recent-posts-land-style.php:517
-#: includes/elementor/widgets/recent-posts-masonry.php:612
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:914
+#: includes/elementor/widgets/recent-posts-land-style.php:530
+#: includes/elementor/widgets/recent-posts-masonry.php:625
 #: includes/elementor/widgets/recent-posts-tiles.php:396
-#: includes/elementor/widgets/recent-posts-timeline.php:527
+#: includes/elementor/widgets/recent-posts-timeline.php:540
 #: includes/elements/recent-posts-grid-carousel.php:413
 #: includes/elements/recent-posts-land-style.php:333
 #: includes/elements/recent-posts-masonry.php:313
@@ -8495,11 +8523,11 @@ msgstr "بیشتر بخوانید"
 msgid "Infinite Scroll"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:909
-#: includes/elementor/widgets/recent-posts-land-style.php:525
-#: includes/elementor/widgets/recent-posts-masonry.php:620
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:922
+#: includes/elementor/widgets/recent-posts-land-style.php:538
+#: includes/elementor/widgets/recent-posts-masonry.php:633
 #: includes/elementor/widgets/recent-posts-tiles.php:404
-#: includes/elementor/widgets/recent-posts-timeline.php:535
+#: includes/elementor/widgets/recent-posts-timeline.php:548
 #: includes/elements/recent-posts-grid-carousel.php:421
 #: includes/elements/recent-posts-land-style.php:341
 #: includes/elements/recent-posts-masonry.php:321
@@ -8508,9 +8536,9 @@ msgstr ""
 msgid "Next Prev"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:941
-#: includes/elementor/widgets/recent-posts-land-style.php:557
-#: includes/elementor/widgets/recent-posts-timeline.php:567
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:954
+#: includes/elementor/widgets/recent-posts-land-style.php:570
+#: includes/elementor/widgets/recent-posts-timeline.php:580
 #: includes/elementor/widgets/recent-products.php:494
 #: includes/elements/gallery.php:298
 #: includes/elements/recent-posts-grid-carousel.php:123
@@ -8520,9 +8548,9 @@ msgstr ""
 msgid "Horizontal 4:3"
 msgstr "افقی 4:3"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:942
-#: includes/elementor/widgets/recent-posts-land-style.php:558
-#: includes/elementor/widgets/recent-posts-timeline.php:568
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:955
+#: includes/elementor/widgets/recent-posts-land-style.php:571
+#: includes/elementor/widgets/recent-posts-timeline.php:581
 #: includes/elementor/widgets/recent-products.php:495
 #: includes/elements/gallery.php:299
 #: includes/elements/recent-posts-grid-carousel.php:124
@@ -8532,9 +8560,9 @@ msgstr "افقی 4:3"
 msgid "Horizontal 16:9"
 msgstr "افقی 16:9"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:943
-#: includes/elementor/widgets/recent-posts-land-style.php:559
-#: includes/elementor/widgets/recent-posts-timeline.php:569
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:956
+#: includes/elementor/widgets/recent-posts-land-style.php:572
+#: includes/elementor/widgets/recent-posts-timeline.php:582
 #: includes/elementor/widgets/recent-products.php:496
 #: includes/elements/gallery.php:300
 #: includes/elements/recent-posts-grid-carousel.php:125
@@ -8544,9 +8572,9 @@ msgstr "افقی 16:9"
 msgid "Square 1:1"
 msgstr "مربع 1:1"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:944
-#: includes/elementor/widgets/recent-posts-land-style.php:560
-#: includes/elementor/widgets/recent-posts-timeline.php:570
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:957
+#: includes/elementor/widgets/recent-posts-land-style.php:573
+#: includes/elementor/widgets/recent-posts-timeline.php:583
 #: includes/elementor/widgets/recent-products.php:497
 #: includes/elements/gallery.php:301
 #: includes/elements/recent-posts-grid-carousel.php:126
@@ -8556,64 +8584,64 @@ msgstr "مربع 1:1"
 msgid "Vertical 3:4"
 msgstr "عمودی 3:4"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:957
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:970
 #, fuzzy
 msgid "Custom Aspect Ratio"
 msgstr "نسبت ابعاد تصویر"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1152
-#: includes/elementor/widgets/recent-posts-land-style.php:710
-#: includes/elementor/widgets/recent-posts-masonry.php:825
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1165
+#: includes/elementor/widgets/recent-posts-land-style.php:723
+#: includes/elementor/widgets/recent-posts-masonry.php:838
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:586
 #: includes/elementor/widgets/recent-posts-tiles.php:527
-#: includes/elementor/widgets/recent-posts-timeline.php:708
+#: includes/elementor/widgets/recent-posts-timeline.php:721
 #, fuzzy
 msgid "Post Info"
 msgstr "اطلاعات"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1278
-#: includes/elementor/widgets/recent-posts-land-style.php:836
-#: includes/elementor/widgets/recent-posts-masonry.php:951
-#: includes/elementor/widgets/recent-posts-timeline.php:834
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1291
+#: includes/elementor/widgets/recent-posts-land-style.php:849
+#: includes/elementor/widgets/recent-posts-masonry.php:964
+#: includes/elementor/widgets/recent-posts-timeline.php:847
 #, fuzzy
 msgid "Excerpt"
 msgstr "خلاصه"
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1343
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1356
 msgid "Badge"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1463
-#: includes/elementor/widgets/recent-posts-land-style.php:900
-#: includes/elementor/widgets/recent-posts-masonry.php:1015
-#: includes/elementor/widgets/recent-posts-timeline.php:898
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1476
+#: includes/elementor/widgets/recent-posts-land-style.php:913
+#: includes/elementor/widgets/recent-posts-masonry.php:1028
+#: includes/elementor/widgets/recent-posts-timeline.php:911
 msgid "Meta"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1526
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1539
 msgid "Padding for meta wrapper"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1568
-#: includes/elementor/widgets/recent-posts-masonry.php:1204
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1581
+#: includes/elementor/widgets/recent-posts-masonry.php:1217
 #: includes/elementor/widgets/staff.php:900
 msgid "Padding for main wrapper"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1580
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1820
-#: includes/elementor/widgets/recent-posts-masonry.php:1216
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1593
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1833
+#: includes/elementor/widgets/recent-posts-masonry.php:1229
 #: includes/elementor/widgets/staff.php:912
 msgid "Padding for content wrapper"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1657
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1670
 #: includes/elementor/widgets/text.php:623
 #: includes/elementor/widgets/text.php:1563
 msgid "Transition duration"
 msgstr ""
 
-#: includes/elementor/widgets/recent-posts-grid-carousel.php:1712
+#: includes/elementor/widgets/recent-posts-grid-carousel.php:1725
 msgid "Flip Wrapper"
 msgstr ""
 
@@ -8622,11 +8650,11 @@ msgstr ""
 msgid "Land Style Posts"
 msgstr "[فلوکس] مطالب اخیر سبک زمین"
 
-#: includes/elementor/widgets/recent-posts-land-style.php:400
-#: includes/elementor/widgets/recent-posts-masonry.php:495
+#: includes/elementor/widgets/recent-posts-land-style.php:413
+#: includes/elementor/widgets/recent-posts-masonry.php:508
 #: includes/elementor/widgets/recent-posts-tiles-carousel.php:377
 #: includes/elementor/widgets/recent-posts-tiles.php:279
-#: includes/elementor/widgets/recent-posts-timeline.php:410
+#: includes/elementor/widgets/recent-posts-timeline.php:423
 #: includes/elements/recent-posts-grid-carousel.php:148
 #: includes/elements/recent-posts-land-style.php:135
 #: includes/elements/recent-posts-masonry.php:115
@@ -8778,8 +8806,8 @@ msgid "Table Even Rows"
 msgstr ""
 
 #: includes/elementor/widgets/search.php:47
-#: includes/elementor/widgets/theme-elements/modern-search.php:1039
-#: includes/elementor/widgets/theme-elements/modern-search.php:1042
+#: includes/elementor/widgets/theme-elements/modern-search.php:1040
+#: includes/elementor/widgets/theme-elements/modern-search.php:1043
 #: includes/elements/search.php:14
 #, fuzzy
 msgid "Search"
@@ -9606,13 +9634,13 @@ msgid "Display Menu Title"
 msgstr "نمایش عنوان؟"
 
 #: includes/elementor/widgets/theme-elements/menu.php:1477
-#: includes/elementor/widgets/theme-elements/modern-search.php:697
+#: includes/elementor/widgets/theme-elements/modern-search.php:698
 #, fuzzy
 msgid "Show"
 msgstr "نمایش نقشه"
 
 #: includes/elementor/widgets/theme-elements/menu.php:1478
-#: includes/elementor/widgets/theme-elements/modern-search.php:698
+#: includes/elementor/widgets/theme-elements/modern-search.php:699
 msgid "Hide"
 msgstr ""
 
@@ -9643,7 +9671,7 @@ msgid "Modern Search"
 msgstr "مدرن"
 
 #: includes/elementor/widgets/theme-elements/modern-search.php:136
-#: includes/elementor/widgets/theme-elements/modern-search.php:602
+#: includes/elementor/widgets/theme-elements/modern-search.php:603
 msgid "Fullscreen Search Input"
 msgstr ""
 
@@ -9676,7 +9704,7 @@ msgid "Search ..."
 msgstr ""
 
 #: includes/elementor/widgets/theme-elements/modern-search.php:220
-#: includes/elementor/widgets/theme-elements/modern-search.php:843
+#: includes/elementor/widgets/theme-elements/modern-search.php:844
 msgid "Search Title"
 msgstr ""
 
@@ -9684,60 +9712,60 @@ msgstr ""
 msgid "Type to Search"
 msgstr ""
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:578
+#: includes/elementor/widgets/theme-elements/modern-search.php:579
 msgid "Cursor"
 msgstr ""
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:622
+#: includes/elementor/widgets/theme-elements/modern-search.php:623
 msgid "Placeholder Text Color"
 msgstr ""
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:659
+#: includes/elementor/widgets/theme-elements/modern-search.php:660
 #, fuzzy
 msgid "Border Size"
 msgstr "کادربندی شده"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:695
+#: includes/elementor/widgets/theme-elements/modern-search.php:696
 #, fuzzy
 msgid "Display Search Icon"
 msgstr "نمایش دکمه لایک"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:707
+#: includes/elementor/widgets/theme-elements/modern-search.php:708
 #, fuzzy
 msgid "Search Icon Size"
 msgstr "اندازه شکلک"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:737
+#: includes/elementor/widgets/theme-elements/modern-search.php:738
 #, fuzzy
 msgid "Search Icon Color"
 msgstr "رنگ شکلک"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:757
+#: includes/elementor/widgets/theme-elements/modern-search.php:758
 #, fuzzy
 msgid "Overlay Background"
 msgstr "فعالسازی پس زمینه"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:771
+#: includes/elementor/widgets/theme-elements/modern-search.php:772
 msgid "Fullscreen Close Button"
 msgstr ""
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:779
+#: includes/elementor/widgets/theme-elements/modern-search.php:780
 #, fuzzy
 msgid "Top Position"
 msgstr "موقعیت"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:808
+#: includes/elementor/widgets/theme-elements/modern-search.php:809
 #, fuzzy
 msgid "Right Position"
 msgstr "موقعیت"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:855
+#: includes/elementor/widgets/theme-elements/modern-search.php:856
 #, fuzzy
 msgid "Title Color"
 msgstr "لینک عنوان"
 
-#: includes/elementor/widgets/theme-elements/modern-search.php:955
-#: includes/elementor/widgets/theme-elements/modern-search.php:1014
+#: includes/elementor/widgets/theme-elements/modern-search.php:956
+#: includes/elementor/widgets/theme-elements/modern-search.php:1015
 msgid "Search..."
 msgstr ""
 
@@ -11424,6 +11452,13 @@ msgid ""
 msgstr ""
 "برای نمایش %s دکمه لایک %s در نوشته های بلاگ این گزینه را فعال کنید. لطفا "
 "توجه کنید که افزونه WP Ulike برای عمل کردن این بخش باید فعال باشد."
+
+#: includes/elements/recent-posts-grid-carousel.php:428
+#: includes/elements/recent-posts-land-style.php:348
+#: includes/elements/recent-posts-masonry.php:328
+#: includes/elements/recent-posts-timeline.php:370
+msgid "Specify summary content in character."
+msgstr "خلاصه نوشته را برحسب کاراکتر مشخص می کند."
 
 #: includes/elements/recent-posts-grid-carousel.php:460
 #, fuzzy

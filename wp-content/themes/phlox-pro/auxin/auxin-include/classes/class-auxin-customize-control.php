@@ -4,7 +4,7 @@
  *
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
 */
 
@@ -1440,22 +1440,22 @@ class Auxin_Customize_GlobalColors_Template_Part_Control extends Auxin_Customize
         $default_colors = [
             [
                 '_id' => 'primary',
-                'title' => __( 'Primary', 'elementor' ),
+                'title' => __( 'Primary', 'phlox-pro' ),
                 'color' => '#6EC1E4',
             ],
             [
                 '_id' => 'secondary',
-                'title' => __( 'Secondary', 'elementor' ),
+                'title' => __( 'Secondary', 'phlox-pro' ),
                 'color' => '#54595F',
             ],
             [
                 '_id' => 'text',
-                'title' => __( 'Text', 'elementor' ),
+                'title' => __( 'Text', 'phlox-pro' ),
                 'color' => '#7A7A7A',
             ],
             [
                 '_id' => 'accent',
-                'title' => __( 'Accent', 'elementor' ),
+                'title' => __( 'Accent', 'phlox-pro' ),
                 'color' => '#61CE70',
             ],
         ];
@@ -1984,7 +1984,7 @@ class Auxin_Elementor_Edit_Template extends Auxin_Customize_Control {
  * A simple customizer controller for displaying information
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
  */
 class Auxin_Customize_Info extends Auxin_Customize_Control {
@@ -2048,7 +2048,7 @@ class Auxin_Customize_Info extends Auxin_Customize_Control {
  * A simple customizer controller for displaying information
  * 
  * @package    Auxin
- * @author     averta (c) 2014-2024
+ * @author     averta (c) 2014-2025
  * @link       http://averta.net
  */
 class Auxin_Customize_Color_Repeater extends Auxin_Customize_Control {

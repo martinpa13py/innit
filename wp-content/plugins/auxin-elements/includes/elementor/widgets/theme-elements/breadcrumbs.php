@@ -360,7 +360,7 @@ class Breadcrumbs extends Widget_Base {
 						'default' => Global_Colors::COLOR_PRIMARY,
 					],
 					'selectors' => [
-						'{{WRAPPER}} span.aux-breadcrumb-sep' => 'color: {{VALUE}};fill: {{VALUE}};',
+						'{{WRAPPER}} .aux-breadcrumb-sep' => 'color: {{VALUE}};fill: {{VALUE}};',
 					]
 				]
 			);

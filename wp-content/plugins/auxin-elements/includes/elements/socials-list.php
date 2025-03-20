@@ -7,7 +7,7 @@
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 function auxin_get_social_master_array( $master_array ) {
 
@@ -143,7 +143,7 @@ function auxin_widget_socials_list_callback( $atts, $shortcode_content = null ){
  * @license    LICENSE.txt
  * @author     averta
  * @link       http://phlox.pro/
- * @copyright  (c) 2010-2024 averta
+ * @copyright  (c) 2010-2025 averta
  */
 function auxin_get_social_widget_master_array( $master_array ) {
 

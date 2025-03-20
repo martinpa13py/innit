@@ -181,7 +181,7 @@ if ( ! function_exists('auxin_template_importer') ) {
             ];
         }
 
-        $template_ID = sanitize_text_field( trim( $template_ID ) );
+        $template_ID = absint( trim( $template_ID ) );
         $template_type = sanitize_text_field( trim( $template_type ) );
 
         if ( empty( $template_ID ) || empty( $template_type ) )

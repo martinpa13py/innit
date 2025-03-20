@@ -8216,9 +8216,11 @@ aside .aux-widget-area { margin-bottom: 0; }
 .aux-dark .aux-widget-area, .aux-widget-area.aux-dark { color: white; }
 
 .widget-container.aux-toggle-widget > .aux-toggle-widget-wrapper { overflow: hidden; transition: height 500ms cubic-bezier(0.165, 0.84, 0.44, 1); }
-.widget-container.aux-toggle-widget .widget-title { position: relative; }
-.widget-container.aux-toggle-widget .widget-title:after { content: ''; position: absolute; top: 4px; right: 0; background-image: url(images/svg/symbols.svg); background-repeat: no-repeat; display: block; width: 6px; height: 10px; background-position: 0px -761px; transition: transform 300ms; }
-.widget-container.aux-toggle-widget.aux-open .widget-title:after { transform: rotate(90deg); }
+.widget-container.aux-toggle-widget .widget-title, .widget-container.aux-toggle-widget .wp-block-heading { position: relative; }
+.widget-container.aux-toggle-widget .widget-title:after, .widget-container.aux-toggle-widget .wp-block-heading:after { content: ''; position: absolute; top: 4px; right: 0; background-image: url(images/svg/symbols.svg); background-repeat: no-repeat; display: block; width: 6px; height: 10px; background-position: 0px -761px; transition: transform 300ms; }
+.widget-container.aux-toggle-widget .wp-block-heading:after { top: 18px; }
+.widget-container.aux-toggle-widget .wp-block-heading + * { transition: height 500ms cubic-bezier(0.165, 0.84, 0.44, 1); }
+.widget-container.aux-toggle-widget.aux-open .widget-title:after, .widget-container.aux-toggle-widget.aux-open .wp-block-heading:after { transform: rotate(90deg); }
 .widget-container ul li { margin-bottom: 0; word-break: break-word; }
 .widget-container a { color: inherit; }
 .widget-container a:hover { color: #1bb0ce; }

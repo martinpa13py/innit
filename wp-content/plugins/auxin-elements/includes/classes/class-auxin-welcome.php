@@ -1315,7 +1315,7 @@ class Auxin_Welcome extends Auxin_Welcome_Base {
                 }
 
                 foreach( $demo_plugins as $plugin_key => $plugin ) {
-                    if( ( strpos( $name, $plugin ) === 0 || strpos( $name, $plugin ) ) && $plugin != 'elementor' ){
+                    if( ( strpos( $name, $plugin ) === 0 || strpos( $name, $plugin ) ) && $plugin != 'elementor' && $plugin != 'woocommerce' ){
                         unset( $active_plugins[$key] );
                     }
                 }

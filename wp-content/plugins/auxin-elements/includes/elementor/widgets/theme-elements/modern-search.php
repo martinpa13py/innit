@@ -281,6 +281,7 @@ class ModernSearch extends Widget_Base {
                 ],
                 'selectors'  => [
                     '{{WRAPPER}} .aux-search-submit svg' => 'font-size: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
+                    '{{WRAPPER}} .aux-search-submit i' => 'font-size: {{SIZE}}{{UNIT}};height: {{SIZE}}{{UNIT}};',
                 ],
             ]
         );

@@ -714,6 +714,9 @@ if( ! function_exists('wp_ulike_kses') ){
 
 		$allowedtags = array_map( 'wp_ulike_global_attributes', $allowedtags );
 
+		// Decode HTML entities (in case the input is encoded)
+		$value = html_entity_decode( $value, ENT_QUOTES, 'UTF-8' );
+
 		return wp_kses($value, $allowedtags);
 	}
 }

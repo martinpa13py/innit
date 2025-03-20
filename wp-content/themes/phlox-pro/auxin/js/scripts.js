@@ -1,8 +1,8 @@
-/*! Auxin WordPress Framework - v5.17.0 - 2024-12-17
+/*! Auxin WordPress Framework - v5.17.4 - 2025-02-15
  *  Scripts for initializing admin plugins 
 
  *  http://averta.net
- *  (c) 2014-2024 averta;
+ *  (c) 2014-2025 averta;
  */
 
 
@@ -266,445 +266,522 @@
     "use strict";
 
     $(function () {
-        
-        var isWidgetsPage = $('body').hasClass( 'widgets-php' );
+        var isWidgetsPage = $("body").hasClass("widgets-php");
 
         ////// init plugins //////////////////////////////////////////////////
 
-
         // init tabs for option pnale
-        $('.av3_option_panel').avertaMultiTabs({
-            enableHash:      true,
-            updateHash:      true,
-            hashSuffix:      '-group',
-            tabs:            'ul.tabs > li:not(.auxin-logo)',
-            subTabs:         '> li:not(.not-tab)'
-        })
-        .find('.tabs li > a').on('click', function(){ // call resize event to update some UI on tab clicked
-            if( window.dispatchEvent ){
-                setTimeout(function(){
-                    window.dispatchEvent( new Event('resize') );
-                }, 100);
-            }
-        });
+        $(".av3_option_panel")
+            .avertaMultiTabs({
+                enableHash: true,
+                updateHash: true,
+                hashSuffix: "-group",
+                tabs: "ul.tabs > li:not(.auxin-logo)",
+                subTabs: "> li:not(.not-tab)",
+            })
+            .find(".tabs li > a")
+            .on("click", function () {
+                // call resize event to update some UI on tab clicked
+                if (window.dispatchEvent) {
+                    setTimeout(function () {
+                        window.dispatchEvent(new Event("resize"));
+                    }, 100);
+                }
+            });
 
-
-        $('.axi-metabox-hub').avertaLiveTabs({
-            enableHash:      true,
-            updateHash:      true,
-            hashSuffix:      '-tab',
-            tabs:            'ul.tabs > li'
-        }).css('display', 'block');
+        $(".axi-metabox-hub")
+            .avertaLiveTabs({
+                enableHash: true,
+                updateHash: true,
+                hashSuffix: "-tab",
+                tabs: "ul.tabs > li",
+            })
+            .css("display", "block");
 
         // remove loading
-        $('.axi-metabox-loading').hide();
+        $(".axi-metabox-loading").hide();
 
         // Init sortable element
-        $('.sortbox').sortable({
-            connectWith:'.draggable-area ul',
-            helper:'clone',
-            placeholder:'sort-item-heighlight',
-            opacity:1,
-            revert: true
+        $(".sortbox").sortable({
+            connectWith: ".draggable-area ul",
+            helper: "clone",
+            placeholder: "sort-item-heighlight",
+            opacity: 1,
+            revert: true,
         });
 
         // Auxin Base Control Class
         // =====================================================================
 
-        if( wp.customize ){
-
+        if (wp.customize) {
             /**
              * Auxin base control.
              *
              */
 
             var DependencyManager;
-                DependencyManager = AuxinDependencyManager.setup();
+            DependencyManager = AuxinDependencyManager.setup();
 
             wp.customize.AuxinSection = wp.customize.Section.extend({
-
-                ready: function() {
+                ready: function () {
                     var section = this;
-                    DependencyManager.add( section.id , { dependencies: section.params.dependencies, value: '' }, 'sections' );
+                    DependencyManager.add(
+                        section.id,
+                        {
+                            dependencies: section.params.dependencies,
+                            value: "",
+                        },
+                        "sections"
+                    );
                 },
 
-                _toggle: function( result ){
-                    if ( result ) {
-                        this.headContainer[0].style.display = 'list-item';
+                _toggle: function (result) {
+                    if (result) {
+                        this.headContainer[0].style.display = "list-item";
                     } else {
-                        this.headContainer[0].style.display = 'none';
+                        this.headContainer[0].style.display = "none";
                     }
                 },
-            })
+            });
 
             wp.customize.AuxinControl = wp.customize.Control.extend({
-
-                ready: function() {
+                ready: function () {
                     this.picker;
-                    var control       = this;
-                    DependencyManager.add( control.id , { dependencies: control.params.dependencies, value: control.setting.get() }, 'controls' );
+                    var control = this;
+                    DependencyManager.add(
+                        control.id,
+                        {
+                            dependencies: control.params.dependencies,
+                            value: control.setting.get(),
+                        },
+                        "controls"
+                    );
 
-
-                    wp.customize.bind( 'pane-contents-reflowed', function() {
-                        var dependControls = DependencyManager.getDependsStatus(control.id);
+                    wp.customize.bind("pane-contents-reflowed", function () {
+                        var dependControls = DependencyManager.getDependsStatus(
+                            control.id
+                        );
                         control.dependencyCheck(dependControls);
-                    } )
+                    });
 
-                    control.setting.bind( function ( value ) {
-                        DependencyManager.update( control.id, value );
-                        var dependControls = DependencyManager.getDependsStatus(control.id);
+                    control.setting.bind(function (value) {
+                        DependencyManager.update(control.id, value);
+                        var dependControls = DependencyManager.getDependsStatus(
+                            control.id
+                        );
                         control.dependencyCheck(dependControls);
                     });
                 },
 
-                update: function( newValue, newData ){
-                    if( this.picker ){
+                update: function (newValue, newData) {
+                    if (this.picker) {
                         newData = newData || null;
                         // if it is new value
-                        if( newValue !== this.setting() ){
-                            this.setting.set( newValue );
-                            this.picker.val( newValue );
-                            this.picker.trigger( 'change', [newData] );
+                        if (newValue !== this.setting()) {
+                            this.setting.set(newValue);
+                            this.picker.val(newValue);
+                            this.picker.trigger("change", [newData]);
                         }
                     }
                 },
-                dependencyCheck: function( dependControls ) {
+                dependencyCheck: function (dependControls) {
                     var dependsName = Object.keys(dependControls);
-                    if( !dependsName.length ) {
-                        return
+                    if (!dependsName.length) {
+                        return;
                     }
 
-                    dependsName.forEach( function(name) {
-                        var sectionObject = wp.customize.section( name ),
-                            controlObject = wp.customize.control( name ),
-                            isSection     = sectionObject ? true : false,
-                            isControl     = controlObject ? true : false,
-                            result        = dependControls[name].isShow;
+                    dependsName.forEach(function (name) {
+                        var sectionObject = wp.customize.section(name),
+                            controlObject = wp.customize.control(name),
+                            isSection = sectionObject ? true : false,
+                            isControl = controlObject ? true : false,
+                            result = dependControls[name].isShow;
 
-                        if ( isControl ) {
-                            controlObject._toggle( result );
+                        if (isControl) {
+                            controlObject._toggle(result);
                         }
 
-                        if ( isSection ) {
-                            sectionObject._toggle( result );
+                        if (isSection) {
+                            sectionObject._toggle(result);
                         }
-                    })
+                    });
                 },
 
-                _toggle: function( result ){
-
-                    if ( result ) {
-                        this.container.slideDown( 'fast', $.noop );
+                _toggle: function (result) {
+                    if (result) {
+                        this.container[0].style.display = "block";
+                        // this.container.slideDown( 'fast', $.noop );
                     } else {
-                        this.container.slideUp( 'fast', $.noop );
+                        this.container[0].style.display = "none";
+                        // this.container.slideUp( 'fast', $.noop );
                     }
                     var initvalue = this.setting();
-                    this.setting.set( initvalue );
+                    this.setting.set(initvalue);
                 },
-
             });
-
         }
 
         // Sections
-        if ( wp.customize ) {
-            wp.customize.sectionConstructor['auxin_section'] = wp.customize.AuxinSection.extend({
-
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinSection.prototype.ready.apply( this, arguments );
-                }
-
-            });
+        if (wp.customize) {
+            wp.customize.sectionConstructor["auxin_section"] =
+                wp.customize.AuxinSection.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinSection.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
+                    },
+                });
         }
 
         // Info Sections
-        if ( wp.customize ) {
-            wp.customize.sectionConstructor['auxin_info_section'] = wp.customize.AuxinSection.extend({
-
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinSection.prototype.ready.apply( this, arguments );
-                }
-
-            });
+        if (wp.customize) {
+            wp.customize.sectionConstructor["auxin_info_section"] =
+                wp.customize.AuxinSection.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinSection.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
+                    },
+                });
         }
 
-         // Info controller
-         // =====================================================================
-         if ( wp.customize ) {
-            wp.customize.controlConstructor['auxin_info'] = wp.customize.AuxinControl.extend({
-
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
-                }
-
-            });
+        // Info controller
+        // =====================================================================
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_info"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
+                    },
+                });
         }
 
         // Color Repeater
         // =====================================================================
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_color_repeater'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_color_repeater"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        var $color_picker =
+                            this.container.find(spectrum_picker);
 
-                    var control = this;
-                    var $color_picker = this.container.find( spectrum_picker );
+                        this.container
+                            .find(".customize-control-notifications-container")
+                            .hide();
 
-                    this.container.find('.customize-control-notifications-container').hide();
+                        $color_picker.each(function () {
+                            $(this).spectrum(spectrum_args);
 
-                    $color_picker.each( function(){
-
-                        $(this).spectrum( spectrum_args );
-
-                        $(this).on("dragstop.spectrum", function(e, color){
-                            if( color === null) {
-                                $(this).val('');
-                            } else {
-                                $(this).val( color.toString() );
-                            }
-                            updateControlValue( control.container );
-                        });
-                    });
-
-                    $('.aux-plus').on('click', function(){
-                        $(this).parents('li').find('label').first().clone().insertBefore('.aux-plus');
-                        var $color_picker = $(this).parents('li').find('label').last().show();
-
-                        // change id of custom color to something unique
-                        var uniqueID = Math.floor(Math.random() * 1000000000).toString(16);
-                        $color_picker.find('.mini-color-wrapper input').data('id', uniqueID);
-                        $color_picker.find('.mini-color-wrapper input').attr( 'data-id', uniqueID);
-
-                        $('<hr>').insertAfter( $color_picker );
-                        $color_picker.find('.sp-replacer').remove();
-                        $color_picker.find( spectrum_picker ).spectrum( spectrum_args );
-
-                        // call remove functionality so that cloned element remove button works too
-                        removeColor();
-
-                        colorNameChange();
-
-                        updateControlValue( control.container );
-
-                        $color_picker = $color_picker.find( spectrum_picker );
-
-                        $color_picker.on("dragstop.spectrum", function(e, color){
-                            if( color === null) {
-                                $color_picker.val('');
-                            } else {
-                                $color_picker.val( color.toString() );
-                            }
-                            updateControlValue( control.container );
-                        });
-                    });
-
-                    var updateControlValue = function( $container ) {
-                        var $color_pickers = $container.find( spectrum_picker );
-                        var colors = [];
-                        $color_pickers.each(function( index ){
-                            colors[index] = {
-                                '_id': $(this).data('id') ? $(this).data('id') : '',
-                                'title': $(this).parents('label').find('.customize-control-title input').val(),
-                                'color': $(this).val()
-                            };
+                            $(this).on(
+                                "dragstop.spectrum",
+                                function (e, color) {
+                                    if (color === null) {
+                                        $(this).val("");
+                                    } else {
+                                        $(this).val(color.toString());
+                                    }
+                                    updateControlValue(control.container);
+                                }
+                            );
                         });
 
-                        control.setting.set( JSON.stringify(colors) );
-                        $('input.aux-color-repeater').trigger('change');
-                    }
+                        $(".aux-plus").on("click", function () {
+                            $(this)
+                                .parents("li")
+                                .find("label")
+                                .first()
+                                .clone()
+                                .insertBefore(".aux-plus");
+                            var $color_picker = $(this)
+                                .parents("li")
+                                .find("label")
+                                .last()
+                                .show();
 
-                    var removeColor = function() {
-                        $('.aux-remove-color').on( 'click', function() {
-                            if ( $('.aux-remove-color').length == 1 ) {
-                                return;
-                            }
-                            $(this).parent('label').next('hr').remove();
-                            $(this).parent('label').remove();
-                            updateControlValue( control.container );
+                            // change id of custom color to something unique
+                            var uniqueID = Math.floor(
+                                Math.random() * 1000000000
+                            ).toString(16);
+                            $color_picker
+                                .find(".mini-color-wrapper input")
+                                .data("id", uniqueID);
+                            $color_picker
+                                .find(".mini-color-wrapper input")
+                                .attr("data-id", uniqueID);
+
+                            $("<hr>").insertAfter($color_picker);
+                            $color_picker.find(".sp-replacer").remove();
+                            $color_picker
+                                .find(spectrum_picker)
+                                .spectrum(spectrum_args);
+
+                            // call remove functionality so that cloned element remove button works too
+                            removeColor();
+
+                            colorNameChange();
+
+                            updateControlValue(control.container);
+
+                            $color_picker = $color_picker.find(spectrum_picker);
+
+                            $color_picker.on(
+                                "dragstop.spectrum",
+                                function (e, color) {
+                                    if (color === null) {
+                                        $color_picker.val("");
+                                    } else {
+                                        $color_picker.val(color.toString());
+                                    }
+                                    updateControlValue(control.container);
+                                }
+                            );
                         });
-                    }
-                    removeColor();
 
-                    var colorNameChange = function() {
-                        $('.customize-control-auxin_color_repeater .customize-control-title input').each(function(){
-                            $(this).on('input', function(){
+                        var updateControlValue = function ($container) {
+                            var $color_pickers =
+                                $container.find(spectrum_picker);
+                            var colors = [];
+                            $color_pickers.each(function (index) {
+                                colors[index] = {
+                                    _id: $(this).data("id")
+                                        ? $(this).data("id")
+                                        : "",
+                                    title: $(this)
+                                        .parents("label")
+                                        .find(".customize-control-title input")
+                                        .val(),
+                                    color: $(this).val(),
+                                };
+                            });
+
+                            control.setting.set(JSON.stringify(colors));
+                            $("input.aux-color-repeater").trigger("change");
+                        };
+
+                        var removeColor = function () {
+                            $(".aux-remove-color").on("click", function () {
+                                if ($(".aux-remove-color").length == 1) {
+                                    return;
+                                }
+                                $(this).parent("label").next("hr").remove();
+                                $(this).parent("label").remove();
                                 updateControlValue(control.container);
                             });
-                        });
-                    }
-                    colorNameChange();
+                        };
+                        removeColor();
 
-                }
-
-            });
+                        var colorNameChange = function () {
+                            $(
+                                ".customize-control-auxin_color_repeater .customize-control-title input"
+                            ).each(function () {
+                                $(this).on("input", function () {
+                                    updateControlValue(control.container);
+                                });
+                            });
+                        };
+                        colorNameChange();
+                    },
+                });
         }
 
         // Textarea
         // =====================================================================
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_textarea'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_textarea"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find("textarea");
 
-                    var control = this;
-                    control.picker = this.container.find( 'textarea' );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                        });
 
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Code editor
         // =====================================================================
 
-        var editor_picker = 'textarea[data-code-editor]';
+        var editor_picker = "textarea[data-code-editor]";
 
-        $( editor_picker ).each( function () {
-                var textarea = $(this);
+        $(editor_picker).each(function () {
+            var textarea = $(this);
 
-                var mode = textarea.data('code-editor') || 'javascript';
+            var mode = textarea.data("code-editor") || "javascript";
 
-                var editDiv = $('<div>', {
-                    width: '100%',
-                    'class': textarea.attr('class')
-                }).insertBefore(textarea);
+            var editDiv = $("<div>", {
+                width: "100%",
+                class: textarea.attr("class"),
+            }).insertBefore(textarea);
 
-                textarea.css('display', 'none');
+            textarea.css("display", "none");
 
-                var editor = ace.edit(editDiv[0]);
-                editor.renderer.setShowGutter( auxin.admin.ace.showGutter );
-                editor.getSession().setValue( textarea.val() );
-                editor.getSession().setMode( "ace/mode/" + mode );
-                editor.$blockScrolling = Infinity;
-                editor.setTheme("ace/theme/" + auxin.admin.ace.theme );
-                editor.getSession().setTabSize( auxin.admin.ace.tabSize );
-                editor.getSession().setUseSoftTabs( auxin.admin.ace.useSoftTabs );
-                editor.setOption( "maxLines", auxin.admin.ace.maxLines );
-                editor.setOption( "minLines", auxin.admin.ace.minLines );
+            var editor = ace.edit(editDiv[0]);
+            editor.renderer.setShowGutter(auxin.admin.ace.showGutter);
+            editor.getSession().setValue(textarea.val());
+            editor.getSession().setMode("ace/mode/" + mode);
+            editor.$blockScrolling = Infinity;
+            editor.setTheme("ace/theme/" + auxin.admin.ace.theme);
+            editor.getSession().setTabSize(auxin.admin.ace.tabSize);
+            editor.getSession().setUseSoftTabs(auxin.admin.ace.useSoftTabs);
+            editor.setOption("maxLines", auxin.admin.ace.maxLines);
+            editor.setOption("minLines", auxin.admin.ace.minLines);
 
-                editor.setOptions({
-                    //enableBasicAutocompletion: auxin.admin.ace.enableBasicAutocompletion
-                });
-
-                editor.getSession().on('change', function () {
-                    textarea.val(editor.getSession().getValue());
-                });
-
+            editor.setOptions({
+                //enableBasicAutocompletion: auxin.admin.ace.enableBasicAutocompletion
             });
 
+            editor.getSession().on("change", function () {
+                textarea.val(editor.getSession().getValue());
+            });
+        });
 
-        if( wp.customize ){
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_code"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-            wp.customize.controlConstructor['auxin_code'] = wp.customize.AuxinControl.extend({
+                        var control = this;
+                        control.picker = this.container.find(editor_picker);
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
-
-                    var control = this;
-                    control.picker = this.container.find( editor_picker);
-
-                        control.picker.each( function () {
-                            var textarea    = $(this),
-                                execute_btn = textarea.siblings('button'),
+                        control.picker.each(function () {
+                            var textarea = $(this),
+                                execute_btn = textarea.siblings("button"),
                                 typingTimer,
                                 typingDelay;
 
                             // The editor mode
-                            var mode = textarea.data('code-editor') || 'javascript';
+                            var mode =
+                                textarea.data("code-editor") || "javascript";
 
                             // Apply editor changes after this delay
-                            typingDelay = ( 'css' === mode ) ? 500 : 1500;
+                            typingDelay = "css" === mode ? 500 : 1500;
 
-                            var editDiv = $('<div>', {
-                                width: '100%',
-                                'class': textarea.attr('class')
+                            var editDiv = $("<div>", {
+                                width: "100%",
+                                class: textarea.attr("class"),
                             }).insertBefore(textarea);
 
-                            textarea.css('display', 'none');
+                            textarea.css("display", "none");
 
                             var editor = ace.edit(editDiv[0]);
                             window.lasteditor = editor;
                             editor.$blockScrolling = Infinity;
-                            editor.renderer.setShowGutter( auxin.admin.ace.showGutter );
-                            editor.getSession().setValue( textarea.val() );
-                            editor.getSession().setMode( "ace/mode/" + mode );
-                            editor.setTheme("ace/theme/" + auxin.admin.ace.theme );
-                            editor.getSession().setTabSize( auxin.admin.ace.tabSize );
-                            editor.getSession().setUseSoftTabs( auxin.admin.ace.useSoftTabs );
+                            editor.renderer.setShowGutter(
+                                auxin.admin.ace.showGutter
+                            );
+                            editor.getSession().setValue(textarea.val());
+                            editor.getSession().setMode("ace/mode/" + mode);
+                            editor.setTheme(
+                                "ace/theme/" + auxin.admin.ace.theme
+                            );
+                            editor
+                                .getSession()
+                                .setTabSize(auxin.admin.ace.tabSize);
+                            editor
+                                .getSession()
+                                .setUseSoftTabs(auxin.admin.ace.useSoftTabs);
 
-
-                            editor.setOption( "maxLines", auxin.admin.ace.maxLines );
-                            editor.setOption( "minLines", auxin.admin.ace.minLines );
+                            editor.setOption(
+                                "maxLines",
+                                auxin.admin.ace.maxLines
+                            );
+                            editor.setOption(
+                                "minLines",
+                                auxin.admin.ace.minLines
+                            );
 
                             editor.setOptions({
                                 //enableBasicAutocompletion: auxin.admin.ace.enableBasicAutocompletion
                             });
 
                             // apply changes and update setting when user clicked on execute button
-                            if( 'javascript' === mode && execute_btn.length ){
-                                execute_btn.on( 'click', function(e){
+                            if ("javascript" === mode && execute_btn.length) {
+                                execute_btn.on("click", function (e) {
                                     e.preventDefault();
 
-                                    textarea.val(editor.getSession().getValue());
+                                    textarea.val(
+                                        editor.getSession().getValue()
+                                    );
 
-                                    if( control.setting.get() == editor.getSession().getValue() ){
-                                        control.setting.set( control.setting.get() + ' ' );
+                                    if (
+                                        control.setting.get() ==
+                                        editor.getSession().getValue()
+                                    ) {
+                                        control.setting.set(
+                                            control.setting.get() + " "
+                                        );
                                     } else {
-                                        control.setting.set( editor.getSession().getValue() );
+                                        control.setting.set(
+                                            editor.getSession().getValue()
+                                        );
                                     }
                                 });
 
-                            // apply changes and update setting when user stoped typing
+                                // apply changes and update setting when user stoped typing
                             } else {
+                                editor.getSession().on("change", function () {
+                                    textarea.val(
+                                        editor.getSession().getValue()
+                                    );
 
-                                editor.getSession().on('change', function () {
-                                    textarea.val(editor.getSession().getValue());
-
-                                    clearTimeout( typingTimer );
-                                    typingTimer = setTimeout( function(){
-                                        control.setting.set( editor.getSession().getValue() );
+                                    clearTimeout(typingTimer);
+                                    typingTimer = setTimeout(function () {
+                                        control.setting.set(
+                                            editor.getSession().getValue()
+                                        );
                                     }, typingDelay);
-
                                 });
-
                             }
 
                             // sync the setting value with editor content
-                            control.setting.bind( function ( value ) {
+                            control.setting.bind(function (value) {
                                 textarea.val(value);
                             });
-
                         });
+                    },
 
-                },
-
-                update: function( value ){}
-
-            });
+                    update: function (value) {},
+                });
         }
-
 
         // Color Picker
         // =====================================================================
 
         // initialize spectrum color picker on text input field
-        var spectrum_picker = '.mini-color-wrapper input[type="text"], .aux-colorpicker-field',
+        var spectrum_picker =
+                '.mini-color-wrapper input[type="text"], .aux-colorpicker-field',
             spectrum_args = {
                 allowEmpty: true,
                 showInput: true,
@@ -712,170 +789,193 @@
                 disabled: false,
 
                 showSelectionPalette: true,
-                showPalette:true,
-                hideAfterPaletteSelect:true,
-                palette: [
-                    ['black', 'white', ' ']
-                ],
+                showPalette: true,
+                hideAfterPaletteSelect: true,
+                palette: [["black", "white", " "]],
                 clickoutFiresChange: true,
                 showInitial: true,
-                chooseText:  auxin.admin.colorpicker.chooseText,
-                cancelText:  auxin.admin.colorpicker.cancelText,
-                containerClassName: 'axi-sp-wrapper',
+                chooseText: auxin.admin.colorpicker.chooseText,
+                cancelText: auxin.admin.colorpicker.cancelText,
+                containerClassName: "axi-sp-wrapper",
                 localStorageKey: "auxin.spectrum",
                 preferredFormat: "hex6",
-                change: function(color) {
-                    if( color === null) {
-                        $(this).val('');
+                change: function (color) {
+                    if (color === null) {
+                        $(this).val("");
                     } else {
-                        $(this).val( color.toString() );
+                        $(this).val(color.toString());
                     }
-                }
+                },
             };
 
+        // only in widgets page
+        if (isWidgetsPage) {
+            $(".inactive-sidebar, .widget-liquid-right")
+                .find(spectrum_picker)
+                .spectrum(spectrum_args);
 
-         // only in widgets page
-        if ( isWidgetsPage ) {
-            $('.inactive-sidebar, .widget-liquid-right').find( spectrum_picker ).spectrum( spectrum_args );
-
-            $( document ).on( 'widget-added widget-updated', function() {
-                $('.inactive-sidebar, .widget-liquid-right').find( spectrum_picker ).spectrum( spectrum_args );
+            $(document).on("widget-added widget-updated", function () {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(spectrum_picker)
+                    .spectrum(spectrum_args);
             });
 
-        // other pages
+            // other pages
         } else {
-            $( spectrum_picker ).spectrum( spectrum_args );
+            $(spectrum_picker).spectrum(spectrum_args);
 
-            $(document).on('panelsopen', function(){
-                $( spectrum_picker ).spectrum( spectrum_args );
+            $(document).on("panelsopen", function () {
+                $(spectrum_picker).spectrum(spectrum_args);
             });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_color'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_color"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find(spectrum_picker);
 
-                    var control = this;
-                    control.picker = this.container.find( spectrum_picker );
+                        control.picker
+                            .val(control.setting())
+                            .spectrum(spectrum_args);
 
-                    control.picker.val( control.setting() ).spectrum( spectrum_args );
+                        control.picker.on(
+                            "dragstop.spectrum",
+                            function (e, color) {
+                                if (color === null) {
+                                    control.picker.val("");
+                                } else {
+                                    control.picker.val(color.toString());
+                                }
+                                control.setting.set(control.picker.val());
+                                // @if DEV
+                                // wp.customize.previewer.refresh();
+                                // @endif
+                            }
+                        );
 
-                    control.picker.on("dragstop.spectrum", function(e, color){
-                        if( color === null) {
-                            control.picker.val('');
-                        } else {
-                            control.picker.val( color.toString() );
-                        }
-                        control.setting.set( control.picker.val() );
-                        // @if DEV
-                        // wp.customize.previewer.refresh();
-                        // @endif
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Gradient Select
         // =====================================================================
 
         // initialize spectrum color picker on text input field
-        var gradient_picker  = '.mini-gradient-wrapper input[type="text"]';
+        var gradient_picker = '.mini-gradient-wrapper input[type="text"]';
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_gradient'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_gradient"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find(gradient_picker);
 
-                    var control      = this;
-                    control.picker   = this.container.find( gradient_picker );
+                        var $typeControl =
+                                this.container.find(".aux-gradient-type"),
+                            $directionControl = this.container.find(
+                                ".aux-gradient-direction"
+                            );
 
-                    var $typeControl      = this.container.find('.aux-gradient-type'),
-                        $directionControl = this.container.find('.aux-gradient-direction');
+                        control.picker.val(control.setting());
 
-                    control.picker.val( control.setting() );
+                        var grapickPicker = new Grapick({
+                            el: this.container.find(".aux-grapick-colors")[0],
+                            direction: "to right",
+                            min: 1,
+                            max: 99,
+                        });
 
-                    var grapickPicker = new Grapick({
-                        el       : this.container.find( '.aux-grapick-colors' )[0],
-                        direction: 'to right',
-                        min      : 1,
-                        max      : 99
-                    });
+                        if (control.setting()) {
+                            grapickPicker.setValue(control.setting());
+                            $typeControl.val(grapickPicker.getType());
+                            $directionControl.val(grapickPicker.getDirection());
+                        }
 
-                    if( control.setting() ){
-                        grapickPicker.setValue( control.setting() );
-                        $typeControl.val( grapickPicker.getType() );
-                        $directionControl.val( grapickPicker.getDirection() );
-                    }
+                        $typeControl.on("change", function (e) {
+                            grapickPicker.setType(this.value);
+                        });
 
-                    $typeControl.on('change', function(e) {
-                        grapickPicker.setType(this.value);
-                    });
+                        $directionControl.on("change", function (e) {
+                            grapickPicker.setDirection(this.value);
+                        });
 
-                    $directionControl.on('change', function(e) {
-                        grapickPicker.setDirection(this.value);
-                    });
+                        grapickPicker.on("change", function (complete) {
+                            control.setting.set(grapickPicker.getSafeValue());
+                        });
 
-                    grapickPicker.on('change', function(complete) {
-                        control.setting.set( grapickPicker.getSafeValue() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Auxin Typography Controller
         // =====================================================================
 
-        function auxin_embed_controller_styles ( prefix, controlID, cssValue ) {
-            var optionName = prefix + controlID.split('_control')[0];
+        function auxin_embed_controller_styles(prefix, controlID, cssValue) {
+            var optionName = prefix + controlID.split("_control")[0];
 
-            if ( ! Object.hasOwnProperty.call( wp.customize.previewer, 'preview' ) ) {
+            if (
+                !Object.hasOwnProperty.call(wp.customize.previewer, "preview")
+            ) {
                 return;
             }
 
-            var styleTag = wp.customize.previewer.preview.iframe[0].contentDocument.getElementById(optionName);
+            var styleTag =
+                wp.customize.previewer.preview.iframe[0].contentDocument.getElementById(
+                    optionName
+                );
 
-            if ( cssValue ) {
+            if (cssValue) {
                 styleTag.innerHTML = cssValue;
             } else {
-                styleTag.innerHTML = '';
+                styleTag.innerHTML = "";
             }
-
         }
 
-        function auxin_embed_fonts_url ( fontsList ) {
-            if ( fontsList.length ) {
-
-                if ( ! Object.hasOwnProperty.call( wp.customize.previewer, 'preview' ) ) {
+        function auxin_embed_fonts_url(fontsList) {
+            if (fontsList.length) {
+                if (
+                    !Object.hasOwnProperty.call(
+                        wp.customize.previewer,
+                        "preview"
+                    )
+                ) {
                     return;
                 }
 
-                var iframeHead = wp.customize.previewer.preview.iframe[0].contentDocument.querySelector('head');
+                var iframeHead =
+                    wp.customize.previewer.preview.iframe[0].contentDocument.querySelector(
+                        "head"
+                    );
 
-
-                fontsList.forEach( function(font) {
-                    var fontLink = iframeHead.querySelector('link[href="' + font + '"]');
-                    if ( ! fontLink ) {
-                        var LinkTag = document.createElement( 'link' );
-                        LinkTag.rel = 'stylesheet';
+                fontsList.forEach(function (font) {
+                    var fontLink = iframeHead.querySelector(
+                        'link[href="' + font + '"]'
+                    );
+                    if (!fontLink) {
+                        var LinkTag = document.createElement("link");
+                        LinkTag.rel = "stylesheet";
                         LinkTag.href = font;
-                        iframeHead.appendChild( LinkTag );
+                        iframeHead.appendChild(LinkTag);
                     }
                 });
             } else {
@@ -883,773 +983,1027 @@
             }
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_group_typography'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_group_typography"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this,
+                            input = this.container
+                                .eq(0)
+                                .find(".aux-typo-controller-input")[0],
+                            container = this.container
+                                .eq(0)
+                                .find(".aux-typo-controller-container")[0];
 
-                    var control = this,
-                        input = this.container.eq(0).find('.aux-typo-controller-input')[0],
-                        container = this.container.eq(0).find('.aux-typo-controller-container')[0]
-
-                    OptionControls.inputAdapter( input, container,
-                        function( optionControl ){ // for onchange
-                            auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                            auxin_embed_fonts_url( optionControl.getFonts() ) ;
-                        },
-                        function( optionControl ) { // for init
-                            wp.customize.previewer.bind('ready', function(){
-                                auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                                auxin_embed_fonts_url( optionControl.getFonts() ) ;
-                            });
-                        }
-                    );
-
-                }
-
-            });
+                        OptionControls.inputAdapter(
+                            input,
+                            container,
+                            function (optionControl) {
+                                // for onchange
+                                auxin_embed_controller_styles(
+                                    "auxin-customizer-css-",
+                                    control.id,
+                                    optionControl.toCSS()
+                                );
+                                auxin_embed_fonts_url(optionControl.getFonts());
+                            },
+                            function (optionControl) {
+                                // for init
+                                wp.customize.previewer.bind(
+                                    "ready",
+                                    function () {
+                                        auxin_embed_controller_styles(
+                                            "auxin-customizer-css-",
+                                            control.id,
+                                            optionControl.toCSS()
+                                        );
+                                        auxin_embed_fonts_url(
+                                            optionControl.getFonts()
+                                        );
+                                    }
+                                );
+                            }
+                        );
+                    },
+                });
         }
 
         // Auxin Global Color Controller
         // =====================================================================
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_group_global_colors'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_group_global_colors"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this,
+                            jsonInput = this.container
+                                .eq(0)
+                                .find(
+                                    ".aux-global-colors-controller-json-input"
+                                )[0],
+                            container = this.container
+                                .eq(0)
+                                .find(
+                                    ".aux-global-colors-controller-container"
+                                )[0],
+                            input = this.container
+                                .eq(0)
+                                .find(".aux-global-colors-controller-input")[0];
 
-                    var control = this,
-                        jsonInput = this.container.eq(0).find('.aux-global-colors-controller-json-input')[0],
-                        container = this.container.eq(0).find('.aux-global-colors-controller-container')[0],
-                        input = this.container.eq(0).find('.aux-global-colors-controller-input')[0]
-
-                    OptionControls.inputAdapter( jsonInput, container,
-                        function( optionControl ){ // for onchange
-                            control.setting.set( optionControl.value.color );
-                            auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                        },
-                        function( optionControl ) { // for init
-                            wp.customize.previewer.bind('ready', function(){
-                                auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                            });
-                        }
-                    );
-
-                }
-
-            });
+                        OptionControls.inputAdapter(
+                            jsonInput,
+                            container,
+                            function (optionControl) {
+                                // for onchange
+                                control.setting.set(optionControl.value.color);
+                                auxin_embed_controller_styles(
+                                    "auxin-customizer-css-",
+                                    control.id,
+                                    optionControl.toCSS()
+                                );
+                            },
+                            function (optionControl) {
+                                // for init
+                                wp.customize.previewer.bind(
+                                    "ready",
+                                    function () {
+                                        auxin_embed_controller_styles(
+                                            "auxin-customizer-css-",
+                                            control.id,
+                                            optionControl.toCSS()
+                                        );
+                                    }
+                                );
+                            }
+                        );
+                    },
+                });
         }
 
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_responsive_slider"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
+                        var control = this,
+                            input = this.container
+                                .eq(0)
+                                .find(".aux-slider-controller-input")[0],
+                            container = this.container
+                                .eq(0)
+                                .find(".aux-slider-controller-container")[0];
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_responsive_slider'] = wp.customize.AuxinControl.extend({
-
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
-
-                    var control = this,
-                        input = this.container.eq(0).find('.aux-slider-controller-input')[0],
-                        container = this.container.eq(0).find('.aux-slider-controller-container')[0];
-
-                    OptionControls.inputAdapter( input, container,
-                        function( optionControl ){ // for onchange
-                            auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.generateCSS() );
-                        },
-                        function( optionControl ) { // for init
-                            wp.customize.previewer.bind('ready', function(){
-                                auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.generateCSS() );
-                            });
-                        }
-                    );
-
-                }
-
-            });
+                        OptionControls.inputAdapter(
+                            input,
+                            container,
+                            function (optionControl) {
+                                // for onchange
+                                auxin_embed_controller_styles(
+                                    "auxin-customizer-css-",
+                                    control.id,
+                                    optionControl.generateCSS()
+                                );
+                            },
+                            function (optionControl) {
+                                // for init
+                                wp.customize.previewer.bind(
+                                    "ready",
+                                    function () {
+                                        auxin_embed_controller_styles(
+                                            "auxin-customizer-css-",
+                                            control.id,
+                                            optionControl.generateCSS()
+                                        );
+                                    }
+                                );
+                            }
+                        );
+                    },
+                });
         }
 
         // Auxin Dimension Controller
         // =====================================================================
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_responsive_dimensions'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_responsive_dimensions"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this,
+                            input = this.container
+                                .eq(0)
+                                .find(".aux-dimension-controller-input")[0],
+                            container = this.container
+                                .eq(0)
+                                .find(".aux-dimension-controller-container")[0];
 
-                    var control = this,
-                        input = this.container.eq(0).find('.aux-dimension-controller-input')[0],
-                        container = this.container.eq(0).find('.aux-dimension-controller-container')[0];
-
-                    OptionControls.inputAdapter( input, container,
-                        function( optionControl ){ // for onchange
-                            auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                        },
-                        function( optionControl ) { // for init
-                            wp.customize.previewer.bind('ready', function(){
-                                auxin_embed_controller_styles('auxin-customizer-css-', control.id, optionControl.toCSS() );
-                            });
-                        }
-                    );
-
-                }
-
-            });
+                        OptionControls.inputAdapter(
+                            input,
+                            container,
+                            function (optionControl) {
+                                // for onchange
+                                auxin_embed_controller_styles(
+                                    "auxin-customizer-css-",
+                                    control.id,
+                                    optionControl.toCSS()
+                                );
+                            },
+                            function (optionControl) {
+                                // for init
+                                wp.customize.previewer.bind(
+                                    "ready",
+                                    function () {
+                                        auxin_embed_controller_styles(
+                                            "auxin-customizer-css-",
+                                            control.id,
+                                            optionControl.toCSS()
+                                        );
+                                    }
+                                );
+                            }
+                        );
+                    },
+                });
         }
 
         // Auxin Pair Repeater
         // =====================================================================
-        var pairRepeaterContainer = document.querySelector('.aux-pair-repeater-container'),
-            pairRepeaterInput = document.querySelector('.aux-product-custom-fields');
+        var pairRepeaterContainer = document.querySelector(
+                ".aux-pair-repeater-container"
+            ),
+            pairRepeaterInput = document.querySelector(
+                ".aux-product-custom-fields"
+            );
 
-        if( ! wp.customize && pairRepeaterContainer ){
-            OptionControls.inputAdapter( pairRepeaterInput, pairRepeaterContainer );
+        if (!wp.customize && pairRepeaterContainer) {
+            OptionControls.inputAdapter(
+                pairRepeaterInput,
+                pairRepeaterContainer
+            );
         }
 
         // Visual Select
         // =====================================================================
-        var visual_select_picker = '.visual-select-wrapper',
-            visual_select_args   = {
+        var visual_select_picker = ".visual-select-wrapper",
+            visual_select_args = {
                 insertCaption: false,
-                item         : 'axi-select-item'
+                item: "axi-select-item",
             };
 
         // only in widgets page
-        if ( isWidgetsPage ) {
-            $('.inactive-sidebar, .widget-liquid-right').find( visual_select_picker ).avertaVisualSelect( visual_select_args );
+        if (isWidgetsPage) {
+            $(".inactive-sidebar, .widget-liquid-right")
+                .find(visual_select_picker)
+                .avertaVisualSelect(visual_select_args);
 
-            $( document ).on( 'widget-added widget-updated', function() {
-                $('.inactive-sidebar, .widget-liquid-right').find( visual_select_picker ).avertaVisualSelect( visual_select_args );
+            $(document).on("widget-added widget-updated", function () {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(visual_select_picker)
+                    .avertaVisualSelect(visual_select_args);
             });
 
-        // other pages
+            // other pages
         } else {
-            $( visual_select_picker ).avertaVisualSelect( visual_select_args );
+            $(visual_select_picker).avertaVisualSelect(visual_select_args);
 
-            $(document).on('panelsopen', function(){
-               $( visual_select_picker ).avertaVisualSelect( visual_select_args );
+            $(document).on("panelsopen", function () {
+                $(visual_select_picker).avertaVisualSelect(visual_select_args);
             });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_radio_image'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_radio_image"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker =
+                            this.container.find(visual_select_picker);
 
-                    var control = this;
-                    control.picker = this.container.find( visual_select_picker );
+                        control.picker
+                            .val(control.setting())
+                            .avertaVisualSelect(visual_select_args);
 
+                        control.picker.on("change", function () {
+                            if (
+                                control.params.presets.constructor === Object &&
+                                Object.keys(control.params.presets).length
+                            ) {
+                                var presetID, presetValue, presetControl;
 
-                    control.picker.val( control.setting() ).avertaVisualSelect( visual_select_args );
-
-                    control.picker.on( 'change', function() {
-                        if ( control.params.presets.constructor === Object && Object.keys(control.params.presets).length ) {
-
-                            var presetID, presetValue, presetControl;
-
-                            for ( presetID in control.params.presets[ control.setting() ] ) {
-                                presetValue = control.params.presets[ control.setting() ][ presetID ];
-                                wp.customize.control( presetID + "_control" ).update( presetValue );
+                                for (presetID in control.params.presets[
+                                    control.setting()
+                                ]) {
+                                    presetValue =
+                                        control.params.presets[
+                                            control.setting()
+                                        ][presetID];
+                                    wp.customize
+                                        .control(presetID + "_control")
+                                        .update(presetValue);
+                                }
                             }
-                        }
 
-                        control.setting.set( control.picker.val() );
-                        //control.setting.preview();
-                    });
+                            control.setting.set(control.picker.val());
+                            //control.setting.preview();
+                        });
 
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
         // Auxin Select
         // =====================================================================
-        var selectPicker = $('.aux-meta-select');
+        var selectPicker = $(".aux-meta-select");
 
-        if ( !isWidgetsPage ) {
+        if (!isWidgetsPage) {
+            selectPicker.on("change", function (event) {
+                if (auxin.metabox) {
+                    for (var metaboxID in auxin.metabox) {
+                        var metaboxRelatedControls =
+                                auxin.metabox[metaboxID].relatedControls,
+                            relatedControls =
+                                metaboxRelatedControls[event.target.id];
 
-            selectPicker.on( 'change', function( event ) {
-                if ( auxin.metabox ) {
+                        relatedControls.forEach(function (related) {
+                            var control = $("#" + related);
 
-                    for ( var metaboxID in auxin.metabox ) {
-                        var metaboxRelatedControls = auxin.metabox[ metaboxID ].relatedControls,
-                            relatedControls = metaboxRelatedControls[ event.target.id ];
-
-                        relatedControls.forEach( function( related ) {
-                            var control =  $( '#' + related );
-
-                            if ( control[0].value !== event.target.value ) {
+                            if (control[0].value !== event.target.value) {
                                 control[0].value = event.target.value;
-                                control.trigger('change');
+                                control.trigger("change");
                             }
-                        })
+                        });
                     }
                 }
-
-            } );
+            });
         }
         // Elementor Tempalte List
         // =====================================================================
-        if ( wp.customize ) {
-            wp.customize.controlConstructor['auxin_template_library'] = wp.customize.AuxinControl.extend({
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_template_library"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                    var control = this;
-                    control.picker = this.container.find( visual_select_picker );
+                        var control = this;
+                        control.picker =
+                            this.container.find(visual_select_picker);
 
+                        control.picker
+                            .val(control.setting())
+                            .avertaVisualSelect(visual_select_args);
 
-                    control.picker.val( control.setting() ).avertaVisualSelect( visual_select_args );
+                        control.picker.on("change", function (event) {
+                            if (
+                                control.params.presets.constructor === Object &&
+                                Object.keys(control.params.presets).length
+                            ) {
+                                var presetID, presetValue, presetControl;
 
-                    control.picker.on( 'change', function( event ) {
-                        if ( control.params.presets.constructor === Object && Object.keys(control.params.presets).length ) {
-
-                            var presetID, presetValue, presetControl;
-
-                            for ( presetID in control.params.presets[ control.setting() ] ) {
-                                presetValue = control.params.presets[ control.setting() ][ presetID ];
-                                wp.customize.control( presetID + "_control" ).update( presetValue );
+                                for (presetID in control.params.presets[
+                                    control.setting()
+                                ]) {
+                                    presetValue =
+                                        control.params.presets[
+                                            control.setting()
+                                        ][presetID];
+                                    wp.customize
+                                        .control(presetID + "_control")
+                                        .update(presetValue);
+                                }
                             }
-                        }
 
-                        control.setting.set( control.picker.val() );
-                        //control.setting.preview();
+                            control.setting.set(control.picker.val());
+                            //control.setting.preview();
 
-                        var $selectedVisual = control.container.find('.axi-selected'),
-                            $loadingText = $('<span />').addClass('aux-fetching-text').html('Importing To Your Library');
+                            var $selectedVisual =
+                                    control.container.find(".axi-selected"),
+                                $loadingText = $("<span />")
+                                    .addClass("aux-fetching-text")
+                                    .html("Importing To Your Library");
 
-                        $selectedVisual.addClass('aux-fetching');
-                        $loadingText.insertAfter( $selectedVisual );
-                        var $template_type = control.picker.parents('.aux-template-type').data('template-type');
-                        $.ajax({
-                            url : auxin.ajaxurl,
-                            type: 'POST',
-                            dataType: 'json',
-                            data: {
-                                action: 'auxin_template_control_importer',
-                                id: control.picker.val(),
-                                template_type: $template_type,
-                                nonce: $('#_' + $template_type + '_template_library_nonce').val()
-                            },
-                            complete: function( data ) {
-                                $selectedVisual.removeClass('aux-fetching');
-                                $loadingText.remove();
-                            }
-                        })
-                        .done(function(response) {
-                            if (response.success) {
-                                var relatedControls = control.params.relatedControls;
+                            $selectedVisual.addClass("aux-fetching");
+                            $loadingText.insertAfter($selectedVisual);
+                            var $template_type = control.picker
+                                .parents(".aux-template-type")
+                                .data("template-type");
+                            $.ajax({
+                                url: auxin.ajaxurl,
+                                type: "POST",
+                                dataType: "json",
+                                data: {
+                                    action: "auxin_template_control_importer",
+                                    id: control.picker.val(),
+                                    template_type: $template_type,
+                                    nonce: $(
+                                        "#_" +
+                                            $template_type +
+                                            "_template_library_nonce"
+                                    ).val(),
+                                },
+                                complete: function (data) {
+                                    $selectedVisual.removeClass("aux-fetching");
+                                    $loadingText.remove();
+                                },
+                            })
+                                .done(function (response) {
+                                    if (response.success) {
+                                        var relatedControls =
+                                            control.params.relatedControls;
 
-                                relatedControls.forEach( function( related ) {
-                                    var relatedControl = wp.customize.control( related + "_control" );
+                                        relatedControls.forEach(function (
+                                            related
+                                        ) {
+                                            var relatedControl =
+                                                wp.customize.control(
+                                                    related + "_control"
+                                                );
 
-                                    if ( !response.data.isImported  ) {
-                                        relatedControl.picker.trigger('change', [ { title: response.data.postTitle , id: response.data.postId } ] );
-                                    } else {
-                                        var selectedTitle = $selectedVisual.attr( 'title' );
-                                        relatedControl.picker.find('option').each( function( index, option) {
-                                            var $option     = $(option),
-                                                optionTitle = $option.text();
-                                            if ( optionTitle === selectedTitle ) {
-                                                var optionValue = $option.attr('value');
-                                                relatedControl.update( optionValue );
+                                            if (!response.data.isImported) {
+                                                relatedControl.picker.trigger(
+                                                    "change",
+                                                    [
+                                                        {
+                                                            title: response.data
+                                                                .postTitle,
+                                                            id: response.data
+                                                                .postId,
+                                                        },
+                                                    ]
+                                                );
+                                            } else {
+                                                var selectedTitle =
+                                                    $selectedVisual.attr(
+                                                        "title"
+                                                    );
+                                                relatedControl.picker
+                                                    .find("option")
+                                                    .each(function (
+                                                        index,
+                                                        option
+                                                    ) {
+                                                        var $option = $(option),
+                                                            optionTitle =
+                                                                $option.text();
+                                                        if (
+                                                            optionTitle ===
+                                                            selectedTitle
+                                                        ) {
+                                                            var optionValue =
+                                                                $option.attr(
+                                                                    "value"
+                                                                );
+                                                            relatedControl.update(
+                                                                optionValue
+                                                            );
+                                                        }
+                                                    });
                                             }
+                                        });
 
-                                        } );
+                                        console.log(
+                                            "Successfully Done. " +
+                                                response.data.message
+                                        );
+                                    } else {
+                                        console.log(
+                                            "Failed. " + response.data.message
+                                        );
                                     }
-
                                 })
-
-                                console.log('Successfully Done. '+response.data.message);
-                            } else {
-                                console.log('Failed. '+response.data.message)
-                            };
-                        })
-                        .fail(function() {
-                            console.log("error");
+                                .fail(function () {
+                                    console.log("error");
+                                });
                         });
 
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Selective List
         // =====================================================================
         var selectiveListArgs = {
             insertCaption: true,
-            item         : 'axi-select-item',
-            container: 'aux-selective-list'
-        }
+            item: "axi-select-item",
+            container: "aux-selective-list",
+        };
 
-        if ( isWidgetsPage ) {
+        if (isWidgetsPage) {
         } else {
-            var selectiveList = $( '.aux-meta-selective-list' ).avertaVisualSelect( selectiveListArgs );
-            selectiveList.on( 'change', function( event ) {
-                if ( auxin.metabox ) {
+            var selectiveList = $(
+                ".aux-meta-selective-list"
+            ).avertaVisualSelect(selectiveListArgs);
+            selectiveList.on("change", function (event) {
+                if (auxin.metabox) {
                     var controlValue = selectiveList.val(),
-                        controlTitle = $( event.target ).find( 'option[selected]').text();
+                        controlTitle = $(event.target)
+                            .find("option[selected]")
+                            .text();
 
-                    for ( var metaboxID in auxin.metabox ) {
+                    for (var metaboxID in auxin.metabox) {
+                        var metaboxRelatedControls =
+                                auxin.metabox[metaboxID].relatedControls,
+                            relatedControls =
+                                metaboxRelatedControls[event.target.id];
 
-                        var metaboxRelatedControls = auxin.metabox[ metaboxID ].relatedControls,
-                            relatedControls = metaboxRelatedControls[ event.target.id ];
-
-                        relatedControls.forEach( function( related ) {
-                            $( '#' + related ).trigger( 'change', [ { title: controlTitle, id: controlValue } ] );
-                        })
-
+                        relatedControls.forEach(function (related) {
+                            $("#" + related).trigger("change", [
+                                { title: controlTitle, id: controlValue },
+                            ]);
+                        });
                     }
                 }
-            } ) ;
+            });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_selective_list'] = wp.customize.AuxinControl.extend({
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_selective_list"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                    var control = this;
-                    control.picker = this.container.find( '.aux-control-selective-list' );
-                    control.picker.val( control.setting() ).avertaVisualSelect( selectiveListArgs );
+                        var control = this;
+                        control.picker = this.container.find(
+                            ".aux-control-selective-list"
+                        );
+                        control.picker
+                            .val(control.setting())
+                            .avertaVisualSelect(selectiveListArgs);
 
-                    control.picker.on( 'change', function( event, data ) {
+                        control.picker.on("change", function (event, data) {
+                            // check if selective list option has url to open , open it in new tab
+                            var _link = $("option:selected", this).attr(
+                                "data-link"
+                            );
+                            if (typeof _link != "undefined" && _link != "") {
+                                window.open(_link, "_blank");
+                            }
 
-                        // check if selective list option has url to open , open it in new tab
-                        var _link = $('option:selected', this).attr('data-link');
-                        if ( typeof _link != 'undefined' && _link != '' ) {
-                            window.open( _link, '_blank' );
-                        }
+                            if (data) {
+                                control.picker.avertaVisualSelect(
+                                    "addItem",
+                                    data.id,
+                                    data.title
+                                );
+                                control.picker.val(data.id);
+                            }
 
-                        if ( data ) {
-                            control.picker.avertaVisualSelect( 'addItem', data.id, data.title );
-                            control.picker.val( data.id );
-                        }
+                            if (control.params.relatedControls) {
+                                var relatedName =
+                                        control.params.relatedControls,
+                                    relatedControl = wp.customize.control(
+                                        relatedName + "_control"
+                                    ),
+                                    controlTitle = control.container
+                                        .find(
+                                            ".axi-select-item.axi-selected .axi-select-caption"
+                                        )
+                                        .text(),
+                                    controlValue = control.picker.val();
 
-                        if ( control.params.relatedControls ) {
-                            var relatedName    = control.params.relatedControls,
-                                relatedControl = wp.customize.control( relatedName + "_control" ),
-                                controlTitle   = control.container.find('.axi-select-item.axi-selected .axi-select-caption').text(),
-                                controlValue   = control.picker.val();
+                                relatedControl.update(controlValue, {
+                                    title: controlTitle,
+                                    id: controlValue,
+                                });
+                            }
+                            control.setting.set(control.picker.val());
+                        });
 
-                            relatedControl.update( controlValue, { title: controlTitle, id: controlValue } );
-                        }
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-            })
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Elementor Edit Template
         // =====================================================================
 
-        if ( isWidgetsPage ) {
-
+        if (isWidgetsPage) {
         } else {
-            $( '.aux-meta-edit-template input' ).on( 'change' , function( event, data ) {
-                var pageID = data.id.indexOf( '-def' ) !== -1  ? data.id.replace( '-def', '' ) : data.id ;
-                var elementorEditPageUrl = auxin.adminurl + 'post.php?post=' + pageID + '&action=elementor';
-                    $( event.target ).parent().find('.axi-select-caption').text( data.title );
-                    $( event.target ).parent().find('.aux-edit-elementor-button').attr( 'href', elementorEditPageUrl );
+            $(".aux-meta-edit-template input").on(
+                "change",
+                function (event, data) {
+                    var pageID =
+                        data.id.indexOf("-def") !== -1
+                            ? data.id.replace("-def", "")
+                            : data.id;
+                    var elementorEditPageUrl =
+                        auxin.adminurl +
+                        "post.php?post=" +
+                        pageID +
+                        "&action=elementor";
+                    $(event.target)
+                        .parent()
+                        .find(".axi-select-caption")
+                        .text(data.title);
+                    $(event.target)
+                        .parent()
+                        .find(".aux-edit-elementor-button")
+                        .attr("href", elementorEditPageUrl);
                     event.target.value = data.id;
-            });
+                }
+            );
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_edit_template'] = wp.customize.AuxinControl.extend({
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_edit_template"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                    var control = this;
-                        control.picker = this.container.find( 'input' );
+                        var control = this;
+                        control.picker = this.container.find("input");
 
-                    control.picker.on( 'change', function( event, data ) {
-                        var elementorEditPageUrl = auxin.adminurl + 'post.php?post=' + data.id + '&action=elementor';
-                        control.container.find('.axi-select-caption').text( data.title );
-                        control.container.find('.aux-edit-elementor-button').attr( 'href', elementorEditPageUrl );
-                        control.setting.set( control.picker.val() );
-                    });
+                        control.picker.on("change", function (event, data) {
+                            var elementorEditPageUrl =
+                                auxin.adminurl +
+                                "post.php?post=" +
+                                data.id +
+                                "&action=elementor";
+                            control.container
+                                .find(".axi-select-caption")
+                                .text(data.title);
+                            control.container
+                                .find(".aux-edit-elementor-button")
+                                .attr("href", elementorEditPageUrl);
+                            control.setting.set(control.picker.val());
+                        });
 
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-            })
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Visual Select
         // =====================================================================
 
-        var sortable_input_picker = '.aux-sortable-input',
-            sortable_input_args   = {
-                addButtonText     : "Add to List",
-                addbuttonClass    : "sortin-add-btn button button-primary button-large",
-                sortable          : true ,
-                fields            : [],
-                wrapperClass      : "sortin-wrapper auxin-sortin",
-                selectboxClass    : "sortin-selectbox aux-select2-single"
+        var sortable_input_picker = ".aux-sortable-input",
+            sortable_input_args = {
+                addButtonText: "Add to List",
+                addbuttonClass:
+                    "sortin-add-btn button button-primary button-large",
+                sortable: true,
+                fields: [],
+                wrapperClass: "sortin-wrapper auxin-sortin",
+                selectboxClass: "sortin-selectbox aux-select2-single",
             };
 
         // only in widgets page
-        if ( isWidgetsPage ) {
-            $('.inactive-sidebar, .widget-liquid-right').find( sortable_input_picker ).sortableInput( sortable_input_args );
+        if (isWidgetsPage) {
+            $(".inactive-sidebar, .widget-liquid-right")
+                .find(sortable_input_picker)
+                .sortableInput(sortable_input_args);
 
-            $( document ).on( 'widget-added widget-updated', function() {
-                $('.inactive-sidebar, .widget-liquid-right').find( sortable_input_picker ).sortableInput( sortable_input_args );
+            $(document).on("widget-added widget-updated", function () {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(sortable_input_picker)
+                    .sortableInput(sortable_input_args);
             });
 
-        // other pages
+            // other pages
         } else {
-            $( sortable_input_picker ).sortableInput( sortable_input_args );
+            $(sortable_input_picker).sortableInput(sortable_input_args);
 
-            $(document).on('panelsopen', function(){
-               $( sortable_input_picker ).sortableInput( sortable_input_args );
+            $(document).on("panelsopen", function () {
+                $(sortable_input_picker).sortableInput(sortable_input_args);
             });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_sortable_input'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_sortable_input"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find(
+                            sortable_input_picker
+                        );
 
-                    var control = this;
-                    control.picker = this.container.find( sortable_input_picker );
+                        control.picker
+                            .val(control.setting())
+                            .sortableInput(sortable_input_args);
 
-
-                    control.picker.val( control.setting() ).sortableInput( sortable_input_args );
-
-                    this.setting.bind( function ( value ) {
-
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {});
+                    },
+                });
         }
-
-
 
         // Switchery
         // =====================================================================
 
-        var switchery_picker = '.av3_container input[type="checkbox"], .aux_switch[type="checkbox"]',
-            switchery_args   = {
-                color          : '#0074A2',
-                secondaryColor : '#C2C2C2',
-                className      : 'axi-switch',
-                speed          : '0.3s'
+        var switchery_picker =
+                '.av3_container input[type="checkbox"], .aux_switch[type="checkbox"]',
+            switchery_args = {
+                color: "#0074A2",
+                secondaryColor: "#C2C2C2",
+                className: "axi-switch",
+                speed: "0.3s",
             };
 
-
-
-        function initSwitchary( $target ){
-            $target.each( function ( index, el ) {
-                if( ! el.getAttribute("data-switchery") ) {
-                    new Switchery( el, switchery_args );
+        function initSwitchary($target) {
+            $target.each(function (index, el) {
+                if (!el.getAttribute("data-switchery")) {
+                    new Switchery(el, switchery_args);
                 }
             });
         }
 
-        function disableHiddenSwitch(){
-            $(".aux_switch:checkbox:checked").each(function(index, el){
+        function disableHiddenSwitch() {
+            $(".aux_switch:checkbox:checked").each(function (index, el) {
                 $(this).prev().prop("disabled", false);
             });
         }
 
         // only in widgets page
-        if ( isWidgetsPage ) {
+        if (isWidgetsPage) {
+            initSwitchary(
+                $(".inactive-sidebar, .widget-liquid-right").find(
+                    switchery_picker
+                )
+            );
 
-            initSwitchary( $('.inactive-sidebar, .widget-liquid-right').find( switchery_picker ) );
-
-            $( document ).on( 'widget-added widget-updated', function() {
-                initSwitchary( $('.inactive-sidebar, .widget-liquid-right').find( switchery_picker ) );
+            $(document).on("widget-added widget-updated", function () {
+                initSwitchary(
+                    $(".inactive-sidebar, .widget-liquid-right").find(
+                        switchery_picker
+                    )
+                );
                 disableHiddenSwitch();
             });
 
-        // other pages
+            // other pages
         } else {
-            var switchery_inputs = $( switchery_picker );
-            initSwitchary( switchery_inputs );
-            switchery_inputs.on( 'change', function( e ) {
-                if ( auxin.metabox ) {
+            var switchery_inputs = $(switchery_picker);
+            initSwitchary(switchery_inputs);
+            switchery_inputs.on("change", function (e) {
+                if (auxin.metabox) {
+                    for (var metaboxID in auxin.metabox) {
+                        var metaboxRelatedControls =
+                                auxin.metabox[metaboxID].relatedControls,
+                            relatedControls =
+                                metaboxRelatedControls[event.target.id];
 
-                    for ( var metaboxID in auxin.metabox ) {
-                        var metaboxRelatedControls = auxin.metabox[ metaboxID ].relatedControls,
-                            relatedControls = metaboxRelatedControls[ event.target.id ];
+                        relatedControls.forEach(function (related) {
+                            var control = $("#" + related);
 
-                        relatedControls.forEach( function( related ) {
-                            var control =  $( '#' + related );
-
-                            if ( control[0].checked !== e.target.checked ) {
-                                control.trigger('click');
+                            if (control[0].checked !== e.target.checked) {
+                                control.trigger("click");
                             }
-                        })
+                        });
                     }
                 }
-                e.target.setAttribute( 'value', e.target.checked ? '1' : '0' );
-            } ) ;
+                e.target.setAttribute("value", e.target.checked ? "1" : "0");
+            });
 
-
-            $(document).on('panelsopen', function(){
-                initSwitchary( $( switchery_picker ) );
+            $(document).on("panelsopen", function () {
+                initSwitchary($(switchery_picker));
                 disableHiddenSwitch();
             });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_switch'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_switch"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find(switchery_picker);
 
-                    var control = this;
-                    control.picker = this.container.find( switchery_picker );
+                        control.picker.val(control.setting());
 
-                    control.picker.val( control.setting() );
+                        switchery_args.size = "small";
 
-                    switchery_args.size = 'small';
+                        var switchery = new Switchery(
+                            control.picker[0],
+                            switchery_args
+                        );
 
-                    var switchery = new Switchery( control.picker[0], switchery_args );
+                        this.setting.bind(function (value) {
+                            if (control.params.relatedControls) {
+                                control.params.relatedControls.forEach(
+                                    function (relatedName, index) {
+                                        var relatedControl =
+                                            wp.customize.control(
+                                                relatedName + "_control"
+                                            );
+                                        relatedControl.update(value);
+                                    }
+                                );
+                            }
 
-                    this.setting.bind( function ( value ) {
-
-                        if ( control.params.relatedControls ) {
-                            control.params.relatedControls.forEach( function( relatedName, index ) {
-                                var relatedControl = wp.customize.control( relatedName + '_control' );
-                                relatedControl.update( value );
-                            } );
-                        }
-
-                        switchery.setPosition( false ) ;
-                        switchery.handleOnchange( false );
-                    });
-
-                }
-
-            });
+                            switchery.setPosition(false);
+                            switchery.handleOnchange(false);
+                        });
+                    },
+                });
         }
-
-
-
 
         // Font Selector
         // =====================================================================
 
-        var font_select_picker = '.axi-font-field',
-            font_select_args   = {
-                insertPreviewText : true,
-                googleFontsPrefix : '_gof_',          // Google fonts prefix
-                systemFontsPrefix : '_sys_',          // System fonts prefix
-                geaFontsPrefix    : '_gea_',          // Google Early Access fonts prefix
-                customFontsPrefix : '_cus_',          // Custom fonts prefix
+        var font_select_picker = ".axi-font-field",
+            font_select_args = {
+                insertPreviewText: true,
+                googleFontsPrefix: "_gof_", // Google fonts prefix
+                systemFontsPrefix: "_sys_", // System fonts prefix
+                geaFontsPrefix: "_gea_", // Google Early Access fonts prefix
+                customFontsPrefix: "_cus_", // Custom fonts prefix
 
-                useGoogleFonts  : true,           // whether load google fonts
-                systemFonts     : auxin.admin.fonts.system.faces,           // system font list DS -> [..,{name:'', thickness:'300,bold,600'},..]
-                geaFonts        : auxin.admin.fonts.google_early.faces,         // Google Early Access fonts DS -> [..,{name:'', thickness:'300,bold,600', url:''},..]
-                customFonts     : auxin.admin.fonts.custom.faces,             // Custom fonts DS -> [..,{name:'', thickness:'300,bold,600', url:''},..]
+                useGoogleFonts: true, // whether load google fonts
+                systemFonts: auxin.admin.fonts.system.faces, // system font list DS -> [..,{name:'', thickness:'300,bold,600'},..]
+                geaFonts: auxin.admin.fonts.google_early.faces, // Google Early Access fonts DS -> [..,{name:'', thickness:'300,bold,600', url:''},..]
+                customFonts: auxin.admin.fonts.custom.faces, // Custom fonts DS -> [..,{name:'', thickness:'300,bold,600', url:''},..]
 
-                l10n : {                    // localization object
-                    previewTextLabel    : auxin.admin.fontSelector.previewTextLabel || 'Preview text:',
-                    fontLabel           : auxin.admin.fontSelector.fontLabel        || 'Font:',
-                    fontSizeLabel       : auxin.admin.fontSelector.fontSizeLabel    || 'Size:',
-                    fontStyleLabel      : auxin.admin.fontSelector.fontStyleLabel   || 'Style:',
-                    googleFonts         : auxin.admin.fontSelector.googleFonts      || 'Google Fonts',
-                    systemFonts         : auxin.admin.fontSelector.systemFonts      || 'System Fonts',
-                    geaFonts            : auxin.admin.fontSelector.geaFonts         || 'Google Early Access',
-                    customFonts         : auxin.admin.fontSelector.customFonts      || 'Custom Fonts'
-                }
-
+                l10n: {
+                    // localization object
+                    previewTextLabel:
+                        auxin.admin.fontSelector.previewTextLabel ||
+                        "Preview text:",
+                    fontLabel: auxin.admin.fontSelector.fontLabel || "Font:",
+                    fontSizeLabel:
+                        auxin.admin.fontSelector.fontSizeLabel || "Size:",
+                    fontStyleLabel:
+                        auxin.admin.fontSelector.fontStyleLabel || "Style:",
+                    googleFonts:
+                        auxin.admin.fontSelector.googleFonts || "Google Fonts",
+                    systemFonts:
+                        auxin.admin.fontSelector.systemFonts || "System Fonts",
+                    geaFonts:
+                        auxin.admin.fontSelector.geaFonts ||
+                        "Google Early Access",
+                    customFonts:
+                        auxin.admin.fontSelector.customFonts || "Custom Fonts",
+                },
             };
 
-        $( font_select_picker ).avertaFontSelector( font_select_args );
+        $(font_select_picker).avertaFontSelector(font_select_args);
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_typography'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_typography"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker =
+                            this.container.find(font_select_picker);
 
-                    var control = this;
-                    control.picker = this.container.find( font_select_picker );
+                        control.picker
+                            .val(control.setting())
+                            .avertaFontSelector(font_select_args);
 
-                    control.picker.val( control.setting() ).avertaFontSelector( font_select_args );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                            // @if DEV
+                            // wp.customize.previewer.refresh();
+                            // @endif
+                        });
 
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                        // @if DEV
-                        // wp.customize.previewer.refresh();
-                        // @endif
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
-
 
         // Attachmedia
         // =====================================================================
 
         var attach_media_picker = '.axi-attachmedia-wrapper input[type="text"]',
-            $attach_media_elem  = $('.axi-attachmedia-wrapper').find('input[type="text"]'),
-            attach_media_args   = {
-                item            : 'am-item am-frame',       // attached media item in dragable list [css class name]
-                thumbnail       : 'am-img-holder',          // thumbnail image [css class name]
-                removeItem      : 'am-remove',              // remove item button [class name]
-                sortable        : 'axi-attach-items',       // soratable container
-                addItem         : 'am-add-new am-frame',    // add attachment button
-                srcMap          : auxin.attachmedia || null,// id:src map object
-                sortableOptions : {
-                    placeholder   : "am-placeholder",
-                    forcePlaceholderSize: true
+            $attach_media_elem = $(".axi-attachmedia-wrapper").find(
+                'input[type="text"]'
+            ),
+            attach_media_args = {
+                item: "am-item am-frame", // attached media item in dragable list [css class name]
+                thumbnail: "am-img-holder", // thumbnail image [css class name]
+                removeItem: "am-remove", // remove item button [class name]
+                sortable: "axi-attach-items", // soratable container
+                addItem: "am-add-new am-frame", // add attachment button
+                srcMap: auxin.attachmedia || null, // id:src map object
+                sortableOptions: {
+                    placeholder: "am-placeholder",
+                    forcePlaceholderSize: true,
                 },
-                autoHideElement : true,                     // hide input element after init
-                confirmOnRemove : true,                     // ask before removing attachment
-                multiple        : true,                     // enables multiple section in wp's media uploader
-                limit           : 9999,                     // specifies maximum number of items
-                type            : null,                     // select media uploader attachment type
-                insertCaption   : false,                    // whether insert caption or not
+                autoHideElement: true, // hide input element after init
+                confirmOnRemove: true, // ask before removing attachment
+                multiple: true, // enables multiple section in wp's media uploader
+                limit: 9999, // specifies maximum number of items
+                type: null, // select media uploader attachment type
+                insertCaption: false, // whether insert caption or not
 
-                l10n            : {                         // localization object
-                    addToList       : 'Add image(s)',
-                    uploaderTitle   : 'Select Image',
-                    uploderSubmit   : 'Add image',
-                    removeConfirm   : 'Are you sure that you want to remove this attachment?'
-                }
+                l10n: {
+                    // localization object
+                    addToList: "Add image(s)",
+                    uploaderTitle: "Select Image",
+                    uploderSubmit: "Add image",
+                    removeConfirm:
+                        "Are you sure that you want to remove this attachment?",
+                },
             };
 
-         // only in widgets page
-        if ( isWidgetsPage ) {
-            $('.inactive-sidebar, .widget-liquid-right').find( attach_media_picker ).avertaAttachMedia( attach_media_args );
+        // only in widgets page
+        if (isWidgetsPage) {
+            $(".inactive-sidebar, .widget-liquid-right")
+                .find(attach_media_picker)
+                .avertaAttachMedia(attach_media_args);
 
-            $( document ).on( 'widget-added widget-updated', function() {
-                $('.inactive-sidebar, .widget-liquid-right').find( attach_media_picker ).avertaAttachMedia( attach_media_args );
+            $(document).on("widget-added widget-updated", function () {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(attach_media_picker)
+                    .avertaAttachMedia(attach_media_args);
             });
 
-        // other pages
+            // other pages
         } else {
-            $( attach_media_picker ).avertaAttachMedia( attach_media_args );
+            $(attach_media_picker).avertaAttachMedia(attach_media_args);
 
-            $(document).on('panelsopen', function(){
-                $( attach_media_picker ).avertaAttachMedia( attach_media_args );
+            $(document).on("panelsopen", function () {
+                $(attach_media_picker).avertaAttachMedia(attach_media_args);
             });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_media'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_media"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker =
+                            this.container.find(attach_media_picker);
 
-                    var control = this;
-                    control.picker = this.container.find( attach_media_picker );
+                        if (control.params.attachments) {
+                            attach_media_args.srcMap =
+                                control.params.attachments;
+                        }
 
-                    if( control.params.attachments ) {
-                        attach_media_args.srcMap = control.params.attachments
-                    }
+                        control.picker
+                            .val(control.setting())
+                            .avertaAttachMedia(attach_media_args);
 
-                    control.picker.val( control.setting() ).avertaAttachMedia( attach_media_args );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                        });
 
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_text'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_text"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find("input[type]");
 
-                    var control = this;
-                    control.picker = this.container.find( 'input[type]' );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                        });
 
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
-        if( wp.customize ){
-            wp.customize.controlConstructor['auxin_base'] = wp.customize.AuxinControl.extend({
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_base"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        var control = this;
+                        control.picker = this.container.find("input[type]");
 
-                    var control = this;
-                    control.picker = this.container.find( 'input[type]' );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                        });
 
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
-
-
-
 
         //
         // =====================================================================
@@ -1658,12 +2012,14 @@
         var $palette_pickers = $('.auxin-color-palette input[type="text"]');
         var $palette_picker, colors, palette_picker_name;
 
-        for ( var i = 0, l = $palette_pickers.length; i < l; i++ ) {
-            $palette_picker     = $palette_pickers.eq(i);
-            palette_picker_name = $palette_picker.prop('name');
+        for (var i = 0, l = $palette_pickers.length; i < l; i++) {
+            $palette_picker = $palette_pickers.eq(i);
+            palette_picker_name = $palette_picker.prop("name");
 
-            if (typeof window.auxin.admin.palette[ palette_picker_name ] != 'undefined') {
-
+            if (
+                typeof window.auxin.admin.palette[palette_picker_name] !=
+                "undefined"
+            ) {
                 $palette_picker.spectrum({
                     allowEmpty: true,
                     showInput: false,
@@ -1671,548 +2027,702 @@
                     disabled: false,
 
                     showSelectionPalette: true,
-                    showPaletteOnly:false,
-                    showPalette:true,
-                    hideAfterPaletteSelect:true,
+                    showPaletteOnly: false,
+                    showPalette: true,
+                    hideAfterPaletteSelect: true,
                     palette: auxin.admin.palette[palette_picker_name],
                     clickoutFiresChange: true,
                     showInitial: true,
-                    chooseText:  auxin.admin.colorpicker.chooseText,
-                    cancelText:  auxin.admin.colorpicker.cancelText,
-                    containerClassName: 'axi-sp-wrapper',
+                    chooseText: auxin.admin.colorpicker.chooseText,
+                    cancelText: auxin.admin.colorpicker.cancelText,
+                    containerClassName: "axi-sp-wrapper",
                     localStorageKey: "auxin.spectrum",
-                    preferredFormat: "hex6"
+                    preferredFormat: "hex6",
                 });
-
             }
         }
 
-
-
         // Init date fields if exist
-        var $dateFields = $('input#custom_news_date');
-        if( $dateFields.length ) {
+        var $dateFields = $("input#custom_news_date");
+        if ($dateFields.length) {
             $dateFields.datepicker({
-                dateFormat:'yy-mm-dd'
+                dateFormat: "yy-mm-dd",
             });
         }
 
         // export
         // =====================================================================
 
-        if( wp.customize ){
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_export"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-            wp.customize.controlConstructor['auxin_export'] = wp.customize.AuxinControl.extend({
+                        var control = this;
+                        control.picker = this.container.find("form");
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        control.picker.on("submit", function (e) {
+                            e.preventDefault();
+                            var $this = $(this),
+                                $button = $this
+                                    .find("button")
+                                    .addClass("aux-button-loading");
 
-                    var control = this;
-                    control.picker = this.container.find( 'form' );
-
-                    control.picker.on( 'submit', function(e) {
-                        e.preventDefault();
-                        var $this = $(this),
-                        $button = $this.find('button').addClass('aux-button-loading');
-
-                        $.ajax({
-                            url : auxin.ajaxurl,
-                            type: 'POST',
-                            dataType: 'json',
-                            data: {
-                                nonce: $this.find('#auxin-export-nonce').val(),
-                                action: 'auxin_customizer_export' // the ajax handler
-                            },
-                            success: function( response ) {
-                                $button.removeClass('aux-button-loading');
-                                if ( response.success ) {
-                                    var element = document.createElement('a');
-                                    element.setAttribute('href', 'data:text/plain;charset=utf-8,' + encodeURIComponent(response.data.content));
-                                    element.setAttribute('download', response.data.fileName);
-                                    element.style.display = 'none';
-                                    document.body.appendChild(element);
-                                    element.click();
-                                    document.body.removeChild(element);
-                                }
-                            }
+                            $.ajax({
+                                url: auxin.ajaxurl,
+                                type: "POST",
+                                dataType: "json",
+                                data: {
+                                    nonce: $this
+                                        .find("#auxin-export-nonce")
+                                        .val(),
+                                    action: "auxin_customizer_export", // the ajax handler
+                                },
+                                success: function (response) {
+                                    $button.removeClass("aux-button-loading");
+                                    if (response.success) {
+                                        var element =
+                                            document.createElement("a");
+                                        element.setAttribute(
+                                            "href",
+                                            "data:text/plain;charset=utf-8," +
+                                                encodeURIComponent(
+                                                    response.data.content
+                                                )
+                                        );
+                                        element.setAttribute(
+                                            "download",
+                                            response.data.fileName
+                                        );
+                                        element.style.display = "none";
+                                        document.body.appendChild(element);
+                                        element.click();
+                                        document.body.removeChild(element);
+                                    }
+                                },
+                            });
                         });
-                    });
-                }
-
-            });
+                    },
+                });
         }
-
 
         // import
         // =====================================================================
 
-        if( wp.customize ){
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_import"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-            wp.customize.controlConstructor['auxin_import'] = wp.customize.AuxinControl.extend({
+                        var control = this;
+                        control.picker = this.container.find("form");
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        control.picker.on("submit", function (e) {
+                            e.preventDefault();
+                            var $this = $(this),
+                                $button = $this
+                                    .find("button")
+                                    .addClass("aux-button-loading");
 
-                    var control = this;
-                    control.picker = this.container.find( 'form' );
+                            var data = new FormData();
+                            data.append(
+                                "file",
+                                $this
+                                    .find("#auxin-select-import")
+                                    .prop("files")[0]
+                            );
+                            data.append("action", "auxin_customizer_import");
+                            data.append(
+                                "nonce",
+                                $this.find("#auxin-import-nonce").val()
+                            );
 
-                    control.picker.on( 'submit', function(e) {
-                        e.preventDefault();
-                        var $this = $(this),
-                        $button = $this.find('button').addClass('aux-button-loading');
-
-                        var data = new FormData();
-                        data.append('file', $this.find('#auxin-select-import').prop('files')[0]);
-                        data.append('action', 'auxin_customizer_import');
-                        data.append('nonce', $this.find('#auxin-import-nonce').val());
-
-                        $.ajax({
-                            url : auxin.ajaxurl,
-                            type: 'POST',
-                            dataType: 'json',
-                            processData: false,
-                            contentType: false,
-                            data: data,
-                            success: function( response ) {
-                                $button.removeClass('aux-button-loading');
-                                if ( response.success ) {
-                                    setTimeout(function(){
-                                        location.reload();
-                                    }, 1000);
-                                }
-                            }
+                            $.ajax({
+                                url: auxin.ajaxurl,
+                                type: "POST",
+                                dataType: "json",
+                                processData: false,
+                                contentType: false,
+                                data: data,
+                                success: function (response) {
+                                    $button.removeClass("aux-button-loading");
+                                    if (response.success) {
+                                        setTimeout(function () {
+                                            location.reload();
+                                        }, 1000);
+                                    }
+                                },
+                            });
                         });
-                    });
-
-                }
-
-            });
+                    },
+                });
         }
-
 
         // select
         // =====================================================================
 
-        if( wp.customize ){
-
-            wp.customize.controlConstructor['auxin_select'] = wp.customize.AuxinControl.extend({
-
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
-
-                    var control = this;
-                    control.picker = this.container.find( 'select' );
-
-                    control.picker.val( control.setting() );
-
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                        //control.setting.preview();
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
-        }
-
-
-        // select2
-        // =====================================================================
-        if( $.fn.select2 ){
-            var select2_picker       = '.aux-select2-single',
-                select2_args         = {
-                    theme: "auxin"
-                };
-
-            // only in widgets page
-            if ( isWidgetsPage ) {
-                $('.inactive-sidebar, .widget-liquid-right').find( select2_picker ).select2( select2_args );
-
-                $( document ).on( 'widget-added widget-updated', function() {
-                    $('.inactive-sidebar, .widget-liquid-right').find( select2_picker ).select2( select2_args );
-                });
-
-            // other pages
-            } else {
-                $( select2_picker ).select2( select2_args );
-
-                $(document).on('panelsopen', function(){
-                    select2_args.dropdownParent = $('.auxin-admin-widget-wrapper');
-                    $( select2_picker ).select2( select2_args );
-                });
-            }
-
-            if( wp.customize ){
-                wp.customize.controlConstructor['auxin_select2'] = wp.customize.AuxinControl.extend({
-
-                    ready: function() {
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_select"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
                         // call superclass
-                        wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
                         var control = this;
-                        control.picker = this.container.find( select2_picker );
+                        control.picker = this.container.find("select");
 
-                        control.picker.val( control.setting() ).select2( select2_args );
+                        control.picker.val(control.setting());
 
-                        control.picker.on( 'change', function() {
-                            control.setting.set( control.picker.val() );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
                             //control.setting.preview();
                         });
 
-                        this.setting.bind( function ( value ) {
-                            control.picker.val( value );
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
                         });
-
-                    }
-
+                    },
                 });
+        }
+
+        // select2
+        // =====================================================================
+        if ($.fn.select2) {
+            var select2_picker = ".aux-select2-single",
+                select2_args = {
+                    theme: "auxin",
+                };
+
+            // only in widgets page
+            if (isWidgetsPage) {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(select2_picker)
+                    .select2(select2_args);
+
+                $(document).on("widget-added widget-updated", function () {
+                    $(".inactive-sidebar, .widget-liquid-right")
+                        .find(select2_picker)
+                        .select2(select2_args);
+                });
+
+                // other pages
+            } else {
+                $(select2_picker).select2(select2_args);
+
+                $(document).on("panelsopen", function () {
+                    select2_args.dropdownParent = $(
+                        ".auxin-admin-widget-wrapper"
+                    );
+                    $(select2_picker).select2(select2_args);
+                });
+            }
+
+            if (wp.customize) {
+                wp.customize.controlConstructor["auxin_select2"] =
+                    wp.customize.AuxinControl.extend({
+                        ready: function () {
+                            // call superclass
+                            wp.customize.AuxinControl.prototype.ready.apply(
+                                this,
+                                arguments
+                            );
+
+                            var control = this;
+                            control.picker =
+                                this.container.find(select2_picker);
+
+                            control.picker
+                                .val(control.setting())
+                                .select2(select2_args);
+
+                            control.picker.on("change", function () {
+                                control.setting.set(control.picker.val());
+                                //control.setting.preview();
+                            });
+
+                            this.setting.bind(function (value) {
+                                control.picker.val(value);
+                            });
+                        },
+                    });
             }
 
             // Select 2 multiple ---------------------
 
-            var select2_picker_multi  = '.aux-select2-multiple',
-                select2_args_multi         = {
-                    theme:       "auxin",
+            var select2_picker_multi = ".aux-select2-multiple",
+                select2_args_multi = {
+                    theme: "auxin",
                     placeholder: "Select Options",
                     allowClear: true,
-                    dropdownParent: $('#vc_ui-panel-edit-element')
+                    dropdownParent: $("#vc_ui-panel-edit-element"),
                 },
                 old_name;
 
             // only in widgets page on widgets the name of multiple select should have [] at the end.
-            if ( isWidgetsPage ) {
-                $('.inactive-sidebar, .widget-liquid-right').find( select2_picker_multi ).each( function() {
-                  old_name = $( this ).attr( "name");
-                  if(! old_name.endsWith( '[]' ) ) {
-                        $( this ).attr( "name", old_name + '[]');
-                      }
-
-                });
-
-                $('.inactive-sidebar, .widget-liquid-right').find( select2_picker_multi ).select2( select2_args_multi );
-
-                $( document ).on( 'widget-added widget-updated', function() {
-                    $('.inactive-sidebar, .widget-liquid-right').find( select2_picker_multi ).each( function() {
-                      old_name = $( this ).attr( "name");
-                      if(! old_name.endsWith( '[]' ) ) {
-                        $( this ).attr( "name", old_name + '[]');
-                      }
-
+            if (isWidgetsPage) {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(select2_picker_multi)
+                    .each(function () {
+                        old_name = $(this).attr("name");
+                        if (!old_name.endsWith("[]")) {
+                            $(this).attr("name", old_name + "[]");
+                        }
                     });
 
-                    $('.inactive-sidebar, .widget-liquid-right').find( select2_picker_multi ).select2( select2_args_multi );
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(select2_picker_multi)
+                    .select2(select2_args_multi);
+
+                $(document).on("widget-added widget-updated", function () {
+                    $(".inactive-sidebar, .widget-liquid-right")
+                        .find(select2_picker_multi)
+                        .each(function () {
+                            old_name = $(this).attr("name");
+                            if (!old_name.endsWith("[]")) {
+                                $(this).attr("name", old_name + "[]");
+                            }
+                        });
+
+                    $(".inactive-sidebar, .widget-liquid-right")
+                        .find(select2_picker_multi)
+                        .select2(select2_args_multi);
                 });
 
-            // other pages
+                // other pages
             } else {
-                $( select2_picker_multi ).select2( select2_args_multi );
+                $(select2_picker_multi).select2(select2_args_multi);
 
-                $(document).on('panelsopen', function(){
-                    select2_args_multi.dropdownParent = $(select2_picker_multi).closest('.aux-element-field.aux-multiple-selector');
-                   $( select2_picker_multi ).select2( select2_args_multi );
+                $(document).on("panelsopen", function () {
+                    select2_args_multi.dropdownParent = $(
+                        select2_picker_multi
+                    ).closest(".aux-element-field.aux-multiple-selector");
+                    $(select2_picker_multi).select2(select2_args_multi);
                 });
             }
 
-            if( wp.customize ){
-                wp.customize.controlConstructor['auxin_select2_multiple'] = wp.customize.AuxinControl.extend({
+            if (wp.customize) {
+                wp.customize.controlConstructor["auxin_select2_multiple"] =
+                    wp.customize.AuxinControl.extend({
+                        ready: function () {
+                            // call superclass
+                            wp.customize.AuxinControl.prototype.ready.apply(
+                                this,
+                                arguments
+                            );
 
-                    ready: function() {
-                        // call superclass
-                        wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                            var control = this;
+                            select2_args_multi.dropdownParent = this.container
+                                .find(select2_picker_multi)
+                                .closest(
+                                    ".customize-control-auxin_select2_multiple"
+                                );
+                            control.picker =
+                                this.container.find(select2_picker_multi);
 
-                        var control = this;
-                        select2_args_multi.dropdownParent = this.container.find(select2_picker_multi).closest('.customize-control-auxin_select2_multiple');
-                        control.picker = this.container.find( select2_picker_multi );
+                            control.picker
+                                .val(control.setting())
+                                .select2(select2_args_multi);
 
-                        control.picker.val( control.setting() ).select2( select2_args_multi );
+                            control.picker.on("change", function () {
+                                control.setting.set(control.picker.val());
+                                // control.setting.preview();
+                            });
 
-                        control.picker.on( 'change', function() {
-                            control.setting.set( control.picker.val() );
-                            // control.setting.preview();
-                        });
-
-                        this.setting.bind( function ( value ) {
-                            control.picker.val( value );
-                        });
-
-                    }
-
-                });
+                            this.setting.bind(function (value) {
+                                control.picker.val(value);
+                            });
+                        },
+                    });
             }
-
-
         }
 
-        if( $.fn.spinner ){
+        if ($.fn.spinner) {
+            var $numerics = $(".auxin-admin-numeric");
 
-            var $numerics = $('.auxin-admin-numeric');
-
-            for ( var i = 0, l = $numerics.length; i < l; i++ ) {
+            for (var i = 0, l = $numerics.length; i < l; i++) {
                 var $this = $numerics.eq(i),
                     params = {};
 
-                if( undefined !== ( minVal = $this.data('min') ) ){
-                    params.min = parseInt( minVal );
+                if (undefined !== (minVal = $this.data("min"))) {
+                    params.min = parseInt(minVal);
                 }
-                if( undefined !== ( maxVal = $this.data('max') ) ){
-                    params.max = parseInt( maxVal );
+                if (undefined !== (maxVal = $this.data("max"))) {
+                    params.max = parseInt(maxVal);
                 }
-                if( undefined !== ( stepVal = $this.data('step') ) ){
-                    params.step = parseInt( stepVal );
+                if (undefined !== (stepVal = $this.data("step"))) {
+                    params.step = parseInt(stepVal);
                 }
 
-                $this.spinner( params );
+                $this.spinner(params);
             }
         }
 
         // iconpicker
         // =====================================================================
         var auxIconPickerOptions = {
-            theme             : 'fip-grey',              // The CSS theme to use with this fontIconPicker. You can set different themes on multiple elements on the same page
-            source            : false,                   // Icons source (array|false|object)
-            emptyIcon         : true,                    // Empty icon should be shown?
-            emptyIconValue    : '',                      // The value of the empty icon, change if you select has something else, say "none"
-            iconsPerPage      : 36,                      // Number of icons per page
-            hasSearch         : true,                    // Is search enabled?
-            searchSource      : false,                   // Give a manual search values. If using attributes then for proper search feature we also need to pass icon names under the same order of source
-            useAttribute      : false,                   // Whether to use attribute selector for printing icons
-            attributeName     : 'data-icon',             // HTML Attribute name
-            convertToHex      : true,                    // Whether or not to convert to hexadecimal for attribute value. If true then please pass decimal integer value to the source (or as value="" attribute of the select field)
-            allCategoryText   : 'From all categories',   // The text for the select all category option
-            unCategorizedText : 'Uncategorized'          // The text for the select uncategorized option
-        }, auxIconPickerSelector = '.aux-fonticonpicker';
+                theme: "fip-grey", // The CSS theme to use with this fontIconPicker. You can set different themes on multiple elements on the same page
+                source: false, // Icons source (array|false|object)
+                emptyIcon: true, // Empty icon should be shown?
+                emptyIconValue: "", // The value of the empty icon, change if you select has something else, say "none"
+                iconsPerPage: 15, // Number of icons per page
+                hasSearch: true, // Is search enabled?
+                searchSource: false, // Give a manual search values. If using attributes then for proper search feature we also need to pass icon names under the same order of source
+                useAttribute: false, // Whether to use attribute selector for printing icons
+                attributeName: "data-icon", // HTML Attribute name
+                convertToHex: true, // Whether or not to convert to hexadecimal for attribute value. If true then please pass decimal integer value to the source (or as value="" attribute of the select field)
+                allCategoryText: "From all categories", // The text for the select all category option
+                unCategorizedText: "Uncategorized", // The text for the select uncategorized option
+            },
+            auxIconPickerSelector = ".aux-fonticonpicker";
 
         // only in widgets page
-        if ( isWidgetsPage ) {
-            $('.inactive-sidebar, .widget-liquid-right').find( auxIconPickerSelector ).fontIconPicker( auxIconPickerOptions );
+        if (isWidgetsPage) {
+            $(".inactive-sidebar, .widget-liquid-right")
+                .find(auxIconPickerSelector)
+                .fontIconPicker(auxIconPickerOptions);
 
-            $( document ).on( 'widget-added widget-updated', function() {
-                $('.inactive-sidebar, .widget-liquid-right').find( auxIconPickerSelector ).fontIconPicker( auxIconPickerOptions );
+            $(document).on("widget-added widget-updated", function () {
+                $(".inactive-sidebar, .widget-liquid-right")
+                    .find(auxIconPickerSelector)
+                    .fontIconPicker(auxIconPickerOptions);
             });
 
-        // other pages
+            // other pages
         } else {
-            $( auxIconPickerSelector ).fontIconPicker( auxIconPickerOptions );
+            $(auxIconPickerSelector).fontIconPicker(auxIconPickerOptions);
 
-            if( wp.customize ){
-                wp.customize.bind( 'ready', function() {
-                    $( auxIconPickerSelector ).fontIconPicker( auxIconPickerOptions );
+            if (wp.customize) {
+                wp.customize.bind("ready", function () {
+                    $(auxIconPickerSelector).fontIconPicker(
+                        auxIconPickerOptions
+                    );
                 });
             }
-            $(document).on('panelsopen', function(){
-                $( auxIconPickerSelector ).fontIconPicker( auxIconPickerOptions );
+            $(document).on("panelsopen", function () {
+                $(auxIconPickerSelector).fontIconPicker(auxIconPickerOptions);
             });
         }
 
-        if( wp.customize ){
+        if (wp.customize) {
+            wp.customize.controlConstructor["auxin_icon"] =
+                wp.customize.AuxinControl.extend({
+                    ready: function () {
+                        // call superclass
+                        wp.customize.AuxinControl.prototype.ready.apply(
+                            this,
+                            arguments
+                        );
 
-            wp.customize.controlConstructor['auxin_icon'] = wp.customize.AuxinControl.extend({
+                        var control = this;
+                        control.picker = this.container.find(
+                            auxIconPickerSelector
+                        );
 
-                ready: function() {
-                    // call superclass
-                    wp.customize.AuxinControl.prototype.ready.apply( this, arguments );
+                        control.picker.val(control.setting());
 
-                    var control = this;
-                    control.picker = this.container.find( auxIconPickerSelector );
+                        control.picker.on("change", function () {
+                            control.setting.set(control.picker.val());
+                        });
 
-                    control.picker.val( control.setting() );
-
-                    control.picker.on( 'change', function() {
-                        control.setting.set( control.picker.val() );
-                    });
-
-                    this.setting.bind( function ( value ) {
-                        control.picker.val( value );
-                    });
-
-                }
-
-            });
+                        this.setting.bind(function (value) {
+                            control.picker.val(value);
+                        });
+                    },
+                });
         }
 
         // Activate the corresponding post format tab on post edit page
         // =====================================================================
 
         function onWPDataChange() {
-            var format = wp.data.select( 'core/editor' ).getPostEdits().format || wp.data.select('core/editor').getCurrentPostAttribute('format');
-            if ( format !== lastFormat )  {
+            var format =
+                wp.data.select("core/editor").getPostEdits().format ||
+                wp.data.select("core/editor").getCurrentPostAttribute("format");
+            if (format !== lastFormat) {
                 lastFormat = format;
-                if( typeof format === 'undefined' ){
+                if (typeof format === "undefined") {
                     return;
                 }
-                $('.aux-format-tab').hide();
-                get_format_section( format ).show();
+                $(".aux-format-tab").hide();
+                get_format_section(format).show();
             }
         }
         // Fix gutenberg issue
-        if( typeof wp.blocks !== "undefined" && wp.data.select( 'core/editor' ) != null ){
-            var lastFormat = '';
-            wp.data.subscribe( onWPDataChange );
+        if (
+            typeof wp.blocks !== "undefined" &&
+            wp.data.select("core/editor") != null
+        ) {
+            var lastFormat = "";
+            wp.data.subscribe(onWPDataChange);
             onWPDataChange();
         }
 
-        var $format_select_buttons = $('#post-formats-select input[type="radio"]');
+        var $format_select_buttons = $(
+            '#post-formats-select input[type="radio"]'
+        );
 
-        function get_format_section( format ){
-            format = format.replace('post-format-', '');
-            return $('.axi-metabox-container .tabs .aux-tab-post-' + format );
+        function get_format_section(format) {
+            format = format.replace("post-format-", "");
+            return $(".axi-metabox-container .tabs .aux-tab-post-" + format);
         }
 
-        if( $format_select_buttons.length ){
+        if ($format_select_buttons.length) {
+            var $format_tabs = $(".aux-format-tab"),
+                $lastDisplayed = get_format_section(
+                    $format_select_buttons.filter(":checked").prop("id")
+                ).show();
 
-            var $format_tabs = $('.aux-format-tab'),
-                $lastDisplayed  = get_format_section( $format_select_buttons.filter(':checked').prop('id') ).show();
-
-            if ( !window.location.hash ) {
+            if (!window.location.hash) {
                 // find the corresponding tab
-                $('.axi-metabox-container .tabs a[href="' + window.location.hash + '"]').parent('li').trigger('click');
+                $(
+                    '.axi-metabox-container .tabs a[href="' +
+                        window.location.hash +
+                        '"]'
+                )
+                    .parent("li")
+                    .trigger("click");
             }
 
-            $format_select_buttons.on('change', function(){
+            $format_select_buttons.on("change", function () {
                 $format_tabs.hide();
 
-                $lastDisplayed = get_format_section( $(this).prop('id') );
+                $lastDisplayed = get_format_section($(this).prop("id"));
                 // if no corresponding tab found, activate the layout tab
-                if( ! $lastDisplayed.length )
-                    $lastDisplayed = get_format_section( 'post-format-sidebar-layout' );
+                if (!$lastDisplayed.length)
+                    $lastDisplayed = get_format_section(
+                        "post-format-sidebar-layout"
+                    );
 
-                $lastDisplayed.show().trigger('click');
+                $lastDisplayed.show().trigger("click");
             });
-
         }
 
         /* ------------------------------------------------------------------------------ */
         // setup dependency in widgets
-        if ( isWidgetsPage ) {
-
+        if (isWidgetsPage) {
             // init for active widgets
-            $( '.widget-liquid-right .widget' ).each( function( index, element ) {
-                auxInitWidgetDependencies( $(this) );
-            } );
-
-            $( document ).on( 'widget-added widget-updated', function( e, target ) {
-                auxInitWidgetDependencies( target );
+            $(".widget-liquid-right .widget").each(function (index, element) {
+                auxInitWidgetDependencies($(this));
             });
 
+            $(document).on("widget-added widget-updated", function (e, target) {
+                auxInitWidgetDependencies(target);
+            });
         } else {
-            jQuery(document).on('panelsopen', function( e ){
-                auxInitWidgetDependencies( $(e.target) );
+            jQuery(document).on("panelsopen", function (e) {
+                auxInitWidgetDependencies($(e.target));
             });
         }
 
-        function auxInitWidgetDependencies( $widget ) {
+        function auxInitWidgetDependencies($widget) {
+            var $wrapper = $widget.find(".auxin-admin-widget-wrapper"),
+                id,
+                deps;
 
-            var $wrapper = $widget.find( '.auxin-admin-widget-wrapper' ),
-                id, deps;
-
-            if ( $wrapper.length === 0 ) {
+            if ($wrapper.length === 0) {
                 return;
             }
 
-            id = $wrapper.attr( 'id' );
+            id = $wrapper.attr("id");
 
-            if ( ! window.auxin || !auxin.elements || !auxin.elements[ id ] ) {
+            if (!window.auxin || !auxin.elements || !auxin.elements[id]) {
                 return;
             }
 
             deps = auxin.elements[id].dependencies;
 
-            var manager = new window.DependencyManager( $wrapper, {
-                fieldContainer : '.aux-element-field',
-                fieldMapper    : auxDependencyFieldMapper,
-                observerMapper : auxDependencyFieldMapper
-            } , deps );
+            var manager = new window.DependencyManager(
+                $wrapper,
+                {
+                    fieldContainer: ".aux-element-field",
+                    fieldMapper: auxDependencyFieldMapper,
+                    observerMapper: auxDependencyFieldMapper,
+                },
+                deps
+            );
 
             manager.setup();
         }
 
-        function auxDependencyFieldMapper( target ) { return '[id$="-' + target + '"]'; }
-
+        function auxDependencyFieldMapper(target) {
+            return '[id$="-' + target + '"]';
+        }
 
         /**
          * Store URL hash to a field
          * @param  {[type]} $ [description]
          * @return {[type]}   [description]
          */
-        (function($){
+        (function ($) {
             var $rating = $(".aux-rating-section input");
 
-            if( ! $rating.length ){
+            if (!$rating.length) {
                 return;
             }
 
-            var $feedback_form      = $('.aux-feedback-form'),
-                $feedback_section   = $feedback_form.find('.aux-feedback-section'),
-                $submit_btn         = $feedback_section.find('input[type="submit"]'),
-                $status_progress    = $('.aux-sending-status .ajax-progress'),
-                $status_response    = $('.aux-sending-status .ajax-response'),
-                $rate_us_notice     = $feedback_section.find('.aux-rate-us-offer'),
+            var $feedback_form = $(".aux-feedback-form"),
+                $feedback_section = $feedback_form.find(
+                    ".aux-feedback-section"
+                ),
+                $submit_btn = $feedback_section.find('input[type="submit"]'),
+                $status_progress = $(".aux-sending-status .ajax-progress"),
+                $status_response = $(".aux-sending-status .ajax-response"),
+                $rate_us_notice = $feedback_section.find(".aux-rate-us-offer"),
                 rate;
 
+            $rating
+                .on("change", function () {
+                    rate = $rating.filter(":checked").val();
+                    if (rate !== undefined) {
+                        $feedback_section.removeClass("aux-hide");
+                        $rate_us_notice.toggleClass("aux-hide", rate < 9);
+                    }
+                })
+                .trigger("change");
 
-            $rating.on('change', function(){
-                rate = $rating.filter(':checked').val();
-                if( rate !== undefined ){
-                    $feedback_section.removeClass('aux-hide');
-                    $rate_us_notice.toggleClass('aux-hide', rate < 9 );
-                }
-            }).trigger('change');
-
-
-            $submit_btn.on('click', function(e){
+            $submit_btn.on("click", function (e) {
                 e.preventDefault();
-                if( $submit_btn.prop('disabled') ){ return; }
+                if ($submit_btn.prop("disabled")) {
+                    return;
+                }
 
-                $status_progress.removeClass('aux-hide');
-                $status_response.removeClass('aux-hide');
+                $status_progress.removeClass("aux-hide");
+                $status_response.removeClass("aux-hide");
 
                 $.ajax({
-                    url : auxin.ajaxurl,
-                    type: 'POST',
-                    dataType: 'json',
+                    url: auxin.ajaxurl,
+                    type: "POST",
+                    dataType: "json",
                     data: {
-                        form   : $feedback_form.serializeObject(),
-                        action : 'send_feedback' // the ajax handler
+                        form: $feedback_form.serializeObject(),
+                        action: "send_feedback", // the ajax handler
                     },
-                    success: function( reposnse ) {
-                        if ( reposnse.success ) {
+                    success: function (reposnse) {
+                        if (reposnse.success) {
                             // sent successfully
-                            $status_response.html( '<i class="_success">&#10003;</i>' + reposnse.data ).removeClass('aux-hide');
-                            $status_progress.addClass('aux-hide');
+                            $status_response
+                                .html(
+                                    '<i class="_success">&#10003;</i>' +
+                                        reposnse.data
+                                )
+                                .removeClass("aux-hide");
+                            $status_progress.addClass("aux-hide");
                         } else {
                             // authorization failed
-                            $status_response.html( '<i class="_fail">&#10008;</i>' + reposnse.data ).removeClass('aux-hide');
-                            $status_progress.addClass('aux-hide');
-                            submit_btn.prop( 'disabled', false );
+                            $status_response
+                                .html(
+                                    '<i class="_fail">&#10008;</i>' +
+                                        reposnse.data
+                                )
+                                .removeClass("aux-hide");
+                            $status_progress.addClass("aux-hide");
+                            submit_btn.prop("disabled", false);
                         }
-                    }
+                    },
                 });
 
-                $submit_btn.prop( 'disabled', true ).addClass('disabled');
+                $submit_btn.prop("disabled", true).addClass("disabled");
             });
-
-
         })(jQuery);
-
-
 
         /**
          * Store URL hash to a field
          */
-        (function($){
-            $("form#post").on( 'submit', function(event) {
-                localStorage.setPostMeta( auxin.post && auxin.post.id, 'edit_fragment', window.location.hash );
+        (function ($) {
+            $("form#post").on("submit", function (event) {
+                localStorage.setPostMeta(
+                    auxin.post && auxin.post.id,
+                    "edit_fragment",
+                    window.location.hash
+                );
                 return true;
             });
         })(jQuery);
     });
+
+    // override jquery show and hide function with pure js
+
+    const superShow = jQuery.fn.show;
+
+    jQuery.fn.show = function () {
+        var i = 0,
+            l = this.length;
+
+        for (; i < l; i++) {
+            //if this[i] is an element
+            if (this[i] && this[i].style) {
+                this[i].style.display = "block";
+            } else {
+                superShow.call(jQuery(this[i]));
+            }
+        }
+        return this;
+    };
+
+    const superHide = jQuery.fn.hide;
+    jQuery.fn.hide = function () {
+        var i = 0,
+            l = this.length;
+
+        for (; i < l; i++) {
+            //if this[i] is an element
+            if (this[i] && this[i].style) {
+                this[i].style.display = "none";
+            } else {
+                superHide.call(jQuery(this[i]));
+            }
+        }
+
+        return this;
+    };
+
+    // override slideUp and slideDown function with pure js
+    const superSlideUp = jQuery.fn.slideUp;
+    jQuery.fn.slideUp = function () {
+        var i = 0,
+            l = this.length;
+
+        for (; i < l; i++) {
+            //if this[i] is an element
+            if (this[i]?.style) {
+                this[i].style.display = "none";
+            } else {
+                superSlideUp.call(jQuery(this[i]));
+            }
+        }
+
+        return this;
+    };
+
+    const superSlideDown = jQuery.fn.slideDown;
+    jQuery.fn.slideDown = function () {
+        var i = 0,
+            l = this.length;
+
+        for (; i < l; i++) {
+            //if this[i] is an element
+            if (this[i]?.style) {
+                this[i].style.display = "block";
+            } else {
+                superSlideDown.call(jQuery(this[i]));
+            }
+        }
+
+        return this;
+    };
 
 })(jQuery, window, document);
 

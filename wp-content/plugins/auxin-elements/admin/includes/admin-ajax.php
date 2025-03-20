@@ -18,6 +18,10 @@ function auxin_ajax_send_feedback(){
         wp_send_json_error( __( 'Authorization failed!', 'auxin-elements' ) );
     }
 
+    if ( ! current_user_can('manage_options') ) {
+        wp_send_json_error( __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) );
+    }
+
     if( $rate || $rate === '0' ){
 
         global $wp_version;
@@ -79,6 +83,10 @@ function auxin_remove_feedback_notice() {
         wp_send_json_error( __( 'Authorization failed!', 'auxin-elements' ) );
     }
 
+    if ( ! current_user_can('manage_options') ) {
+        wp_send_json_error( __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) );
+    }
+
     update_option( 'auxin_show_rate_scale_notice', 0 );
     set_theme_mod( 'rate_scale_notice_remind_later_date', 0 );
 
@@ -99,7 +107,7 @@ function auxin_ajax_remind_feedback() {
 
     $nonce    = ! empty( $_POST['form']['_wpnonce']   ) ? sanitize_text_field( $_POST['form']['_wpnonce'] )   : '';
 
-    if( ! wp_verify_nonce( $nonce, 'phlox_feedback' ) ){
+    if( ! wp_verify_nonce( $nonce, 'phlox_feedback' ) || ! current_user_can('manage_options') ){
         wp_send_json_error( __( 'Authorization failed!', 'auxin-elements' ) );
     }
 
@@ -118,6 +126,10 @@ function auxin_ajax_isotope_filter_group(){
     // Check nonce
     if ( ! isset( $_POST['group'] ) ||! isset( $_POST['key'] ) || ! isset( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'aux-iso-group' ) ) {
         wp_send_json_error( __( 'Token Error.', 'auxin-elements' ) );
+    }
+
+    if ( ! current_user_can('manage_options') ) {
+        wp_send_json_error( __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) );
     }
 
     if( false !== update_option( 'aux_isotope_group_' . auxin_sanitize_input( $_POST['key'] ) , auxin_sanitize_input( $_POST['group'] ) ) ) {
@@ -395,6 +407,10 @@ function auxin_customizer_import(){
 		wp_send_json_error( __( 'Token Error.', 'auxin-elements' ) );
     }
 
+    if ( ! current_user_can('manage_options') ) {
+        wp_send_json_error( __( "Access Denied: You don't have the required permissions!", 'auxin-elements' ) );
+    }
+
     // Check input file
     if ( ! isset( $_FILES['file'] ) || 0 < $_FILES['file']['error'] ) {
         wp_send_json_error( __( 'Please upload a valid file.', 'auxin-elements' ) );
@@ -464,7 +480,13 @@ function auxin_template_control_importer() {
     $template_type = sanitize_text_field( $_POST['template_type'] );
     if ( empty( $_POST['nonce'] ) || ! wp_verify_nonce( $_POST['nonce'], 'customizer-template-library-' .  $template_type ) ) {
         wp_send_json_error([
-            'message' => __( 'Sorry. You don\'t have sufficient permission to import a template!', 'auxin-elements')
+            'message' => __( 'Authorization failed!', 'auxin-elements')
+        ]);
+    }
+
+    if ( ! current_user_can('manage_options') ) {
+        wp_send_json_error( [
+            'message' => __( "Access Denied: You don't have the required permissions!", 'auxin-elements' )
         ]);
     }
 

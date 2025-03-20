@@ -1,7 +1,7 @@
-/*! Auxin WordPress Framework - v5.17.0 (2024-12-17)
+/*! Auxin WordPress Framework - v5.17.4 (2025-02-15)
  *  Scripts for initializing plugins 
  *  http://averta.net
- *  (c) 2014-2024 averta;
+ *  (c) 2014-2025 averta;
  */
 
 
@@ -1330,8 +1330,8 @@ for ( var i = 0 ; UlikeHeart.length > i; i++){
         $scope.find('.aux-sidebar .aux-widget-area').each( function( index, el ) {
             $(this).avertaAccordion({
                 items           : '.aux-toggle-widget',
-                itemHeader      : '.widget-title',
-                itemContent     : '.widget-title + *',
+                itemHeader      : '.widget-title, .wp-block-heading',
+                itemContent     : '.widget-title + *, .wp-block-heading + *',
                 itemActiveClass : 'aux-open',
                 contentWrapClass: 'aux-toggle-widget-wrapper',
                 oneVisible      : false,
@@ -1349,7 +1349,10 @@ for ( var i = 0 ; UlikeHeart.length > i; i++){
                     var wrapper = $item.find('.aux-toggle-widget-wrapper'),
                         height = wrapper.outerHeight();
 
-                    wrapper.css('height', height);
+                    wrapper.css({
+                        'height': height,
+                        'overflow': 'hidden'
+                    });
                 }
             });
         });
@@ -3139,19 +3142,6 @@ for ( var i = 0 ; UlikeHeart.length > i; i++){
     // Init some modules on doc ready
     $(function(){
         AuxinInitElementsOnReady();
-    });
-
-    document.addEventListener('DOMContentLoaded', function() {
-        var shopTitles = document.querySelectorAll('.auxshp-title-heading');
-
-        shopTitles.forEach(function(title){
-            var parent = title.parentElement;
-            var parentFontFamily = window.getComputedStyle(parent).fontFamily;
-
-            if (parentFontFamily !== 'inherit') {
-                title.style.fontFamily = parentFontFamily;
-            }
-        });
     });
 
 })(jQuery, window, document);

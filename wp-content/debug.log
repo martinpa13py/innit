@@ -1,0 +1,752 @@
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471336] Starting new trace with root span id c2214078095942f9
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471283] Initializing
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471283] Logging at level 3
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471283] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471283] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:08:22 UTC] [instana.LL_Info:471283] Starting new trace with root span id 60e228d2c016f121
+[20-Mar-2025 13:08:24 UTC] [instana.LL_Info:471283] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476103876456, spans: 137, status: 204
+[20-Mar-2025 13:08:24 UTC] [instana.LL_Info:471283] Starting new trace with root span id d1ede168ad92ca5e
+[20-Mar-2025 13:08:29 UTC] [instana.LL_Info:471337] Initializing
+[20-Mar-2025 13:08:29 UTC] [instana.LL_Info:471337] Logging at level 3
+[20-Mar-2025 13:08:29 UTC] [instana.LL_Info:471337] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:08:29 UTC] [instana.LL_Info:471337] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:08:29 UTC] [instana.LL_Info:471337] Starting new trace with root span id cccbe491a08b2f09
+[20-Mar-2025 13:08:37 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742475987994618, spans: 117, status: 204
+[20-Mar-2025 13:08:37 UTC] [instana.LL_Info:471285] Starting new trace with root span id 1294227fb4107b18
+[20-Mar-2025 13:08:37 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:08:37 UTC] [instana.LL_Info:471286] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742475989772331, spans: 117, status: 204
+[20-Mar-2025 13:08:37 UTC] [instana.LL_Info:471286] Starting new trace with root span id e998313e1b8c5070
+[20-Mar-2025 13:09:24 UTC] [instana.LL_Info:471337] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476110839260, spans: 115, status: 204
+[20-Mar-2025 13:09:24 UTC] [instana.LL_Info:471337] Starting new trace with root span id 6afca5cc95748741
+[20-Mar-2025 13:09:58 UTC] [instana.LL_Info:471492] Initializing
+[20-Mar-2025 13:09:58 UTC] [instana.LL_Info:471492] Logging at level 3
+[20-Mar-2025 13:09:58 UTC] [instana.LL_Info:471492] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:09:58 UTC] [instana.LL_Info:471492] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:09:58 UTC] [instana.LL_Info:471492] Starting new trace with root span id 2edd2598cca2def8
+[20-Mar-2025 13:10:00 UTC] [instana.LL_Info:471492] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476199807955, spans: 141, status: 204
+[20-Mar-2025 13:10:00 UTC] [instana.LL_Info:471492] Starting new trace with root span id 726cad95ba631dd5
+[20-Mar-2025 13:10:22 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476048524040, spans: 119, status: 204
+[20-Mar-2025 13:10:22 UTC] [instana.LL_Info:471364] Starting new trace with root span id 05a5991a83b7a55c
+[20-Mar-2025 13:11:00 UTC] [instana.LL_Info:471295] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742475985675502, spans: 1, status: 204
+[20-Mar-2025 13:11:00 UTC] [instana.LL_Info:471295] Starting new trace with root span id ac2df330f9516347
+[20-Mar-2025 13:11:39 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476118008166, spans: 116, status: 204
+[20-Mar-2025 13:11:39 UTC] [instana.LL_Info:471285] Starting new trace with root span id 8ec79b3d00c84026
+[20-Mar-2025 13:11:40 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476300025318, spans: 134, status: 204
+[20-Mar-2025 13:11:40 UTC] [instana.LL_Info:471285] Starting new trace with root span id 27c422de91244120
+[20-Mar-2025 13:11:42 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476301027882, spans: 116, status: 204
+[20-Mar-2025 13:11:42 UTC] [instana.LL_Info:471285] Starting new trace with root span id 573a8da5d28bb30e
+[20-Mar-2025 13:11:43 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476303031083, spans: 134, status: 204
+[20-Mar-2025 13:11:43 UTC] [instana.LL_Info:471285] Starting new trace with root span id 5703aa955b8b574c
+[20-Mar-2025 13:11:46 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476304033730, spans: 116, status: 204
+[20-Mar-2025 13:11:46 UTC] [instana.LL_Info:471285] Starting new trace with root span id 054ef6965c1774b5
+[20-Mar-2025 13:11:48 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476223539969, spans: 115, status: 204
+[20-Mar-2025 13:11:48 UTC] [instana.LL_Info:471364] Starting new trace with root span id c6a95a37f3a99956
+[20-Mar-2025 13:12:11 UTC] [instana.LL_Info:471749] Initializing
+[20-Mar-2025 13:12:11 UTC] [instana.LL_Info:471749] Logging at level 3
+[20-Mar-2025 13:12:11 UTC] [instana.LL_Info:471749] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:12:11 UTC] [instana.LL_Info:471749] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:12:11 UTC] [instana.LL_Info:471749] Starting new trace with root span id 75de5b5d39d70e28
+[20-Mar-2025 13:12:22 UTC] [instana.LL_Info:471285] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476307036531, spans: 125, status: 204
+[20-Mar-2025 13:12:22 UTC] [instana.LL_Info:471285] Starting new trace with root span id eda89701cb057b23
+[20-Mar-2025 13:12:59 UTC] [instana.LL_Info:471337] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476306857761, spans: 1, status: 204
+[20-Mar-2025 13:12:59 UTC] [instana.LL_Info:471337] Starting new trace with root span id 638eb8a82af4e909
+[20-Mar-2025 13:13:01 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476308548474, spans: 114, status: 204
+[20-Mar-2025 13:13:01 UTC] [instana.LL_Info:471364] Starting new trace with root span id d67f8f526bf07b74
+[20-Mar-2025 13:13:07 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:13:07 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:13:08 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:13:08 UTC] [instana.LL_Info:471287] Starting new trace with root span id a49dc27239547525
+[20-Mar-2025 13:14:09 UTC] [instana.LL_Info:471750] Initializing
+[20-Mar-2025 13:14:09 UTC] [instana.LL_Info:471750] Logging at level 3
+[20-Mar-2025 13:14:09 UTC] [instana.LL_Info:471750] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:14:09 UTC] [instana.LL_Info:471750] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:14:09 UTC] [instana.LL_Info:471750] Starting new trace with root span id 2d48cd7ebc7aeae7
+[20-Mar-2025 13:14:13 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476450685071, spans: 119, status: 204
+[20-Mar-2025 13:14:13 UTC] [instana.LL_Info:471750] Starting new trace with root span id d1a10c99ccba9965
+[20-Mar-2025 13:14:16 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476454690124, spans: 125, status: 204
+[20-Mar-2025 13:14:16 UTC] [instana.LL_Info:471750] Starting new trace with root span id 7bd8542e51b5bb7e
+[20-Mar-2025 13:14:20 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476457692816, spans: 123, status: 204
+[20-Mar-2025 13:14:20 UTC] [instana.LL_Info:471750] Starting new trace with root span id 6f557849a236dd84
+[20-Mar-2025 13:14:21 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476460695594, spans: 124, status: 204
+[20-Mar-2025 13:14:21 UTC] [instana.LL_Info:471750] Starting new trace with root span id 01efeec45d79ecec
+[20-Mar-2025 13:18:59 UTC] [instana.LL_Info:471287] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476389365675, spans: 1, status: 204
+[20-Mar-2025 13:18:59 UTC] [instana.LL_Info:471287] Starting new trace with root span id 230b371150acc8aa
+[20-Mar-2025 13:20:59 UTC] [instana.LL_Info:471366] Initializing
+[20-Mar-2025 13:20:59 UTC] [instana.LL_Info:471366] Logging at level 3
+[20-Mar-2025 13:20:59 UTC] [instana.LL_Info:471366] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:20:59 UTC] [instana.LL_Info:471366] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:20:59 UTC] [instana.LL_Info:471366] Starting new trace with root span id 593afdfd0c426331
+[20-Mar-2025 13:21:06 UTC] [instana.LL_Info:471749] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476332602439, spans: 119, status: 204
+[20-Mar-2025 13:21:06 UTC] [instana.LL_Info:471749] Starting new trace with root span id a9e025918fee80b2
+[20-Mar-2025 13:21:07 UTC] [instana.LL_Info:471751] Initializing
+[20-Mar-2025 13:21:07 UTC] [instana.LL_Info:471751] Logging at level 3
+[20-Mar-2025 13:21:07 UTC] [instana.LL_Info:471751] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:07 UTC] [instana.LL_Info:471751] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:07 UTC] [instana.LL_Info:471751] Starting new trace with root span id 692bda2bc61ac47f
+[20-Mar-2025 13:21:27 UTC] [instana.LL_Info:472072] Initializing
+[20-Mar-2025 13:21:27 UTC] [instana.LL_Info:472072] Logging at level 3
+[20-Mar-2025 13:21:27 UTC] [instana.LL_Info:472072] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:27 UTC] [instana.LL_Info:472072] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:27 UTC] [instana.LL_Info:472072] Starting new trace with root span id e5e1dd1e29f92829
+[20-Mar-2025 13:21:28 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:21:28 UTC] [instana.LL_Info:472073] Initializing
+[20-Mar-2025 13:21:28 UTC] [instana.LL_Info:472073] Logging at level 3
+[20-Mar-2025 13:21:28 UTC] [instana.LL_Info:472073] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:28 UTC] [instana.LL_Info:472073] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:21:28 UTC] [instana.LL_Info:472073] Starting new trace with root span id b653f01560a7fdf0
+[20-Mar-2025 13:21:33 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476888725404, spans: 117, status: 204
+[20-Mar-2025 13:21:33 UTC] [instana.LL_Info:472072] Starting new trace with root span id 99f2d84643d3caac
+[20-Mar-2025 13:21:34 UTC] [instana.LL_Info:472072] Starting new trace with root span id 8166e5e41fc5d116
+[20-Mar-2025 13:21:34 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476893728360, spans: 89, status: 204
+[20-Mar-2025 13:21:37 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476894731175, spans: 136, status: 204
+[20-Mar-2025 13:21:37 UTC] [instana.LL_Info:472072] Starting new trace with root span id 1036dbec62c19b12
+[20-Mar-2025 13:21:39 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476897734048, spans: 118, status: 204
+[20-Mar-2025 13:21:39 UTC] [instana.LL_Info:472072] Starting new trace with root span id 3974437cbf7d035d
+[20-Mar-2025 13:21:41 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476899736837, spans: 126, status: 204
+[20-Mar-2025 13:21:41 UTC] [instana.LL_Info:472072] Starting new trace with root span id 8f992875a38bde48
+[20-Mar-2025 13:21:45 UTC] [instana.LL_Info:472072] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476901739480, spans: 118, status: 204
+[20-Mar-2025 13:21:45 UTC] [instana.LL_Info:472072] Starting new trace with root span id b2023f2bdcecea3a
+[20-Mar-2025 13:22:41 UTC] [instana.LL_Info:471822] Starting new trace with root span id 3401e0d956f49d80
+[20-Mar-2025 13:22:59 UTC] [instana.LL_Info:471749] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476866651500, spans: 325, status: 204
+[20-Mar-2025 13:22:59 UTC] [instana.LL_Info:471749] Starting new trace with root span id e2f8a73189f88fec
+[20-Mar-2025 13:23:08 UTC] [instana.LL_Info:471366] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476859914595, spans: 117, status: 204
+[20-Mar-2025 13:23:08 UTC] [instana.LL_Info:471366] Starting new trace with root span id 4e8b4fdcf01a4c14
+[20-Mar-2025 13:23:54 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476381556509, spans: 117, status: 204
+[20-Mar-2025 13:23:54 UTC] [instana.LL_Info:471364] Starting new trace with root span id e90ab08761af8f83
+[20-Mar-2025 13:23:56 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477034609117, spans: 125, status: 204
+[20-Mar-2025 13:23:56 UTC] [instana.LL_Info:471364] Starting new trace with root span id 38ff14e1255de35c
+[20-Mar-2025 13:23:57 UTC] [instana.LL_Info:471364] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477036611909, spans: 126, status: 204
+[20-Mar-2025 13:23:57 UTC] [instana.LL_Info:471364] Starting new trace with root span id d2e8aa6994f24845
+[20-Mar-2025 13:24:06 UTC] [instana.LL_Info:472255] Initializing
+[20-Mar-2025 13:24:06 UTC] [instana.LL_Info:472255] Logging at level 3
+[20-Mar-2025 13:24:06 UTC] [instana.LL_Info:472255] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:24:06 UTC] [instana.LL_Info:472255] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:24:06 UTC] [instana.LL_Info:472255] Starting new trace with root span id 7d9db488fb148644
+[20-Mar-2025 13:24:10 UTC] [instana.LL_Info:472255] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477047754183, spans: 119, status: 204
+[20-Mar-2025 13:24:10 UTC] [instana.LL_Info:472255] Starting new trace with root span id 6501fe178ae3e674
+[20-Mar-2025 13:24:58 UTC] [instana.LL_Info:471492] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476200810607, spans: 118, status: 204
+[20-Mar-2025 13:24:58 UTC] [instana.LL_Info:471492] Starting new trace with root span id 2f116a6b5c4854e9
+[20-Mar-2025 13:25:00 UTC] [instana.LL_Info:471287] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476739402180, spans: 325, status: 204
+[20-Mar-2025 13:25:00 UTC] [instana.LL_Info:471287] Starting new trace with root span id 2c2777ccaf177f50
+[20-Mar-2025 13:25:06 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:07 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:07 UTC] [instana.LL_Info:471822] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476962548744, spans: 117, status: 204
+[20-Mar-2025 13:25:07 UTC] [instana.LL_Info:471822] Starting new trace with root span id deea5b196113e4f4
+[20-Mar-2025 13:25:09 UTC] [instana.LL_Info:472092] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476900392021, spans: 1, status: 204
+[20-Mar-2025 13:25:09 UTC] [instana.LL_Info:472092] Starting new trace with root span id 708cb74dd5b33279
+[20-Mar-2025 13:25:17 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:17 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:17 UTC] [instana.LL_Info:471492] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477098881885, spans: 117, status: 204
+[20-Mar-2025 13:25:17 UTC] [instana.LL_Info:471492] Starting new trace with root span id 81f886d15eceb29f
+[20-Mar-2025 13:25:18 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:18 UTC] [instana.LL_Info:471492] Starting new trace with root span id 7708ceea70902533
+[20-Mar-2025 13:25:18 UTC] [instana.LL_Info:471492] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477117886684, spans: 134, status: 204
+[20-Mar-2025 13:25:25 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:25 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:26 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476461698483, spans: 116, status: 204
+[20-Mar-2025 13:25:26 UTC] [instana.LL_Info:471750] Starting new trace with root span id cc8bf43be66ad1f5
+[20-Mar-2025 13:25:26 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:27 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:27 UTC] [instana.LL_Info:471750] Starting new trace with root span id 42f79d78235ca478
+[20-Mar-2025 13:25:27 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477126754011, spans: 122, status: 204
+[20-Mar-2025 13:25:33 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:33 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:33 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477127756905, spans: 119, status: 204
+[20-Mar-2025 13:25:33 UTC] [instana.LL_Info:471750] Starting new trace with root span id 2b30932db6e73fcb
+[20-Mar-2025 13:25:33 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:33 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:25:33 UTC] [instana.LL_Info:471750] Starting new trace with root span id bae7d087ae8dd760
+[20-Mar-2025 13:25:33 UTC] [instana.LL_Info:471750] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477133760360, spans: 119, status: 204
+[20-Mar-2025 13:26:34 UTC] [instana.LL_Info:472309] Initializing
+[20-Mar-2025 13:26:34 UTC] [instana.LL_Info:472309] Logging at level 3
+[20-Mar-2025 13:26:34 UTC] [instana.LL_Info:472309] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:26:34 UTC] [instana.LL_Info:472309] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:26:34 UTC] [instana.LL_Info:472309] Starting new trace with root span id 7a50b5990a7cf7e2
+[20-Mar-2025 13:26:48 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:26:48 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:26:48 UTC] [instana.LL_Info:472255] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477050756811, spans: 116, status: 204
+[20-Mar-2025 13:26:48 UTC] [instana.LL_Info:472255] Starting new trace with root span id 4cceb1d96f244697
+[20-Mar-2025 13:27:08 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:08 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:08 UTC] [instana.LL_Info:471749] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742476980662894, spans: 116, status: 204
+[20-Mar-2025 13:27:08 UTC] [instana.LL_Info:471749] Starting new trace with root span id 26cad7d26b7a41e4
+[20-Mar-2025 13:27:13 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:13 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:13 UTC] [instana.LL_Info:472256] Initializing
+[20-Mar-2025 13:27:13 UTC] [instana.LL_Info:472256] Logging at level 3
+[20-Mar-2025 13:27:13 UTC] [instana.LL_Info:472256] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:13 UTC] [instana.LL_Info:472256] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:13 UTC] [instana.LL_Info:472256] Starting new trace with root span id e2b010575fa7f3f7
+[20-Mar-2025 13:27:14 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:15 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:15 UTC] [instana.LL_Info:472256] Starting new trace with root span id c559782d10960055
+[20-Mar-2025 13:27:15 UTC] [instana.LL_Info:472256] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477234462300, spans: 116, status: 204
+[20-Mar-2025 13:27:16 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:16 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:16 UTC] [instana.LL_Info:472256] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477235465057, spans: 118, status: 204
+[20-Mar-2025 13:27:16 UTC] [instana.LL_Info:472256] Starting new trace with root span id 2877daebbf5b461f
+[20-Mar-2025 13:27:17 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:17 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:17 UTC] [instana.LL_Info:472256] Starting new trace with root span id 78862bd657269a65
+[20-Mar-2025 13:27:17 UTC] [instana.LL_Info:472256] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477237468048, spans: 121, status: 204
+[20-Mar-2025 13:27:19 UTC] [instana.LL_Info:472256] Starting new trace with root span id 0373106f6cf60346
+[20-Mar-2025 13:27:19 UTC] [instana.LL_Info:472256] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477238471116, spans: 122, status: 204
+[20-Mar-2025 13:27:21 UTC] [instana.LL_Info:472256] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477239473803, spans: 116, status: 204
+[20-Mar-2025 13:27:21 UTC] [instana.LL_Info:472256] Starting new trace with root span id a8ec5fb4f14f9376
+[20-Mar-2025 13:27:29 UTC] [instana.LL_Info:472441] Initializing
+[20-Mar-2025 13:27:29 UTC] [instana.LL_Info:472441] Logging at level 3
+[20-Mar-2025 13:27:29 UTC] [instana.LL_Info:472441] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:29 UTC] [instana.LL_Info:472441] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:29 UTC] [instana.LL_Info:472441] Starting new trace with root span id c9cdd088cece3f54
+[20-Mar-2025 13:27:34 UTC] [instana.LL_Info:472441] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477249894395, spans: 115, status: 204
+[20-Mar-2025 13:27:34 UTC] [instana.LL_Info:472441] Starting new trace with root span id 4060cad604ebdb45
+[20-Mar-2025 13:27:34 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:35 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:27:35 UTC] [instana.LL_Info:472443] Initializing
+[20-Mar-2025 13:27:35 UTC] [instana.LL_Info:472443] Logging at level 3
+[20-Mar-2025 13:27:35 UTC] [instana.LL_Info:472443] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:35 UTC] [instana.LL_Info:472443] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:27:35 UTC] [instana.LL_Info:472443] Starting new trace with root span id b57b919c6f07dd5a
+[20-Mar-2025 13:27:38 UTC] [instana.LL_Info:471822] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477107562173, spans: 134, status: 204
+[20-Mar-2025 13:27:38 UTC] [instana.LL_Info:471822] Starting new trace with root span id 33b089d9eadba668
+[20-Mar-2025 13:27:40 UTC] PHP Warning:  Undefined array key "add_ons" in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21
+[20-Mar-2025 13:27:40 UTC] PHP Warning:  Trying to access array offset on null in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21
+[20-Mar-2025 13:27:40 UTC] PHP Fatal error:  Uncaught TypeError: Elementor\Modules\Home\Transformations\Filter_Plugins::get_add_ons_installation_status(): Argument #1 ($add_ons) must be of type array, null given, called in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21 and defined in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php:30
+Stack trace:
+#0 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php(21): Elementor\Modules\Home\Transformations\Filter_Plugins->get_add_ons_installation_status()
+#1 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/classes/transformations-manager.php(57): Elementor\Modules\Home\Transformations\Filter_Plugins->transform()
+#2 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/api.php(25): Elementor\Modules\Home\Classes\Transformations_Manager->run_transformations()
+#3 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/api.php(19): Elementor\Modules\Home\API->transform_home_screen_data()
+#4 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/module.php(104): Elementor\Modules\Home\API->get_home_screen_items()
+#5 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/module.php(66): Elementor\Modules\Home\Module->get_app_js_config()
+#6 /var/www/innit.com.py/wp-includes/class-wp-hook.php(324): Elementor\Modules\Home\Module->enqueue_home_screen_scripts()
+#7 /var/www/innit.com.py/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/innit.com.py/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/innit.com.py/wp-admin/admin-header.php(139): do_action()
+#10 /var/www/innit.com.py/wp-admin/admin.php(239): require_once('...')
+#11 {main}
+  thrown in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 30
+[20-Mar-2025 13:27:40 UTC] [instana.LL_Info:471822] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.471281, time: 1742477258576096, spans: 116, status: 204
+[20-Mar-2025 13:27:40 UTC] [instana.LL_Info:471822] Starting new trace with root span id 0d46a9694bc16846
+[20-Mar-2025 13:28:20 UTC] [instana.LL_Info:472442] Initializing
+[20-Mar-2025 13:28:20 UTC] [instana.LL_Info:472442] Logging at level 3
+[20-Mar-2025 13:28:20 UTC] [instana.LL_Info:472442] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:28:20 UTC] [instana.LL_Info:472442] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:28:20 UTC] [instana.LL_Info:472442] Starting new trace with root span id 5d6f4bd2ce29716f
+[20-Mar-2025 13:28:42 UTC] PHP Warning:  Undefined array key "add_ons" in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21
+[20-Mar-2025 13:28:42 UTC] PHP Warning:  Trying to access array offset on null in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21
+[20-Mar-2025 13:28:42 UTC] PHP Fatal error:  Uncaught TypeError: Elementor\Modules\Home\Transformations\Filter_Plugins::get_add_ons_installation_status(): Argument #1 ($add_ons) must be of type array, null given, called in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 21 and defined in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php:30
+Stack trace:
+#0 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php(21): Elementor\Modules\Home\Transformations\Filter_Plugins->get_add_ons_installation_status()
+#1 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/classes/transformations-manager.php(57): Elementor\Modules\Home\Transformations\Filter_Plugins->transform()
+#2 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/api.php(25): Elementor\Modules\Home\Classes\Transformations_Manager->run_transformations()
+#3 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/api.php(19): Elementor\Modules\Home\API->transform_home_screen_data()
+#4 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/module.php(104): Elementor\Modules\Home\API->get_home_screen_items()
+#5 /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/module.php(66): Elementor\Modules\Home\Module->get_app_js_config()
+#6 /var/www/innit.com.py/wp-includes/class-wp-hook.php(324): Elementor\Modules\Home\Module->enqueue_home_screen_scripts()
+#7 /var/www/innit.com.py/wp-includes/class-wp-hook.php(348): WP_Hook->apply_filters()
+#8 /var/www/innit.com.py/wp-includes/plugin.php(517): WP_Hook->do_action()
+#9 /var/www/innit.com.py/wp-admin/admin-header.php(139): do_action()
+#10 /var/www/innit.com.py/wp-admin/admin.php(239): require_once('...')
+#11 {main}
+  thrown in /var/www/innit.com.py/wp-content/plugins/elementor/modules/home/transformations/filter-plugins.php on line 30
+[20-Mar-2025 13:28:42 UTC] [instana.LL_Info:472550] Initializing
+[20-Mar-2025 13:28:42 UTC] [instana.LL_Info:472550] Logging at level 3
+[20-Mar-2025 13:28:42 UTC] [instana.LL_Info:472550] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:28:42 UTC] [instana.LL_Info:472550] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:28:42 UTC] [instana.LL_Info:472550] Starting new trace with root span id 8a8533857552019f
+[20-Mar-2025 13:28:45 UTC] [instana.LL_Info:472550] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472547, time: 1742477322591920, spans: 134, status: 204
+[20-Mar-2025 13:28:45 UTC] [instana.LL_Info:472550] Starting new trace with root span id 38ecd9d7e8b62c38
+[20-Mar-2025 13:28:48 UTC] [instana.LL_Info:472550] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472547, time: 1742477325594814, spans: 120, status: 204
+[20-Mar-2025 13:28:48 UTC] [instana.LL_Info:472550] Starting new trace with root span id 33394a373733083a
+[20-Mar-2025 13:29:04 UTC] [instana.LL_Info:472604] Initializing
+[20-Mar-2025 13:29:04 UTC] [instana.LL_Info:472604] Logging at level 3
+[20-Mar-2025 13:29:04 UTC] [instana.LL_Info:472604] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:29:04 UTC] [instana.LL_Info:472604] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:29:04 UTC] [instana.LL_Info:472604] Starting new trace with root span id bd3740366b62155f
+[20-Mar-2025 13:29:49 UTC] [instana.LL_Info:472604] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472547, time: 1742477345331525, spans: 319, status: 204
+[20-Mar-2025 13:29:49 UTC] [instana.LL_Info:472604] Starting new trace with root span id 744687709c3be232
+[20-Mar-2025 13:30:49 UTC] [instana.LL_Info:472552] Starting new trace with root span id b82702e204fce07f
+[20-Mar-2025 13:30:59 UTC] [instana.LL_Info:472731] Initializing
+[20-Mar-2025 13:30:59 UTC] [instana.LL_Info:472731] Logging at level 3
+[20-Mar-2025 13:30:59 UTC] [instana.LL_Info:472731] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:30:59 UTC] [instana.LL_Info:472731] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:30:59 UTC] [instana.LL_Info:472731] Starting new trace with root span id 2d8f10145981a37c
+[20-Mar-2025 13:31:04 UTC] [instana.LL_Info:472731] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477460080395, spans: 133, status: 204
+[20-Mar-2025 13:31:04 UTC] [instana.LL_Info:472731] Starting new trace with root span id c9a4044cf3ba1ba8
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Initializing
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Logging at level 3
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Starting new trace with root span id 83af541e73a2af41
+[20-Mar-2025 13:31:20 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:20 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472795] Initializing
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472795] Logging at level 3
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472795] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472795] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472795] Starting new trace with root span id 800bb8fdfafb39d3
+[20-Mar-2025 13:31:20 UTC] [instana.LL_Info:472730] Starting new trace with root span id 1a0df3507b03ae76
+[20-Mar-2025 13:31:23 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:23 UTC] [instana.LL_Info:472730] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477481352955, spans: 173, status: 204
+[20-Mar-2025 13:31:23 UTC] [instana.LL_Info:472730] Starting new trace with root span id ec5f6ae0bc3cccc1
+[20-Mar-2025 13:31:25 UTC] [instana.LL_Info:472730] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477483355177, spans: 87, status: 204
+[20-Mar-2025 13:31:25 UTC] [instana.LL_Info:472730] Starting new trace with root span id fc1c4931e2b86601
+[20-Mar-2025 13:31:26 UTC] [instana.LL_Info:472730] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477485357435, spans: 87, status: 204
+[20-Mar-2025 13:31:26 UTC] [instana.LL_Info:472730] Starting new trace with root span id af3fe20c2d4831d7
+[20-Mar-2025 13:31:27 UTC] [instana.LL_Info:472732] Initializing
+[20-Mar-2025 13:31:27 UTC] [instana.LL_Info:472732] Logging at level 3
+[20-Mar-2025 13:31:27 UTC] [instana.LL_Info:472732] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:27 UTC] [instana.LL_Info:472732] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:27 UTC] [instana.LL_Info:472732] Starting new trace with root span id 4fadc7057931ecd0
+[20-Mar-2025 13:31:33 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:33 UTC] PHP Warning:  wp_update_themes(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:33 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:34 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:34 UTC] PHP Warning:  wp_version_check(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:34 UTC] [instana.LL_Info:472734] Initializing
+[20-Mar-2025 13:31:34 UTC] [instana.LL_Info:472734] Logging at level 3
+[20-Mar-2025 13:31:34 UTC] [instana.LL_Info:472734] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:34 UTC] [instana.LL_Info:472734] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:34 UTC] [instana.LL_Info:472734] Starting new trace with root span id 39fd04982dfe9c96
+[20-Mar-2025 13:31:42 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:42 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:42 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:43 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:43 UTC] [instana.LL_Info:472730] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477487360253, spans: 126, status: 204
+[20-Mar-2025 13:31:43 UTC] [instana.LL_Info:472730] Starting new trace with root span id d963fccad55e73dc
+[20-Mar-2025 13:31:43 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:43 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:43 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:44 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:44 UTC] [instana.LL_Info:472737] Initializing
+[20-Mar-2025 13:31:44 UTC] [instana.LL_Info:472737] Logging at level 3
+[20-Mar-2025 13:31:44 UTC] [instana.LL_Info:472737] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:44 UTC] [instana.LL_Info:472737] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:31:44 UTC] [instana.LL_Info:472737] Starting new trace with root span id 78ffefacd2c889d1
+[20-Mar-2025 13:31:47 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:47 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:47 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:31:47 UTC] [instana.LL_Info:472737] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477504705857, spans: 127, status: 204
+[20-Mar-2025 13:31:47 UTC] [instana.LL_Info:472737] Starting new trace with root span id 82a494a38ddc5633
+[20-Mar-2025 13:32:48 UTC] [instana.LL_Info:472730] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477503364140, spans: 126, status: 204
+[20-Mar-2025 13:32:48 UTC] [instana.LL_Info:472730] Starting new trace with root span id 86b06ee7093e6322
+[20-Mar-2025 13:33:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:33:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:33:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:33:06 UTC] [instana.LL_Info:472731] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477465083280, spans: 120, status: 204
+[20-Mar-2025 13:33:06 UTC] [instana.LL_Info:472731] Starting new trace with root span id f2dd63bf2057b291
+[20-Mar-2025 13:34:07 UTC] [instana.LL_Info:472732] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477487974604, spans: 115, status: 204
+[20-Mar-2025 13:34:07 UTC] [instana.LL_Info:472732] Starting new trace with root span id 1914e7d95b2acb7e
+[20-Mar-2025 13:35:54 UTC] [instana.LL_Info:472782] Initializing
+[20-Mar-2025 13:35:54 UTC] [instana.LL_Info:472782] Logging at level 3
+[20-Mar-2025 13:35:54 UTC] [instana.LL_Info:472782] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:35:54 UTC] [instana.LL_Info:472782] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:35:54 UTC] [instana.LL_Info:472782] Starting new trace with root span id 842969c6a89073b0
+[20-Mar-2025 13:35:55 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:35:56 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:35:56 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:35:56 UTC] [instana.LL_Info:472782] Starting new trace with root span id 098487504bc642a3
+[20-Mar-2025 13:35:56 UTC] [instana.LL_Info:472782] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477755060378, spans: 115, status: 204
+[20-Mar-2025 13:36:20 UTC] [instana.LL_Info:472783] Starting new trace with root span id c9146549e59985f8
+[20-Mar-2025 13:36:21 UTC] [instana.LL_Info:472954] Initializing
+[20-Mar-2025 13:36:21 UTC] [instana.LL_Info:472954] Logging at level 3
+[20-Mar-2025 13:36:21 UTC] [instana.LL_Info:472954] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:36:21 UTC] [instana.LL_Info:472954] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:36:21 UTC] [instana.LL_Info:472954] Starting new trace with root span id cb1c0d404b971218
+[20-Mar-2025 13:36:57 UTC] [instana.LL_Info:472732] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477647988952, spans: 112, status: 204
+[20-Mar-2025 13:36:57 UTC] [instana.LL_Info:472732] Starting new trace with root span id 2317afa49b3d5aef
+[20-Mar-2025 13:37:26 UTC] [instana.LL_Info:472956] Initializing
+[20-Mar-2025 13:37:26 UTC] [instana.LL_Info:472956] Logging at level 3
+[20-Mar-2025 13:37:26 UTC] [instana.LL_Info:472956] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:37:26 UTC] [instana.LL_Info:472956] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:37:26 UTC] [instana.LL_Info:472956] Starting new trace with root span id 82c8797a241be370
+[20-Mar-2025 13:37:29 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:37:29 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:37:29 UTC] [instana.LL_Info:472956] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477846417480, spans: 116, status: 204
+[20-Mar-2025 13:37:29 UTC] [instana.LL_Info:472956] Starting new trace with root span id f530609fba733085
+[20-Mar-2025 13:38:04 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:38:04 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:38:04 UTC] [instana.LL_Info:473131] Initializing
+[20-Mar-2025 13:38:04 UTC] [instana.LL_Info:473131] Logging at level 3
+[20-Mar-2025 13:38:04 UTC] [instana.LL_Info:473131] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:38:04 UTC] [instana.LL_Info:473131] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:38:04 UTC] [instana.LL_Info:473131] Starting new trace with root span id f4a81e6bf8c53ec3
+[20-Mar-2025 13:38:07 UTC] [instana.LL_Info:472956] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477849420279, spans: 119, status: 204
+[20-Mar-2025 13:38:07 UTC] [instana.LL_Info:472956] Starting new trace with root span id e7380910bbeaab72
+[20-Mar-2025 13:38:32 UTC] [instana.LL_Info:472956] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477887431788, spans: 316, status: 204
+[20-Mar-2025 13:38:32 UTC] [instana.LL_Info:472956] Starting new trace with root span id 40c0a7199413f441
+[20-Mar-2025 13:39:05 UTC] [instana.LL_Info:472783] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477780884644, spans: 84, status: 204
+[20-Mar-2025 13:39:05 UTC] [instana.LL_Info:472783] Starting new trace with root span id cffcff3ef9b11a76
+[20-Mar-2025 13:40:05 UTC] [instana.LL_Info:472782] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.472728, time: 1742477757063532, spans: 122, status: 204
+[20-Mar-2025 13:40:05 UTC] [instana.LL_Info:472782] Starting new trace with root span id 57c604b80d16ed1d
+[20-Mar-2025 13:40:49 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:40:49 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:40:49 UTC] [instana.LL_Info:473621] Initializing
+[20-Mar-2025 13:40:49 UTC] [instana.LL_Info:473621] Logging at level 3
+[20-Mar-2025 13:40:49 UTC] [instana.LL_Info:473621] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:40:49 UTC] [instana.LL_Info:473621] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:40:49 UTC] [instana.LL_Info:473621] Starting new trace with root span id ebd0395118cc3787
+[20-Mar-2025 13:41:02 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:41:02 UTC] PHP Warning:  translations_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:41:02 UTC] [instana.LL_Info:473417] Initializing
+[20-Mar-2025 13:41:02 UTC] [instana.LL_Info:473417] Logging at level 3
+[20-Mar-2025 13:41:02 UTC] [instana.LL_Info:473417] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:02 UTC] [instana.LL_Info:473417] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:02 UTC] [instana.LL_Info:473417] Starting new trace with root span id 364400e130be5d62
+[20-Mar-2025 13:41:24 UTC] [instana.LL_Info:473747] Initializing
+[20-Mar-2025 13:41:24 UTC] [instana.LL_Info:473747] Logging at level 3
+[20-Mar-2025 13:41:24 UTC] [instana.LL_Info:473747] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:24 UTC] [instana.LL_Info:473747] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:24 UTC] [instana.LL_Info:473747] Starting new trace with root span id 0e11b2cbf6860ec1
+[20-Mar-2025 13:41:25 UTC] [instana.LL_Info:473747] Starting new trace with root span id 06c13b66bd79d50e
+[20-Mar-2025 13:41:25 UTC] [instana.LL_Info:473747] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478085362155, spans: 118, status: 204
+[20-Mar-2025 13:41:32 UTC] [instana.LL_Info:473716] Initializing
+[20-Mar-2025 13:41:32 UTC] [instana.LL_Info:473716] Logging at level 3
+[20-Mar-2025 13:41:32 UTC] [instana.LL_Info:473716] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:32 UTC] [instana.LL_Info:473716] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:41:32 UTC] [instana.LL_Info:473716] Starting new trace with root span id 48f048765a738976
+[20-Mar-2025 13:42:25 UTC] [instana.LL_Info:473758] Initializing
+[20-Mar-2025 13:42:25 UTC] [instana.LL_Info:473758] Logging at level 3
+[20-Mar-2025 13:42:25 UTC] [instana.LL_Info:473758] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:42:25 UTC] [instana.LL_Info:473758] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:42:25 UTC] [instana.LL_Info:473758] Starting new trace with root span id 9d391f664ab0c73b
+[20-Mar-2025 13:42:55 UTC] [instana.LL_Info:473748] Initializing
+[20-Mar-2025 13:42:55 UTC] [instana.LL_Info:473748] Logging at level 3
+[20-Mar-2025 13:42:55 UTC] [instana.LL_Info:473748] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:42:55 UTC] [instana.LL_Info:473748] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:42:55 UTC] [instana.LL_Info:473748] Starting new trace with root span id 61b26e4c080144ac
+[20-Mar-2025 13:43:08 UTC] [instana.LL_Info:473747] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478086364607, spans: 112, status: 204
+[20-Mar-2025 13:43:08 UTC] [instana.LL_Info:473747] Starting new trace with root span id 71cca47d0a727ffc
+[20-Mar-2025 13:43:09 UTC] [instana.LL_Info:473747] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478189374860, spans: 118, status: 204
+[20-Mar-2025 13:43:09 UTC] [instana.LL_Info:473747] Starting new trace with root span id 6028802e0d8f0901
+[20-Mar-2025 13:43:15 UTC] [instana.LL_Info:473747] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478190377291, spans: 112, status: 204
+[20-Mar-2025 13:43:15 UTC] [instana.LL_Info:473747] Starting new trace with root span id 3f4a35c553553165
+[20-Mar-2025 13:43:16 UTC] [instana.LL_Info:473747] Starting new trace with root span id 4b55b59a08b066aa
+[20-Mar-2025 13:43:28 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:43:28 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473890] Initializing
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473890] Logging at level 3
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473890] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473890] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473890] Starting new trace with root span id f033d04a77fe831a
+[20-Mar-2025 13:43:29 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:43:29 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473891] Initializing
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473891] Logging at level 3
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473891] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473891] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:43:29 UTC] [instana.LL_Info:473891] Starting new trace with root span id 3c873c9bc5a9a3f0
+[20-Mar-2025 13:43:47 UTC] [instana.LL_Info:473417] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478063865387, spans: 119, status: 204
+[20-Mar-2025 13:43:47 UTC] [instana.LL_Info:473417] Starting new trace with root span id 4ad6ae8b4243db3d
+[20-Mar-2025 13:44:17 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:17 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:17 UTC] [instana.LL_Info:473748] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478176130108, spans: 117, status: 204
+[20-Mar-2025 13:44:17 UTC] [instana.LL_Info:473748] Starting new trace with root span id 0ce75690ff6aa856
+[20-Mar-2025 13:44:18 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:19 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:19 UTC] [instana.LL_Info:473748] Starting new trace with root span id 5f575662d88e5a12
+[20-Mar-2025 13:44:19 UTC] [instana.LL_Info:473748] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478258139446, spans: 126, status: 204
+[20-Mar-2025 13:44:27 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:27 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:28 UTC] [instana.LL_Info:473890] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478209898875, spans: 124, status: 204
+[20-Mar-2025 13:44:28 UTC] [instana.LL_Info:473890] Starting new trace with root span id 26e7711c583d9264
+[20-Mar-2025 13:44:28 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:28 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:28 UTC] [instana.LL_Info:473890] Starting new trace with root span id 1ceda3e6daa95632
+[20-Mar-2025 13:44:34 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:34 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:44:34 UTC] [instana.LL_Info:473621] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478050353617, spans: 138, status: 204
+[20-Mar-2025 13:44:34 UTC] [instana.LL_Info:473621] Starting new trace with root span id f8bde226d115ea9d
+[20-Mar-2025 13:44:47 UTC] [instana.LL_Info:473417] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478227879063, spans: 112, status: 204
+[20-Mar-2025 13:44:47 UTC] [instana.LL_Info:473417] Starting new trace with root span id 8da3b8c93dd6dc2b
+[20-Mar-2025 13:45:36 UTC] [instana.LL_Info:473747] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478196381760, spans: 242, status: 204
+[20-Mar-2025 13:45:36 UTC] [instana.LL_Info:473747] Starting new trace with root span id 3ebdbebabe0bbb2b
+[20-Mar-2025 13:46:48 UTC] [instana.LL_Info:473891] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.473414, time: 1742478210193500, spans: 123, status: 204
+[20-Mar-2025 13:46:48 UTC] [instana.LL_Info:473891] Starting new trace with root span id 1cd93cd0010884ba
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Info:485365] Initializing
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Info:485365] Logging at level 3
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Info:485365] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Info:485365] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Info:485365] Starting new trace with root span id 66b10e4082ed656c
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Error:485365] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:47:23 UTC] [instana.LL_Error:485365] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:47:23 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:47:24 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Info:485367] Initializing
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Info:485367] Logging at level 3
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Info:485367] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Info:485367] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Info:485367] Starting new trace with root span id 42d28212b45cbd4d
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Error:485367] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:47:24 UTC] [instana.LL_Error:485367] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:48:25 UTC] [instana.LL_Error:485365] Failed to announce: All retry attempts were exhausted
+[20-Mar-2025 13:48:25 UTC] [instana.LL_Info:485365] Starting new trace with root span id 37a81df90aa9725c
+[20-Mar-2025 13:48:25 UTC] [instana.LL_Error:485365] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:48:25 UTC] [instana.LL_Error:485365] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:48:34 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:48:34 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:48:34 UTC] [instana.LL_Info:485580] Initializing
+[20-Mar-2025 13:48:34 UTC] [instana.LL_Info:485580] Logging at level 3
+[20-Mar-2025 13:48:34 UTC] [instana.LL_Info:485580] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:48:34 UTC] [instana.LL_Info:485580] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:48:34 UTC] [instana.LL_Info:485580] Starting new trace with root span id fc5819bf62575378
+[20-Mar-2025 13:48:49 UTC] [instana.LL_Info:485440] Initializing
+[20-Mar-2025 13:48:49 UTC] [instana.LL_Info:485440] Logging at level 3
+[20-Mar-2025 13:48:49 UTC] [instana.LL_Info:485440] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:48:49 UTC] [instana.LL_Info:485440] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:48:49 UTC] [instana.LL_Info:485440] Starting new trace with root span id 24e0ff6d01ca7994
+[20-Mar-2025 13:49:35 UTC] [instana.LL_Info:485368] Initializing
+[20-Mar-2025 13:49:35 UTC] [instana.LL_Info:485368] Logging at level 3
+[20-Mar-2025 13:49:35 UTC] [instana.LL_Info:485368] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:49:35 UTC] [instana.LL_Info:485368] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:49:35 UTC] [instana.LL_Info:485368] Starting new trace with root span id 1ea1ae3334d53498
+[20-Mar-2025 13:50:18 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:50:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:50:18 UTC] [instana.LL_Info:485573] Initializing
+[20-Mar-2025 13:50:18 UTC] [instana.LL_Info:485573] Logging at level 3
+[20-Mar-2025 13:50:18 UTC] [instana.LL_Info:485573] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:50:18 UTC] [instana.LL_Info:485573] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:50:18 UTC] [instana.LL_Info:485573] Starting new trace with root span id 9ed67d226b30bfcc
+[20-Mar-2025 13:50:44 UTC] [instana.LL_Info:485572] Joining existing trace with id 7d9bf852b46922d3 with new span 1d5fdee4104c6948
+[20-Mar-2025 13:50:44 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:50:45 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:50:45 UTC] [instana.LL_Info:486059] Initializing
+[20-Mar-2025 13:50:45 UTC] [instana.LL_Info:486059] Logging at level 3
+[20-Mar-2025 13:50:45 UTC] [instana.LL_Info:486059] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:50:45 UTC] [instana.LL_Info:486059] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:50:45 UTC] [instana.LL_Info:486059] Starting new trace with root span id 7d9bf852b46922d3
+[20-Mar-2025 13:50:50 UTC] [instana.LL_Info:485573] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.485359, time: 1742478619103388, spans: 114, status: 204
+[20-Mar-2025 13:50:50 UTC] [instana.LL_Info:485573] Starting new trace with root span id de2637c88c8028ae
+[20-Mar-2025 13:51:34 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:51:34 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:51:34 UTC] [instana.LL_Info:486152] Initializing
+[20-Mar-2025 13:51:34 UTC] [instana.LL_Info:486152] Logging at level 3
+[20-Mar-2025 13:51:34 UTC] [instana.LL_Info:486152] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:51:34 UTC] [instana.LL_Info:486152] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:51:34 UTC] [instana.LL_Info:486152] Starting new trace with root span id 3549f959eb2f7bba
+[20-Mar-2025 13:51:40 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:51:40 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:51:40 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:51:40 UTC] [instana.LL_Info:486159] Initializing
+[20-Mar-2025 13:51:40 UTC] [instana.LL_Info:486159] Logging at level 3
+[20-Mar-2025 13:51:40 UTC] [instana.LL_Info:486159] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:51:40 UTC] [instana.LL_Info:486159] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:51:40 UTC] [instana.LL_Info:486159] Starting new trace with root span id 527528f723cb6817
+[20-Mar-2025 13:52:42 UTC] [instana.LL_Info:486282] Initializing
+[20-Mar-2025 13:52:42 UTC] [instana.LL_Info:486282] Logging at level 3
+[20-Mar-2025 13:52:42 UTC] [instana.LL_Info:486282] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:52:42 UTC] [instana.LL_Info:486282] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:52:42 UTC] [instana.LL_Info:486282] Starting new trace with root span id 1eaa85e83c2a3113
+[20-Mar-2025 13:52:51 UTC] [instana.LL_Info:486333] Initializing
+[20-Mar-2025 13:52:51 UTC] [instana.LL_Info:486333] Logging at level 3
+[20-Mar-2025 13:52:51 UTC] [instana.LL_Info:486333] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:52:51 UTC] [instana.LL_Info:486333] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:52:51 UTC] [instana.LL_Info:486333] Starting new trace with root span id be7a29988051a69d
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486604] Initializing
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486604] Logging at level 3
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486604] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486604] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486604] Joining existing trace with id 33e0b2cb32eb77f2 with new span 5f6a5b6ba1ea5ebb
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486605] Initializing
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486605] Logging at level 3
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486605] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486605] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486605] Joining existing trace with id 68b22aa5f90760f4 with new span bf70f86823c70eef
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486602] Initializing
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486602] Logging at level 3
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486602] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486602] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:07 UTC] [instana.LL_Info:486602] Starting new trace with root span id 33e0b2cb32eb77f2
+[20-Mar-2025 13:54:07 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:08 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:08 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:08 UTC] [instana.LL_Info:486603] Initializing
+[20-Mar-2025 13:54:08 UTC] [instana.LL_Info:486603] Logging at level 3
+[20-Mar-2025 13:54:08 UTC] [instana.LL_Info:486603] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:08 UTC] [instana.LL_Info:486603] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:08 UTC] [instana.LL_Info:486603] Starting new trace with root span id 68b22aa5f90760f4
+[20-Mar-2025 13:54:32 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:33 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:33 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Info:486674] Initializing
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Info:486674] Logging at level 3
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Info:486674] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Info:486674] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Info:486674] Starting new trace with root span id 39ee69aea394492c
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Error:486674] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:54:33 UTC] [instana.LL_Error:486674] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:54:35 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:35 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:36 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:36 UTC] [instana.LL_Info:486674] Starting new trace with root span id 4e8b84efea297e70
+[20-Mar-2025 13:54:36 UTC] [instana.LL_Error:486674] Failed to announce: All retry attempts were exhausted
+[20-Mar-2025 13:54:36 UTC] [instana.LL_Error:486674] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:54:36 UTC] [instana.LL_Error:486674] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:54:42 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:42 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:42 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Info:486668] Initializing
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Info:486668] Logging at level 3
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Info:486668] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Info:486668] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Info:486668] Starting new trace with root span id f6505c434b4e973a
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Error:486668] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 13:54:42 UTC] [instana.LL_Error:486668] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 13:55:44 UTC] [instana.LL_Info:486616] Initializing
+[20-Mar-2025 13:55:44 UTC] [instana.LL_Info:486616] Logging at level 3
+[20-Mar-2025 13:55:44 UTC] [instana.LL_Info:486616] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:55:44 UTC] [instana.LL_Info:486616] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:55:44 UTC] [instana.LL_Info:486616] Starting new trace with root span id 00b5419d5e7d6c28
+[20-Mar-2025 13:57:44 UTC] [instana.LL_Info:486601] Initializing
+[20-Mar-2025 13:57:44 UTC] [instana.LL_Info:486601] Logging at level 3
+[20-Mar-2025 13:57:44 UTC] [instana.LL_Info:486601] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:57:44 UTC] [instana.LL_Info:486601] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:57:44 UTC] [instana.LL_Info:486601] Starting new trace with root span id 05e5266f607fd4f5
+[20-Mar-2025 13:58:42 UTC] [instana.LL_Info:486615] Initializing
+[20-Mar-2025 13:58:42 UTC] [instana.LL_Info:486615] Logging at level 3
+[20-Mar-2025 13:58:42 UTC] [instana.LL_Info:486615] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:58:42 UTC] [instana.LL_Info:486615] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 13:58:42 UTC] [instana.LL_Info:486615] Starting new trace with root span id b13400424d632a80
+[20-Mar-2025 13:59:43 UTC] [instana.LL_Info:486616] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.486599, time: 1742478944929091, spans: 106, status: 204
+[20-Mar-2025 13:59:43 UTC] [instana.LL_Info:486616] Starting new trace with root span id 37299d175cd1a319
+[20-Mar-2025 14:01:43 UTC] [instana.LL_Error:486668] Failed to announce: All retry attempts were exhausted
+[20-Mar-2025 14:01:43 UTC] [instana.LL_Info:486668] Starting new trace with root span id 18ae4b1b3c0062ed
+[20-Mar-2025 14:01:43 UTC] [instana.LL_Error:486668] Can't assemble samples for the lack of root namespace PID
+[20-Mar-2025 14:01:43 UTC] [instana.LL_Error:486668] Can't assemble trace for the lack of root namespace PID
+[20-Mar-2025 14:03:44 UTC] [instana.LL_Info:486604] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.486599, time: 1742478848741225, spans: 81, status: 204
+[20-Mar-2025 14:03:44 UTC] [instana.LL_Info:486604] Starting new trace with root span id ba1ea1eb3e293f46
+[20-Mar-2025 14:05:44 UTC] [instana.LL_Info:492930] Initializing
+[20-Mar-2025 14:05:44 UTC] [instana.LL_Info:492930] Logging at level 3
+[20-Mar-2025 14:05:44 UTC] [instana.LL_Info:492930] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:05:44 UTC] [instana.LL_Info:492930] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:05:44 UTC] [instana.LL_Info:492930] Starting new trace with root span id 6c007e444389953f
+[20-Mar-2025 14:05:49 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:50 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:50 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:50 UTC] [instana.LL_Info:492930] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.492919, time: 1742479544936913, spans: 113, status: 204
+[20-Mar-2025 14:05:50 UTC] [instana.LL_Info:492930] Starting new trace with root span id 5658ba8f27b363bf
+[20-Mar-2025 14:05:53 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:53 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:54 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:05:54 UTC] [instana.LL_Info:492930] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.492919, time: 1742479550941440, spans: 113, status: 204
+[20-Mar-2025 14:05:54 UTC] [instana.LL_Info:492930] Starting new trace with root span id 4f638edee8bed5ce
+[20-Mar-2025 14:06:55 UTC] [instana.LL_Info:493041] Initializing
+[20-Mar-2025 14:06:55 UTC] [instana.LL_Info:493041] Logging at level 3
+[20-Mar-2025 14:06:55 UTC] [instana.LL_Info:493041] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:06:55 UTC] [instana.LL_Info:493041] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:06:55 UTC] [instana.LL_Info:493041] Starting new trace with root span id 64a8cc9f9f6c20d1
+[20-Mar-2025 14:07:17 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:07:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:07:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:07:18 UTC] [instana.LL_Info:493045] Initializing
+[20-Mar-2025 14:07:18 UTC] [instana.LL_Info:493045] Logging at level 3
+[20-Mar-2025 14:07:18 UTC] [instana.LL_Info:493045] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:07:18 UTC] [instana.LL_Info:493045] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:07:18 UTC] [instana.LL_Info:493045] Starting new trace with root span id dcd2ed22ad8bf1b4
+[20-Mar-2025 14:08:13 UTC] [instana.LL_Info:492980] Initializing
+[20-Mar-2025 14:08:13 UTC] [instana.LL_Info:492980] Logging at level 3
+[20-Mar-2025 14:08:13 UTC] [instana.LL_Info:492980] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:08:13 UTC] [instana.LL_Info:492980] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:08:13 UTC] [instana.LL_Info:492980] Starting new trace with root span id d7939deecf483268
+[20-Mar-2025 14:08:19 UTC] [instana.LL_Info:492930] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.492919, time: 1742479554945941, spans: 113, status: 204
+[20-Mar-2025 14:08:19 UTC] [instana.LL_Info:492930] Starting new trace with root span id d33d781e4c3484e0
+[20-Mar-2025 14:10:19 UTC] [instana.LL_Info:493045] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.492919, time: 1742479638639916, spans: 114, status: 204
+[20-Mar-2025 14:10:19 UTC] [instana.LL_Info:493045] Starting new trace with root span id 15547ee3f948fc56
+[20-Mar-2025 14:11:17 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:11:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:11:18 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:11:18 UTC] [instana.LL_Info:495094] Initializing
+[20-Mar-2025 14:11:18 UTC] [instana.LL_Info:495094] Logging at level 3
+[20-Mar-2025 14:11:18 UTC] [instana.LL_Info:495094] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:11:18 UTC] [instana.LL_Info:495094] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:11:18 UTC] [instana.LL_Info:495094] Starting new trace with root span id 4f39269cf580f839
+[20-Mar-2025 14:12:19 UTC] [instana.LL_Info:495154] Initializing
+[20-Mar-2025 14:12:19 UTC] [instana.LL_Info:495154] Logging at level 3
+[20-Mar-2025 14:12:19 UTC] [instana.LL_Info:495154] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:12:19 UTC] [instana.LL_Info:495154] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:12:19 UTC] [instana.LL_Info:495154] Starting new trace with root span id 98c5f8b886782fbc
+[20-Mar-2025 14:14:19 UTC] [instana.LL_Info:495094] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742479878911613, spans: 122, status: 204
+[20-Mar-2025 14:14:19 UTC] [instana.LL_Info:495094] Starting new trace with root span id 63c834ea25a704ba
+[20-Mar-2025 14:14:59 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:14:59 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:15:00 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:15:00 UTC] [instana.LL_Info:495097] Initializing
+[20-Mar-2025 14:15:00 UTC] [instana.LL_Info:495097] Logging at level 3
+[20-Mar-2025 14:15:00 UTC] [instana.LL_Info:495097] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:15:00 UTC] [instana.LL_Info:495097] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:15:00 UTC] [instana.LL_Info:495097] Starting new trace with root span id 36a8f6795333e209
+[20-Mar-2025 14:16:00 UTC] [instana.LL_Info:495155] Initializing
+[20-Mar-2025 14:16:00 UTC] [instana.LL_Info:495155] Logging at level 3
+[20-Mar-2025 14:16:00 UTC] [instana.LL_Info:495155] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:16:00 UTC] [instana.LL_Info:495155] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:16:00 UTC] [instana.LL_Info:495155] Starting new trace with root span id fec03413451efbab
+[20-Mar-2025 14:16:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:16:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:16:06 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:16:06 UTC] [instana.LL_Info:495155] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480161917979, spans: 106, status: 204
+[20-Mar-2025 14:16:06 UTC] [instana.LL_Info:495155] Starting new trace with root span id 52678482e420f1d7
+[20-Mar-2025 14:17:07 UTC] [instana.LL_Info:495401] Initializing
+[20-Mar-2025 14:17:07 UTC] [instana.LL_Info:495401] Logging at level 3
+[20-Mar-2025 14:17:07 UTC] [instana.LL_Info:495401] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:17:07 UTC] [instana.LL_Info:495401] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:17:07 UTC] [instana.LL_Info:495401] Starting new trace with root span id dc9332fb6cdd7d04
+[20-Mar-2025 14:18:29 UTC] [instana.LL_Info:495115] Starting new trace with root span id 031d4783a26a5d59
+[20-Mar-2025 14:19:29 UTC] [instana.LL_Info:495094] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480059928103, spans: 106, status: 204
+[20-Mar-2025 14:19:29 UTC] [instana.LL_Info:495094] Starting new trace with root span id 06d55fc6d8e24205
+[20-Mar-2025 14:20:27 UTC] [instana.LL_Info:495096] Initializing
+[20-Mar-2025 14:20:27 UTC] [instana.LL_Info:495096] Logging at level 3
+[20-Mar-2025 14:20:27 UTC] [instana.LL_Info:495096] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:20:27 UTC] [instana.LL_Info:495096] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:20:27 UTC] [instana.LL_Info:495096] Starting new trace with root span id 4caac93f0172150b
+[20-Mar-2025 14:20:31 UTC] [instana.LL_Info:495096] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480428320372, spans: 107, status: 204
+[20-Mar-2025 14:20:31 UTC] [instana.LL_Info:495096] Starting new trace with root span id fc8817b4cd43cd6d
+[20-Mar-2025 14:20:31 UTC] [instana.LL_Info:495096] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480431324229, spans: 106, status: 204
+[20-Mar-2025 14:20:31 UTC] [instana.LL_Info:495096] Starting new trace with root span id 77c595ae150737cc
+[20-Mar-2025 14:20:37 UTC] PHP Warning:  wp_update_plugins(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:20:37 UTC] PHP Warning:  plugins_api(): Ha sucedido un error inesperado. Puede que algo vaya mal con WordPress.org o la configuración de este servidor. Si sigues teniendo problemas, por favor, prueba en los <a href="https://es-mx.wordpress.org/support/forums/">foros de soporte</a>. (WordPress no pudo establecer una conexión segura con WordPress.org. Por favor, contacta con el administrador de tu servidor.) in /var/www/innit.com.py/wp-includes/functions.php on line 6085
+[20-Mar-2025 14:20:37 UTC] [instana.LL_Info:495401] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480228326210, spans: 106, status: 204
+[20-Mar-2025 14:20:37 UTC] [instana.LL_Info:495401] Starting new trace with root span id b3bc2a71eae4f259
+[20-Mar-2025 14:21:21 UTC] [instana.LL_Info:495094] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480369954792, spans: 106, status: 204
+[20-Mar-2025 14:21:21 UTC] [instana.LL_Info:495094] Starting new trace with root span id c4c34ca105e46e4b
+[20-Mar-2025 14:21:38 UTC] [instana.LL_Info:495095] Initializing
+[20-Mar-2025 14:21:38 UTC] [instana.LL_Info:495095] Logging at level 3
+[20-Mar-2025 14:21:38 UTC] [instana.LL_Info:495095] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:21:38 UTC] [instana.LL_Info:495095] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:21:38 UTC] [instana.LL_Info:495095] Starting new trace with root span id de7c663b40e98428
+[20-Mar-2025 14:22:39 UTC] [instana.LL_Info:495096] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480432328122, spans: 106, status: 204
+[20-Mar-2025 14:22:39 UTC] [instana.LL_Info:495096] Starting new trace with root span id 5cd90b470a689faa
+[20-Mar-2025 14:23:21 UTC] [instana.LL_Info:495115] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480310209697, spans: 106, status: 204
+[20-Mar-2025 14:23:21 UTC] [instana.LL_Info:495115] Starting new trace with root span id fd7493bb44e16bda
+[20-Mar-2025 14:23:39 UTC] [instana.LL_Info:495097] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480100528105, spans: 114, status: 204
+[20-Mar-2025 14:23:39 UTC] [instana.LL_Info:495097] Starting new trace with root span id b241324c15db0f14
+[20-Mar-2025 14:25:23 UTC] [instana.LL_Info:495402] Initializing
+[20-Mar-2025 14:25:23 UTC] [instana.LL_Info:495402] Logging at level 3
+[20-Mar-2025 14:25:23 UTC] [instana.LL_Info:495402] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:25:23 UTC] [instana.LL_Info:495402] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:25:23 UTC] [instana.LL_Info:495402] Starting new trace with root span id 30845c8679ea94be
+[20-Mar-2025 14:25:39 UTC] [instana.LL_Info:495095] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480499351487, spans: 106, status: 204
+[20-Mar-2025 14:25:39 UTC] [instana.LL_Info:495095] Starting new trace with root span id 505a59c0db9074d7
+[20-Mar-2025 14:27:23 UTC] [instana.LL_Info:495157] Initializing
+[20-Mar-2025 14:27:23 UTC] [instana.LL_Info:495157] Logging at level 3
+[20-Mar-2025 14:27:23 UTC] [instana.LL_Info:495157] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:27:23 UTC] [instana.LL_Info:495157] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:27:23 UTC] [instana.LL_Info:495157] Starting new trace with root span id 1d4b143c12f7e21a
+[20-Mar-2025 14:27:39 UTC] [instana.LL_Info:495115] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480602235138, spans: 106, status: 204
+[20-Mar-2025 14:27:39 UTC] [instana.LL_Info:495115] Starting new trace with root span id 2f3db98195ce8aba
+[20-Mar-2025 14:28:39 UTC] [instana.LL_Info:495397] Initializing
+[20-Mar-2025 14:28:39 UTC] [instana.LL_Info:495397] Logging at level 3
+[20-Mar-2025 14:28:39 UTC] [instana.LL_Info:495397] Agent endpoint: http://127.0.0.1:42699, endpoint type: php-profile/profiles, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:28:39 UTC] [instana.LL_Info:495397] Agent endpoint: http://127.0.0.1:42699, endpoint type: php/traces, timeout: 500 ms, buffer: soft 500, hard 1000, interval 1000 ms
+[20-Mar-2025 14:28:39 UTC] [instana.LL_Info:495397] Starting new trace with root span id 3e08422f2144ff03
+[20-Mar-2025 14:29:24 UTC] [instana.LL_Info:495402] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480723898101, spans: 109, status: 204
+[20-Mar-2025 14:29:24 UTC] [instana.LL_Info:495402] Starting new trace with root span id 2413f6e6adb2eaa0
+[20-Mar-2025 14:29:47 UTC] [instana.LL_Info:495095] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480740373170, spans: 106, status: 204
+[20-Mar-2025 14:29:47 UTC] [instana.LL_Info:495095] Starting new trace with root span id 5d4b3c1ca7b3c018
+[20-Mar-2025 14:30:47 UTC] [instana.LL_Info:495115] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480859258981, spans: 106, status: 204
+[20-Mar-2025 14:30:47 UTC] [instana.LL_Info:495115] Starting new trace with root span id bba9e94e05f08e46
+[20-Mar-2025 14:31:25 UTC] [instana.LL_Info:495097] Transmitted spans.. endpoint: http://127.0.0.1:42699/com.instana.plugin.php/traces.495092, time: 1742480619570288, spans: 106, status: 204
+[20-Mar-2025 14:31:25 UTC] [instana.LL_Info:495097] Starting new trace with root span id 3808614acd6fab50
