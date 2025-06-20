@@ -85,6 +85,7 @@ $table_prefix = 'wp_';
  *
  * @link https://developer.wordpress.org/advanced-administration/debug/debug-wordpress/
  */
+define( 'WP_MEMORY_LIMIT', '512M' );
 
 define( 'WP_HTTP_CURL_SSL_VERIFY', false );
 
